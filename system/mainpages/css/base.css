@@ -1,0 +1,331 @@
+@charset "UTF-8";
+body {
+    font-size: .92em;
+    font-family:微软雅黑,黑体,宋体,sans-serif !important;
+    background: rgb(255, 255, 255);
+    color:#000!important;
+
+}
+body.bcgray {
+    background-color: #f6f6f6;
+}
+html, body, div, form, p, a, h1, h2, h3, h4, h5, h6, img, table, td, th, input, span, section, header, footer, nav, article, aside, fieldset, textarea, dl, dt, dd, blockquote, ul, ol, strong {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+*, *:before, *:after {
+    -webkit-tap-highlight-color: transparent;/*清除点击默认的高亮效果*/
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+img {
+    border:none;
+}
+ul{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+input,textarea{
+    border:0;
+    resize: none;
+    outline: none;
+    -webkit-appearance: none;/*清除浏览器默认的样式*/
+    background:none;
+}
+/*清除浮动*/
+.clearfix::before,.clearfix::after {
+    content: ".";
+    display: block;
+    height:0;
+    line-height:0;
+    visibility: hidden;
+    clear: both;
+}
+.ovflh {
+    overflow: hidden;
+}
+.overflowh {overflow: hidden}
+i,strong,b{
+    font-weight:normal;
+    font-style: normal;
+}
+
+.fl {
+    float: left;
+}
+.fr{
+    float: right;}
+
+.widget-container {
+    background: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+}
+/*页码*/
+.pagination {
+    margin: 12px 0;
+}
+.pagination li {
+    display:inline;
+}
+.pagination>li>a, .pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    height: 32px;
+    margin-left: -1px;
+    line-height: 1.428571429;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.pagination a.icon {
+    padding-top: 8px;
+}
+.pagination>li.active>a {
+    background-color: #007aff;
+    color: #fff;
+    border-color:#007aff;
+}
+/*end 页码*/
+.red {
+    color: #DD5A43 !important;
+}
+.green {
+    color: #69AA46;
+}
+.blue {
+    color: #478FCA;
+}
+.btn-primary:hover, .btn-primary.active {
+    background: transparent;
+    color: #007aff;
+    border-color: #007aff;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #428bca;
+    border-color: #357ebd;
+}
+.btn {
+    font-weight: 300;
+    margin: 0 10px 10px 0;
+    -webkit-transition: all 0.15s;
+    -moz-transition: all 0.15s;
+    transition: all 0.15s;
+}
+.padded {
+    padding: 15px;
+}
+.widget-container .heading {
+    display: block;
+    background: rgba(255, 255, 255, 0.94);
+    padding-bottom: 10px;
+    color: #007aff;
+    font-size: 15px;
+    width: 100%;
+    font-weight: 400;
+    margin: 0;
+}
+.col-6 {
+    width: 50%;
+    float: left;
+    padding:0 10px;
+}
+.table-filters {
+    margin-bottom: 20px;
+}
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.table thead>tr>th, .table tbody>tr>th, .table tfoot>tr>th, .table thead>tr>td, .table tbody>tr>td, .table tfoot>tr>td {
+    padding: 7px;
+}
+.table thead > tr > th, .table tbody > tr > th, .table tfoot > tr > th, .table thead > tr > td, .table tbody > tr > td, .table tfoot > tr > td {
+    vertical-align: middle;
+}
+.table > thead > tr > th {
+    border-bottom: 2px solid #dddddd;
+}
+.table th {
+    font-size: 14px;
+}
+.table-filters tbody:last-child td.filter-category {
+    border-bottom: 0;
+}
+.table-filters tbody tr td.blue {
+    background: #5bc0de;
+}
+.table-filters tbody tr td.filter-category {
+    text-align: center;
+    color: white!important;
+    border-bottom: 1px solid white;
+}
+.filter-category {
+    width: 60px;
+}
+.arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-right: 7px solid white;
+    float: right;
+    clear: both;
+    margin-right: -8px;
+    margin-top: 5px;
+}
+.filter-category i {
+    font-size: 24px;
+}
+.table-filters tbody tr td.green {
+    background: #60c560;
+}
+.table-filters tbody tr td.orange {
+    background: #f59b3b;
+}
+.table-filters tbody tr td.red {
+    background: #d9534f;
+}
+.table-filters tbody tr td.blue {
+    background: #5bc0de;
+}
+.table-filters tbody tr td.magenta {
+    background: #d94084;
+}
+.col-30 {
+    width: 30%;
+    float: left;
+}
+.col-70 {
+    width: 70%;
+    float: left;
+}
+.benma_ui_tab {
+    box-sizing: content-box;
+}
+.w {
+    width: 1000px;
+    margin:0 auto;
+}
+.row {
+    margin: 0 10px 0;
+    overflow: hidden;
+}
+.row + .row {
+    margin-top: 20px;
+}
+.bcwhite {
+    background-color: #fff;
+}
+.leftw {
+    width: 168px;
+    height: 168px;
+    float: left;
+    box-sizing: border-box;
+}
+.pl0 {
+    padding-left: 0;
+}
+.righttxtw {
+    width: 648px;
+    height: 168px;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 20px;
+    position: relative;
+}
+.htext {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    margin: 12px 0;
+}
+.aptxt {
+    text-indent: 2em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.page_content {
+    width: 100%;
+
+}
+.ptxt {
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 10px;
+}
+.ats {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+}
+.myrelbox {
+    position: relative!important;
+}
+.col-md-2 {
+    width:16.67%;
+    float: left;
+}
+.col-md-10 {
+    width:83.33%;
+    float: left;
+}
+.overflowtxt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.shouc {
+    float: left;
+    margin-right: 10px;
+    margin-left: 1px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+.red {
+    color: #DD5A43 !important;
+}
+/*layer样式改*/
+.layui-layer-title{
+    background-color: #fafdff!important;
+    border: 1.0pt solid #D8E3EF!important;
+    border-top: 2px solid #6bc1f2!important;
+    border-left:0!important;
+}
+/*end layer样式改*/
+

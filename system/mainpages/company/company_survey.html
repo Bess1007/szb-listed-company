@@ -1,0 +1,3082 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=11"/>
+    <title>公司概况</title>
+    <!--框架必需start-->
+    <link href="../../../libs/css/import_main.css" rel="stylesheet" type="text/css"/>
+    <link href="../../../libs/skins/skyblue/style.css" rel="stylesheet" type="text/css" id="theme" themeColor="skyblue" positionTarget="positionContent"/>
+    <link href="../skin/style.css" rel="stylesheet" type="text/css" id="skin" skinPath="system/style1_accordion_skyblue/skin/" scrollerX="true"/>
+    <link href="../../../libs/css/import_basic.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="../../../libs/js/jquery.js"></script>
+    <script type="text/javascript" src="../../../libs/js/language/cn.js"></script>
+    <script type="text/javascript" src="../../../libs/js/framework.js"></script>
+    <!--框架必需end-->
+    <script type="text/javascript" src="../../../libs/js/form/datePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="../../../libs/js/nav/basicTab.js"></script>
+    <link rel="stylesheet" href="../layer/skin/default/layer.css">
+    <script type="text/javascript" src="../layer/layer.js"></script>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/shzqb.css">
+    <link rel="stylesheet" href="../css/szb_company.css">
+    <script type="text/javascript" src="../js/shzqbqui.js"></script>
+    <style>
+
+    </style>
+</head>
+<body class="bclightgray">
+<div class="page_content companyBox">
+    <!--顶部模块-->
+    <div class="company_nav1"><!--顶部logo & 搜索框-->
+        <div class="centerBox clearfix">
+            <div class="left_logo fl">
+                <a href=""><img src="../images/shzqlogo.png" alt=""></a>
+            </div>
+            <div class="center_input_box fl">
+                <div class="center_input clearfix">
+                    <div class="center_select fl">
+                        <select name="" id="">
+                            <option value="">公司股票代码或全称查询</option>
+                            <option value="">个人查询</option>
+                        </select>
+                    </div>
+                    <div class="center_inp fl">
+                        <input type="text" placeholder="输入公司股票代码/公司名称/个人名称+公司名称">
+                        <button class="fa fa-search btn_search"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="company_nav2">
+        <ul class="centerBox clearfix">
+            <li class="fl nav_list_node">
+                <a href="" class="nav_list_node_link fa fa-home" target="_blank">&nbsp;系统首页</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company.html" class="nav_list_node_link " >公司首页</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_survey.html" class="nav_list_node_link actived" >概况</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_shareholder.html" class="nav_list_node_link">股东</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_seniorExecutive.html" class="nav_list_node_link">高管</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_finance.html" class="nav_list_node_link">财务</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_bonus.html" class="nav_list_node_link">分红</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_market.html" class="nav_list_node_link">市场</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_risk.html" class="nav_list_node_link">风险</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_industry.html" class="nav_list_node_link">行业</a>
+            </li>
+        </ul>
+    </div>
+    <!--顶部模块 end-->
+
+    <!--概况内容-->
+    <div class="company_survey_box centerBox" style="padding-bottom: 20px;">
+     <!--   <table class="c_survey_table">
+           <tbody>
+           <tr>
+               <td class="tit_hd"><span>机构名称</span></td>
+               <td><span>平安银行股份有限公司</span></td>
+               <td class="tit_hd"><span>机构简称</span></td>
+               <td><span>平安银行</span></td>
+               <td class="tit_hd"><span>所在省份</span></td>
+               <td><span></span></td>
+           </tr>
+          <tr>
+              <td class="tit_hd"><span>股票代码</span></td>
+              <td><span>000001</span></td>
+              <td class="tit_hd"><span>股票简称</span></td>
+              <td><span>平安银行</span></td>
+              <td class="tit_hd"><span>注册号</span></td>
+              <td><span></span></td>
+          </tr>
+          <tr>
+              <td class="tit_hd"><span>英文全称</span></td>
+              <td><span>Ping An Bank Co., Ltd.</span></td>
+              <td class="tit_hd"><span>英文简称</span></td>
+              <td><span>PAB</span></td>
+              <td class="tit_hd"><span>公司类型</span></td>
+              <td><span></span></td>
+          </tr>
+          <tr>
+              <td class="tit_hd"><span>机构类型（大类）</span></td>
+              <td><span>160</span></td>
+              <td class="tit_hd"><span>机构类型（小类）</span></td>
+              <td><span></span></td>
+              <td class="tit_hd"><span>成立日期</span></td>
+              <td><span>4700</span></td>
+          </tr>
+          <tr>
+              <td class="tit_hd"><span>法定代表人</span></td>
+              <td><span>谢永林</span></td>
+              <td class="tit_hd"><span>董事长</span></td>
+              <td><span></span></td>
+              <td class="tit_hd"><span>营业期限</span></td>
+              <td><span>2019-11-01</span></td>
+          </tr>
+          <tr>
+              <td class="tit_hd"><span>总经理</span></td>
+              <td><span>胡跃飞</span></td>
+              <td class="tit_hd"><span>董秘</span></td>
+              <td><span>周强</span></td>
+              <td class="tit_hd"><span>实收资本</span></td>
+              <td><span>万元</span></td>
+          </tr>
+          <tr>
+              <td class="tit_hd"><span>董秘电话</span></td>
+              <td><span>0755-82080387</span></td>
+              <td class="tit_hd"><span>董秘邮箱</span></td>
+              <td><span>pabdsh@pingan.com.cn</span></td>
+              <td class="tit_hd"><span>最后年检日期</span></td>
+              <td><span></span></td>
+          </tr>
+          <tr>
+              <td class="tit_hd"><span>董秘传真</span></td>
+              <td><span>0755-82080386</span></td>
+              <td class="tit_hd"><span>注销日期</span></td>
+              <td><span></span></td>
+              <td class="tit_hd"><span>吊销日期</span></td>
+              <td><span></span></td>
+          </tr>
+          <tr>
+              <td class="tit_hd"><span>证券代表</span></td>
+              <td><span>吕旭光</span></td>
+              <td class="tit_hd"><span>证券代表电话</span></td>
+              <td><span>0755-82080387</span></td>
+              <td class="tit_hd"><span>证券代表传真</span></td>
+              <td><span>	0755-82080386</span></td>
+          </tr>
+          <tr>
+              <td class="tit_hd"><span>证券代表邮箱</span></td>
+              <td><span>pabdsh@pingan.com.cn</span></td>
+              <td class="tit_hd"><span>机构状态</span></td>
+              <td><span>在营（开业）  </span></td>
+              <td class="tit_hd"><span>行业代码</span></td>
+              <td><span></span></td>
+          </tr>
+          <tr>
+              <td class="tit_hd"><span>注册资本</span></td>
+              <td><span>1142489.478700 万元</span></td>
+              <td class="tit_hd"><span>币种</span></td>
+              <td><span>人民币元</span></td>
+              <td class="tit_hd"><span>行业类别代码</span></td>
+              <td><span></span></td>
+          </tr>
+          <tr>
+              <td class="tit_hd"><span>职工人数</span></td>
+              <td><span></span></td>
+              <td class="tit_hd"><span>办公地址</span></td>
+              <td><span>深圳市深南东路5047号</span></td>
+              <td class="tit_hd"><span>原注册码</span></td>
+              <td><span></span></td>
+          </tr>
+          <tr>
+              <td class="tit_hd"><span>注册地址</span></td>
+              <td><span>深圳市罗湖区深南东路5047号</span></td>
+              <td class="tit_hd"><span>办公地址邮编</span></td>
+              <td><span>518001</span></td>
+              <td class="tit_hd"><span>变更日期</span></td>
+              <td><span></span></td>
+          </tr>
+          <tr>
+              <td class="tit_hd"><span>注册地址邮编</span></td>
+              <td><span>518001</span></td>
+              <td class="tit_hd"><span>公司电话</span></td>
+              <td><span>	0755-82080387</span></td>
+              <td class="tit_hd"><span>登记机关</span></td>
+              <td><span></span></td>
+          </tr>
+          <tr>
+              <td class="tit_hd"><span>律师事务所</span></td>
+              <td><span></span></td>
+              <td class="tit_hd"><span>会计事务所</span></td>
+              <td><span>	普华永道中天会计师事务所(特殊普通合伙)</span></td>
+              <td class="tit_hd"><span>公司传真</span></td>
+              <td><span>0755-82080386</span></td>
+          </tr>
+          <tr>
+              <td class="tit_hd"><span>公司邮箱</span></td>
+              <td><span>pabdsh@pingan.com.cn</span></td>
+              <td class="tit_hd"><span>公司网址</span></td>
+              <td><span>http://www.bank.pingan.com</span></td>
+              <td class="tit_hd"><span>地址</span></td>
+              <td><span>深圳市深南东路5047号</span></td>
+          </tr>
+          <tr>
+              <td class="tit_hd"><span>证监会行业</span></td>
+              <td><span>20066</span></td>
+              <td class="tit_hd"><span>主营业务</span></td>
+              <td colspan="3"><span>（一）吸收公众存款； （二）发放短期、中期和长期贷款； （三）办理国内外结算； （四）办理票据承兑与贴现； （五）发行金融债券； （六）代理发行、代理兑付、承销政府债券； （七）买卖政府债券、金融债券； （八）从事同业拆借； （九）买卖、代理买卖外汇； （十）从事银行卡业务； （十一）提供信用证服务及担保； （十二）代理收付款项及代理保险业务； （十三）提供保管箱服务； （十四）结汇、售汇业务； （十五）离岸银行业务； （十六）资产托管业务； （十七）办理黄金业务； （十八）财务顾问、资信调查、咨询、见证业务； （十九）经有关监管机构批准的其他业务。</span></td>
+          </tr>
+
+
+           </tbody>
+        </table>-->
+
+        <div class="lhubsj" style="margin-top: 15px;">
+            <div class="zhuygcfx_tit">
+                <span class="zhuygcfx_tit_txt">公司概况</span>
+            </div>
+            <div class="zhuygcfx_con">
+                <table class="mystyle_tab2">
+                    <tbody class="tr_bc">
+                    <tr class=" bt_dark">
+                        <td class="tit_hd"><span>公司名称</span></td>
+                        <td>
+                            <span>平安银行股份有限公司</span>
+                        </td>
+                        <td class="tit_hd"><span>公司简称</span></td>
+                        <td>
+                            <span>平安银行</span>
+                        </td>
+                        <td class="tit_hd"><span>成立日期</span></td>
+                        <td>
+                            <span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tit_hd"><span>公司类型</span></td>
+                        <td>
+                            <span></span>
+                        </td>
+                        <td class="tit_hd"><span>英文全称</span></td>
+                        <td>
+                            <span>Ping An Bank Co., Ltd.</span>
+                        </td>
+                        <td class="tit_hd"><span>英文简称</span></td>
+                        <td>
+                            <span>PAB</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tit_hd"><span>法定代表人</span></td>
+                        <td>
+                            <span>谢永林</span>
+                        </td>
+                        <td class="tit_hd"><span>注册资金(元)</span></td>
+                        <td>
+                            <span>11,111,111,111,111</span>
+                        </td>
+                        <td class="tit_hd"><span>公司曾用名</span></td>
+                        <td>
+                            <span></span>
+                        </td>
+                    </tr>
+
+                    <tr class=" bt_dark">
+                        <td class="tit_hd"><span>股票代码</span></td>
+                        <td>
+                            <span>000001</span>
+                        </td>
+                        <td class="tit_hd"><span>股票简称</span></td>
+                        <td>
+                            <span>平安银行</span>
+                        </td>
+                        <td class="tit_hd"><span>上市日期</span></td>
+                        <td>
+                            <span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tit_hd"><span>董事长</span></td>
+                        <td>
+                            <span></span>
+                        </td>
+                        <td class="tit_hd"><span>独立董事</span></td>
+                        <td>
+                            <span></span>
+                        </td>
+                        <td class="tit_hd"><span>董秘</span></td>
+                        <td>
+                            <span>周强</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tit_hd"><span>总经理</span></td>
+                        <td>
+                            <span></span>
+                        </td>
+                        <td class="tit_hd"><span>证券代表</span></td>
+                        <td>
+                            <span></span>
+                        </td>
+                        <td>
+                            <span></span>
+                        </td>
+                        <td>
+                            <span></span>
+                        </td>
+                    </tr>
+
+                    <tr class=" bt_dark">
+                        <td class="tit_hd"><span>所在省份</span></td>
+                        <td>
+                            <span></span>
+                        </td>
+                        <td class="tit_hd"><span>注册地址</span></td>
+                        <td>
+                            <span></span>
+                        </td>
+                        <td class="tit_hd"><span>办公地址</span></td>
+                        <td>
+                            <span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tit_hd"><span>公司电话</span></td>
+                        <td>
+                            <span></span>
+                        </td>
+                        <td class="tit_hd"><span>公司传真</span></td>
+                        <td>
+                            <span></span>
+                        </td>
+                        <td class="tit_hd"><span>公司邮箱</span></td>
+                        <td>
+                            <span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tit_hd"><span>公司网址</span></td>
+                        <td>
+                            <span></span>
+                        </td>
+                        <td class="tit_hd"><span>公司邮编</span></td>
+                        <td>
+                            <span></span>
+                        </td>
+                        <td class="tit_hd"><span>职工人数</span></td>
+                        <td>
+                            <span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tit_hd"><span>证监会行业</span></td>
+                        <td>
+                            <span></span>
+                        </td>
+                        <td class="tit_hd"><span>会计事务所</span></td>
+                        <td>
+                            <span></span>
+                        </td>
+                        <td class="tit_hd"><span>律师事务所</span></td>
+                        <td>
+                            <span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tit_hd"><span>信息披露报纸</span></td>
+                        <td colspan="5">
+                            <span></span>
+                        </td>
+                    </tr>
+
+                    <tr class=" bt_dark">
+                        <td class="tit_hd"><span>主营业务</span></td>
+                        <td colspan="8">
+                            <span>
+                                （一）吸收公众存款； （二）发放短期、中期和长期贷款； （三）办理国内外结算； （四）办理票据承兑与贴现； （五）发行金融债券； （六）代理发行、代理兑付、承销政府债券； （七）买卖政府债券、金融债券； （八）从事同业拆借； （九）买卖、代理买卖外汇； （十）从事银行卡业务； （十一）提供信用证服务及担保； （十二）代理收付款项及代理保险业务； （十三）提供保管箱服务； （十四）结汇、售汇业务； （十五）离岸银行业务； （十六）资产托管业务； （十七）办理黄金业务； （十八）财务顾问、资信调查、咨询、见证业务； （十九）经有关监管机构批准的其他业务。
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tit_hd"><span>公司简介</span></td>
+                        <td colspan="8"><span></span></td>
+                    </tr>
+                    <tr>
+                        <td class="tit_hd"><span>经营范围</span></td>
+                        <td colspan="8"><span></span></td>
+                    </tr>
+                    </tbody>
+                </table>
+           <!--     <table class="mystyle_tab2 bt_dark">
+                    <tbody class="tr_bc">
+
+                    </tbody>
+                </table>
+                <table class="mystyle_tab2 bt_dark">
+                    <tbody class="tr_bc">
+                    <tr>
+                        <td class="tit_hd"><span>所在省份</span></td>
+                        <td>
+                            <span></span>
+                        </td>
+                        <td class="tit_hd"><span>注册地址</span></td>
+                        <td>
+                            <span>深圳市罗湖区深南东路5047号</span>
+                        </td>
+                        <td class="tit_hd"><span>办公地址</span></td>
+                        <td>
+                            <span>深圳市深南东路5047号</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tit_hd"><span>公司电话</span></td>
+                        <td>
+                            <span>0755-82080387</span>
+                        </td>
+                        <td class="tit_hd"><span>公司传真</span></td>
+                        <td>
+                            <span>0755-82080386</span>
+                        </td>
+                        <td class="tit_hd"><span>公司邮箱</span></td>
+                        <td>
+                            <span>pabdsh@pingan.com.cn</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tit_hd"><span>公司网址</span></td>
+                        <td>
+                            <span>http://www.bank.pingan.com</span>
+                        </td>
+                        <td class="tit_hd"><span>公司邮编</span></td>
+                        <td>
+                            <span>518001</span>
+                        </td>
+                        <td class="tit_hd"><span>职工人数</span></td>
+                        <td>
+                            <span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tit_hd"><span>证监会行业</span></td>
+                        <td>
+                            <span></span>
+                        </td>
+                        <td class="tit_hd"><span>会计事务所</span></td>
+                        <td>
+                            <span></span>
+                        </td>
+                        <td class="tit_hd"><span>律师事务所</span></td>
+                        <td>
+                            <span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tit_hd"><span>信息披露报纸</span></td>
+                        <td colspan="5">
+                            <span></span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="mystyle_tab2 bt_dark" style="margin-bottom: 0;">
+                    <tbody class="tr_bc">
+
+                    </tbody>
+                </table>-->
+            </div>
+        </div>
+
+        <!--主营业务-->
+        <div class="centerBox zhuygcfx_box">
+            <div class="zhuygcfx_tit">
+                <span class="zhuygcfx_tit_txt">主营构成分析</span>
+            </div>
+            <div class="zhuygcfx_con mystyle_tab" style="padding-top: 5px;">
+                <div class="survey_charts_box clearfix" style="height: 170px;">
+                    <div class="fl">
+                        <div class="survey_charts_tit ">
+                            <span>按行业分</span>
+                        </div>
+                        <div id="surveycharts1" style="width: 360px;height: 220px;z-index: 1"></div>
+                    </div>
+                    <div class="fl">
+                        <div class="survey_charts_tit">
+                            <span>按产品分</span>
+                        </div>
+                        <div id="surveycharts2" style="width: 360px;height: 220px;z-index: 1"></div>
+                    </div>
+                    <div class="fl">
+                        <div class="survey_charts_tit">
+                            <span>按地区分</span>
+                        </div>
+                        <div id="surveycharts3" style="width: 360px;height: 220px;z-index: 1"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--主营业务表格-->
+        <div class="centerBox zhuygcfx_box" style="position: relative;top: -64px;">
+            <div class="zhuygcfx_tit" style="overflow: hidden">
+                <span class="zhuygcfx_tit_txt">主营构成--表格</span>
+                <div class="zhuygcfx_bgq">
+                    <span>注：<i class="text_red">通常在中报、年报时披露</i></span>
+                </div>
+            </div>
+            <div class="zhuygcfx_con">
+                <div class="basicTab scrollbar-tab">
+                    <div name="2017-06-30" style="width:100%">
+                        <table class="mystyle_tab2 " style="margin-top: 15px;">
+                          <tbody>
+                          <tr class="th_bc">
+                              <td colspan="2">业务名称</td>
+                              <td>营业收入（元）</td>
+                              <td>收入比例</td>
+                              <td>营业成本（元）</td>
+                              <td>成本比例</td>
+                              <td>利润比例</td>
+                              <td>毛利率</td>
+                          </tr>
+                          <tr>
+                              <td class="td_bc"><span>按行业</span></td>
+                              <td><span>零售业</span></td>
+                              <td class="num_ta_right"><span>265.89亿</span></td>
+                              <td class="num_ta_right"><span>100.00%</span></td>
+                              <td class="num_ta_right"><span>222.33亿</span></td>
+                              <td class="num_ta_right"><span>100.00%</span></td>
+                              <td class="num_ta_right"><span>100.00%</span></td>
+                              <td class="num_ta_right"><span>16.38%</span></td>
+                          </tr>
+                          <tr>
+                              <td class="td_bc" rowspan="3"><span>按产品</span></td>
+                              <td><span>食品用品</span></td>
+                              <td class="num_ta_right"><span>132.62亿</span></td>
+                              <td class="num_ta_right"><span>49.88%</span></td>
+                              <td class="num_ta_right"><span>108.37亿</span></td>
+                              <td class="num_ta_right"><span>48.74%</span></td>
+                              <td class="num_ta_right"><span>55.66%</span></td>
+                              <td class="num_ta_right"><span>18.28%</span></td>
+                          </tr>
+                          <tr>
+                              <td><span>生鲜及加工</span></td>
+                              <td class="num_ta_right"><span>132.62亿</span></td>
+                              <td class="num_ta_right"><span>49.88%</span></td>
+                              <td class="num_ta_right"><span>108.37亿</span></td>
+                              <td class="num_ta_right"><span>48.74%</span></td>
+                              <td class="num_ta_right"><span>55.66%</span></td>
+                              <td class="num_ta_right"><span>18.28%</span></td>
+                          </tr>
+                          <tr>
+                              <td><span>服装</span></td>
+                              <td class="num_ta_right"><span>132.62亿</span></td>
+                              <td class="num_ta_right"><span>49.88%</span></td>
+                              <td class="num_ta_right"><span>108.37亿</span></td>
+                              <td class="num_ta_right"><span>48.74%</span></td>
+                              <td class="num_ta_right"><span>55.66%</span></td>
+                              <td class="num_ta_right"><span>18.28%</span></td>
+                          </tr>
+                          <tr>
+                              <td class="td_bc" rowspan="7"><span>按地区</span></td>
+                              <td><span>华西大区</span></td>
+                              <td class="num_ta_right"<span>97.49亿</span></td>
+                              <td class="num_ta_right"<span>36.67%</span></td>
+                              <td class="num_ta_right"<span>80.86亿</span></td>
+                              <td class="num_ta_right"<span>36.37%</span></td>
+                              <td class="num_ta_right"<span>38.18%</span></td>
+                              <td class="num_ta_right"<span>17.06%</span></td>
+                          </tr>
+                          <tr>
+                            <td><span>福建大区</span></td>
+                            <td class="num_ta_right"><span>97.49亿</span></td>
+                            <td class="num_ta_right"><span>36.67%</span></td>
+                            <td class="num_ta_right"><span>80.86亿</span></td>
+                            <td class="num_ta_right"><span>36.37%</span></td>
+                            <td class="num_ta_right"><span>38.18%</span></td>
+                            <td class="num_ta_right"><span>17.06%</span></td>
+                          </tr>
+                          <tr>
+                              <td><span>北京大区</span></td>
+                              <td class="num_ta_right"><span>97.49亿</span></td>
+                              <td class="num_ta_right"><span>36.67%</span></td>
+                              <td class="num_ta_right"><span>80.86亿</span></td>
+                              <td class="num_ta_right"><span>36.37%</span></td>
+                              <td class="num_ta_right"><span>38.18%</span></td>
+                              <td class="num_ta_right"><span>17.06%</span></td>
+                          </tr>
+                          <tr>
+                              <td><span>华东大区</span></td>
+                              <td class="num_ta_right"<span>97.49亿</span></td>
+                              <td class="num_ta_right"<span>36.67%</span></td>
+                              <td class="num_ta_right"<span>80.86亿</span></td>
+                              <td class="num_ta_right"<span>36.37%</span></td>
+                              <td class="num_ta_right"<span>38.18%</span></td>
+                              <td class="num_ta_right"<span>17.06%</span></td>
+                          </tr>
+                          <tr>
+                              <td><span>安徽大区</span></td>
+                              <td class="num_ta_right"><span>97.49亿</span></td>
+                              <td class="num_ta_right"><span>36.67%</span></td>
+                              <td class="num_ta_right"><span>80.86亿</span></td>
+                              <td class="num_ta_right"><span>36.37%</span></td>
+                              <td class="num_ta_right"><span>38.18%</span></td>
+                              <td class="num_ta_right"><span>17.06%</span></td>
+                          </tr>
+                          <tr>
+                              <td><span>河南大区</span></td>
+                              <td class="num_ta_right"><span>97.49亿</span></td>
+                              <td class="num_ta_right"><span>36.67%</span></td>
+                              <td class="num_ta_right"><span>80.86亿</span></td>
+                              <td class="num_ta_right"><span>36.37%</span></td>
+                              <td class="num_ta_right"><span>38.18%</span></td>
+                              <td class="num_ta_right"><span>17.06%</span></td>
+                          </tr>
+                          <tr>
+                              <td><span>河北大区</span></td>
+                              <td class="num_ta_right"><span>97.49亿</span></td>
+                              <td class="num_ta_right"><span>36.67%</span></td>
+                              <td class="num_ta_right"><span>80.86亿</span></td>
+                              <td class="num_ta_right"><span>36.37%</span></td>
+                              <td class="num_ta_right"><span>38.18%</span></td>
+                              <td class="num_ta_right"><span>17.06%</span></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                    <div name="2016-12-31" style="width:100%;">
+                        <table class="mystyle_tab2 " style="margin-top: 15px;">
+                            <tbody>
+                            <tr class="th_bc">
+                                <td colspan="2">业务名称</td>
+                                <td>营业收入（元）</td>
+                                <td>收入比例</td>
+                                <td>营业成本（元）</td>
+                                <td>成本比例</td>
+                                <td>利润比例</td>
+                                <td>毛利率</td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>按行业</span></td>
+                                <td><span>零售业</span></td>
+                                <td class="num_ta_right"><span>265.89亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>222.33亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>16.38%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="3"><span>按产品</span></td>
+                                <td><span>食品用品</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>生鲜及加工</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>服装</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="7"><span>按地区</span></td>
+                                <td><span>华西大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>福建大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>北京大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>华东大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>安徽大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河南大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河北大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div name="2016-09-30" style="width:100%;">
+                        <table class="mystyle_tab2 " style="margin-top: 15px;">
+                            <tbody>
+                            <tr class="th_bc">
+                                <td colspan="2">业务名称</td>
+                                <td>营业收入（元）</td>
+                                <td>收入比例</td>
+                                <td>营业成本（元）</td>
+                                <td>成本比例</td>
+                                <td>利润比例</td>
+                                <td>毛利率</td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>按行业</span></td>
+                                <td><span>零售业</span></td>
+                                <td class="num_ta_right"><span>265.89亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>222.33亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>16.38%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="3"><span>按产品</span></td>
+                                <td><span>食品用品</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>生鲜及加工</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>服装</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="7"><span>按地区</span></td>
+                                <td><span>华西大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>福建大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>北京大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>华东大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>安徽大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河南大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河北大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div name="2016-06-30" style="width:100%">
+                        <table class="mystyle_tab2 " style="margin-top: 15px;">
+                            <tbody>
+                            <tr class="th_bc">
+                                <td colspan="2">业务名称</td>
+                                <td>营业收入（元）</td>
+                                <td>收入比例</td>
+                                <td>营业成本（元）</td>
+                                <td>成本比例</td>
+                                <td>利润比例</td>
+                                <td>毛利率</td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>按行业</span></td>
+                                <td><span>零售业</span></td>
+                                <td class="num_ta_right"><span>265.89亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>222.33亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>16.38%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="3"><span>按产品</span></td>
+                                <td><span>食品用品</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>生鲜及加工</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>服装</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="7"><span>按地区</span></td>
+                                <td><span>华西大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>福建大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>北京大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>华东大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>安徽大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河南大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河北大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div name="2016-03-31" style="width:100%;">
+                        <table class="mystyle_tab2 " style="margin-top: 15px;">
+                            <tbody>
+                            <tr class="th_bc">
+                                <td colspan="2">业务名称</td>
+                                <td>营业收入（元）</td>
+                                <td>收入比例</td>
+                                <td>营业成本（元）</td>
+                                <td>成本比例</td>
+                                <td>利润比例</td>
+                                <td>毛利率</td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>按行业</span></td>
+                                <td><span>零售业</span></td>
+                                <td class="num_ta_right"><span>265.89亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>222.33亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>16.38%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="3"><span>按产品</span></td>
+                                <td><span>食品用品</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>生鲜及加工</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>服装</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="7"><span>按地区</span></td>
+                                <td><span>华西大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>福建大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>北京大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>华东大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>安徽大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河南大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河北大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div name="2015-12-30" style="width:100%;">
+                        <table class="mystyle_tab2 " style="margin-top: 15px;">
+                            <tbody>
+                            <tr class="th_bc">
+                                <td colspan="2">业务名称</td>
+                                <td>营业收入（元）</td>
+                                <td>收入比例</td>
+                                <td>营业成本（元）</td>
+                                <td>成本比例</td>
+                                <td>利润比例</td>
+                                <td>毛利率</td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>按行业</span></td>
+                                <td><span>零售业</span></td>
+                                <td class="num_ta_right"><span>265.89亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>222.33亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>16.38%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="3"><span>按产品</span></td>
+                                <td><span>食品用品</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>生鲜及加工</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>服装</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="7"><span>按地区</span></td>
+                                <td><span>华西大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>福建大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>北京大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>华东大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>安徽大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河南大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河北大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div name="2015-09-30" style="width:100%">
+                        <table class="mystyle_tab2 " style="margin-top: 15px;">
+                            <tbody>
+                            <tr class="th_bc">
+                                <td colspan="2">业务名称</td>
+                                <td>营业收入（元）</td>
+                                <td>收入比例</td>
+                                <td>营业成本（元）</td>
+                                <td>成本比例</td>
+                                <td>利润比例</td>
+                                <td>毛利率</td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>按行业</span></td>
+                                <td><span>零售业</span></td>
+                                <td class="num_ta_right"><span>265.89亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>222.33亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>16.38%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="3"><span>按产品</span></td>
+                                <td><span>食品用品</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>生鲜及加工</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>服装</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="7"><span>按地区</span></td>
+                                <td><span>华西大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>福建大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>北京大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>华东大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>安徽大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河南大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河北大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div name="2015-06-31" style="width:100%;">
+                        <table class="mystyle_tab2 " style="margin-top: 15px;">
+                            <tbody>
+                            <tr class="th_bc">
+                                <td colspan="2">业务名称</td>
+                                <td>营业收入（元）</td>
+                                <td>收入比例</td>
+                                <td>营业成本（元）</td>
+                                <td>成本比例</td>
+                                <td>利润比例</td>
+                                <td>毛利率</td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>按行业</span></td>
+                                <td><span>零售业</span></td>
+                                <td class="num_ta_right"><span>265.89亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>222.33亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>16.38%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="3"><span>按产品</span></td>
+                                <td><span>食品用品</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>生鲜及加工</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>服装</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="7"><span>按地区</span></td>
+                                <td><span>华西大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>福建大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>北京大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>华东大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>安徽大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河南大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河北大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div name="2015-03-30" style="width:100%;">
+                        <table class="mystyle_tab2 " style="margin-top: 15px;">
+                            <tbody>
+                            <tr class="th_bc">
+                                <td colspan="2">业务名称</td>
+                                <td>营业收入（元）</td>
+                                <td>收入比例</td>
+                                <td>营业成本（元）</td>
+                                <td>成本比例</td>
+                                <td>利润比例</td>
+                                <td>毛利率</td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>按行业</span></td>
+                                <td><span>零售业</span></td>
+                                <td class="num_ta_right"><span>265.89亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>222.33亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>16.38%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="3"><span>按产品</span></td>
+                                <td><span>食品用品</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>生鲜及加工</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>服装</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="7"><span>按地区</span></td>
+                                <td><span>华西大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>福建大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>北京大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>华东大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>安徽大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河南大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河北大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div name="2014-12-30" style="width:100%">
+                        <table class="mystyle_tab2 " style="margin-top: 15px;">
+                            <tbody>
+                            <tr class="th_bc">
+                                <td colspan="2">业务名称</td>
+                                <td>营业收入（元）</td>
+                                <td>收入比例</td>
+                                <td>营业成本（元）</td>
+                                <td>成本比例</td>
+                                <td>利润比例</td>
+                                <td>毛利率</td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>按行业</span></td>
+                                <td><span>零售业</span></td>
+                                <td class="num_ta_right"><span>265.89亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>222.33亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>16.38%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="3"><span>按产品</span></td>
+                                <td><span>食品用品</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>生鲜及加工</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>服装</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="7"><span>按地区</span></td>
+                                <td><span>华西大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>福建大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>北京大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>华东大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>安徽大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河南大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河北大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div name="2014-09-31" style="width:100%;">
+                        <table class="mystyle_tab2 " style="margin-top: 15px;">
+                            <tbody>
+                            <tr class="th_bc">
+                                <td colspan="2">业务名称</td>
+                                <td>营业收入（元）</td>
+                                <td>收入比例</td>
+                                <td>营业成本（元）</td>
+                                <td>成本比例</td>
+                                <td>利润比例</td>
+                                <td>毛利率</td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>按行业</span></td>
+                                <td><span>零售业</span></td>
+                                <td class="num_ta_right"><span>265.89亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>222.33亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>16.38%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="3"><span>按产品</span></td>
+                                <td><span>食品用品</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>生鲜及加工</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>服装</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="7"><span>按地区</span></td>
+                                <td><span>华西大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>福建大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>北京大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>华东大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>安徽大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河南大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河北大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div name="2014-06-30" style="width:100%;">
+                        <table class="mystyle_tab2 " style="margin-top: 15px;">
+                            <tbody>
+                            <tr class="th_bc">
+                                <td colspan="2">业务名称</td>
+                                <td>营业收入（元）</td>
+                                <td>收入比例</td>
+                                <td>营业成本（元）</td>
+                                <td>成本比例</td>
+                                <td>利润比例</td>
+                                <td>毛利率</td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>按行业</span></td>
+                                <td><span>零售业</span></td>
+                                <td class="num_ta_right"><span>265.89亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>222.33亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>16.38%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="3"><span>按产品</span></td>
+                                <td><span>食品用品</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>生鲜及加工</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>服装</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="7"><span>按地区</span></td>
+                                <td><span>华西大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>福建大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>北京大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>华东大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>安徽大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河南大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河北大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div name="2014-03-30" style="width:100%">
+                        <table class="mystyle_tab2 " style="margin-top: 15px;">
+                            <tbody>
+                            <tr class="th_bc">
+                                <td colspan="2">业务名称</td>
+                                <td>营业收入（元）</td>
+                                <td>收入比例</td>
+                                <td>营业成本（元）</td>
+                                <td>成本比例</td>
+                                <td>利润比例</td>
+                                <td>毛利率</td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>按行业</span></td>
+                                <td><span>零售业</span></td>
+                                <td class="num_ta_right"><span>265.89亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>222.33亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>16.38%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="3"><span>按产品</span></td>
+                                <td><span>食品用品</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>生鲜及加工</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>服装</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="7"><span>按地区</span></td>
+                                <td><span>华西大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>福建大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>北京大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>华东大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>安徽大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河南大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河北大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div name="2013-12-31" style="width:100%;">
+                        <table class="mystyle_tab2 " style="margin-top: 15px;">
+                            <tbody>
+                            <tr class="th_bc">
+                                <td colspan="2">业务名称</td>
+                                <td>营业收入（元）</td>
+                                <td>收入比例</td>
+                                <td>营业成本（元）</td>
+                                <td>成本比例</td>
+                                <td>利润比例</td>
+                                <td>毛利率</td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>按行业</span></td>
+                                <td><span>零售业</span></td>
+                                <td class="num_ta_right"><span>265.89亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>222.33亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>16.38%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="3"><span>按产品</span></td>
+                                <td><span>食品用品</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>生鲜及加工</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>服装</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="7"><span>按地区</span></td>
+                                <td><span>华西大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>福建大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>北京大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>华东大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>安徽大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河南大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河北大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div name="2013-09-30" style="width:100%;">
+                        <table class="mystyle_tab2 " style="margin-top: 15px;">
+                            <tbody>
+                            <tr class="th_bc">
+                                <td colspan="2">业务名称</td>
+                                <td>营业收入（元）</td>
+                                <td>收入比例</td>
+                                <td>营业成本（元）</td>
+                                <td>成本比例</td>
+                                <td>利润比例</td>
+                                <td>毛利率</td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>按行业</span></td>
+                                <td><span>零售业</span></td>
+                                <td class="num_ta_right"><span>265.89亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>222.33亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>16.38%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="3"><span>按产品</span></td>
+                                <td><span>食品用品</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>生鲜及加工</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>服装</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="7"><span>按地区</span></td>
+                                <td><span>华西大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>福建大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>北京大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>华东大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>安徽大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河南大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河北大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div name="2013-06-30" style="width:100%">
+                        <table class="mystyle_tab2 " style="margin-top: 15px;">
+                            <tbody>
+                            <tr class="th_bc">
+                                <td colspan="2">业务名称</td>
+                                <td>营业收入（元）</td>
+                                <td>收入比例</td>
+                                <td>营业成本（元）</td>
+                                <td>成本比例</td>
+                                <td>利润比例</td>
+                                <td>毛利率</td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>按行业</span></td>
+                                <td><span>零售业</span></td>
+                                <td class="num_ta_right"><span>265.89亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>222.33亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>16.38%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="3"><span>按产品</span></td>
+                                <td><span>食品用品</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>生鲜及加工</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>服装</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="7"><span>按地区</span></td>
+                                <td><span>华西大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>福建大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>北京大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>华东大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>安徽大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河南大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河北大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div name="2013-03-31" style="width:100%;">
+                        <table class="mystyle_tab2 " style="margin-top: 15px;">
+                            <tbody>
+                            <tr class="th_bc">
+                                <td colspan="2">业务名称</td>
+                                <td>营业收入（元）</td>
+                                <td>收入比例</td>
+                                <td>营业成本（元）</td>
+                                <td>成本比例</td>
+                                <td>利润比例</td>
+                                <td>毛利率</td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>按行业</span></td>
+                                <td><span>零售业</span></td>
+                                <td class="num_ta_right"><span>265.89亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>222.33亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>16.38%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="3"><span>按产品</span></td>
+                                <td><span>食品用品</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>生鲜及加工</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>服装</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="7"><span>按地区</span></td>
+                                <td><span>华西大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>福建大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>北京大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>华东大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>安徽大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河南大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河北大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div name="2012-12-30" style="width:100%;">
+                        <table class="mystyle_tab2 " style="margin-top: 15px;">
+                            <tbody>
+                            <tr class="th_bc">
+                                <td colspan="2">业务名称</td>
+                                <td>营业收入（元）</td>
+                                <td>收入比例</td>
+                                <td>营业成本（元）</td>
+                                <td>成本比例</td>
+                                <td>利润比例</td>
+                                <td>毛利率</td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>按行业</span></td>
+                                <td><span>零售业</span></td>
+                                <td class="num_ta_right"><span>265.89亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>222.33亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>16.38%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="3"><span>按产品</span></td>
+                                <td><span>食品用品</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>生鲜及加工</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>服装</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="7"><span>按地区</span></td>
+                                <td><span>华西大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>福建大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>北京大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>华东大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>安徽大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河南大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河北大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div name="2012-09-30" style="width:100%">
+                        <table class="mystyle_tab2 " style="margin-top: 15px;">
+                            <tbody>
+                            <tr class="th_bc">
+                                <td colspan="2">业务名称</td>
+                                <td>营业收入（元）</td>
+                                <td>收入比例</td>
+                                <td>营业成本（元）</td>
+                                <td>成本比例</td>
+                                <td>利润比例</td>
+                                <td>毛利率</td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>按行业</span></td>
+                                <td><span>零售业</span></td>
+                                <td class="num_ta_right"><span>265.89亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>222.33亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>16.38%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="3"><span>按产品</span></td>
+                                <td><span>食品用品</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>生鲜及加工</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>服装</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="7"><span>按地区</span></td>
+                                <td><span>华西大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>福建大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>北京大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>华东大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>安徽大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河南大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河北大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div name="2012-06-31" style="width:100%;">
+                        <table class="mystyle_tab2 " style="margin-top: 15px;">
+                            <tbody>
+                            <tr class="th_bc">
+                                <td colspan="2">业务名称</td>
+                                <td>营业收入（元）</td>
+                                <td>收入比例</td>
+                                <td>营业成本（元）</td>
+                                <td>成本比例</td>
+                                <td>利润比例</td>
+                                <td>毛利率</td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>按行业</span></td>
+                                <td><span>零售业</span></td>
+                                <td class="num_ta_right"><span>265.89亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>222.33亿</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>100.00%</span></td>
+                                <td class="num_ta_right"><span>16.38%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="3"><span>按产品</span></td>
+                                <td><span>食品用品</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>生鲜及加工</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>服装</span></td>
+                                <td class="num_ta_right"><span>132.62亿</span></td>
+                                <td class="num_ta_right"><span>49.88%</span></td>
+                                <td class="num_ta_right"><span>108.37亿</span></td>
+                                <td class="num_ta_right"><span>48.74%</span></td>
+                                <td class="num_ta_right"><span>55.66%</span></td>
+                                <td class="num_ta_right"><span>18.28%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="7"><span>按地区</span></td>
+                                <td><span>华西大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>福建大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>北京大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>华东大区</span></td>
+                                <td class="num_ta_right"<span>97.49亿</span></td>
+                                <td class="num_ta_right"<span>36.67%</span></td>
+                                <td class="num_ta_right"<span>80.86亿</span></td>
+                                <td class="num_ta_right"<span>36.37%</span></td>
+                                <td class="num_ta_right"<span>38.18%</span></td>
+                                <td class="num_ta_right"<span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>安徽大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河南大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>河北大区</span></td>
+                                <td class="num_ta_right"><span>97.49亿</span></td>
+                                <td class="num_ta_right"><span>36.67%</span></td>
+                                <td class="num_ta_right"><span>80.86亿</span></td>
+                                <td class="num_ta_right"><span>36.37%</span></td>
+                                <td class="num_ta_right"><span>38.18%</span></td>
+                                <td class="num_ta_right"><span>17.06%</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--概况内容 end-->
+</div>
+
+<script type="text/javascript" src="../js/echarts.min.js"></script>
+<script>
+    var myChart1 = echarts.init(document.getElementById('surveycharts1'));
+    var myChart2 = echarts.init(document.getElementById('surveycharts2'));
+    var myChart3 = echarts.init(document.getElementById('surveycharts3'));
+    option1 = {
+        title : {
+            show:false,
+            text: '按行业分',
+            x:'center'
+        },
+        tooltip : {
+            trigger: 'item',
+            formatter: "{a} <br/>{b} : {c} ({d}%)"
+        },
+        legend: {
+            orient : 'vertical',
+            x : 'right',
+            y:' middle',
+            data:['有色金属延压加工','农机制造','橡胶','房地产开发','有色金属冶炼']
+        },
+        toolbox: {
+            show : false,
+            feature : {
+                mark : {show: false},
+                dataView : {show: false, readOnly: true},
+                magicType : {
+                    show: false,
+                    type: ['pie', 'funnel'],
+                    option: {
+                        funnel: {
+                            x: '25%',
+                            width: '50%',
+                            funnelAlign: 'left',
+                            max: 1548
+                        }
+                    }
+                },
+                restore : {show: false},
+                saveAsImage : {show: false}
+            }
+        },
+        calculable : false,
+        series : [
+            {
+                name:'',
+                type:'pie',
+                radius : '45%',
+                center: ['50%', '30%'],
+                data:[
+                    {value:335,name:'有色金属延压加工'},
+                    {value:310,name:'农机制造'},
+                    {value:234,name:'橡胶'},
+                    {value:135,name:'房地产开发'},
+                    {value:1548, name:'有色金属冶炼'}
+                ],
+                itemStyle : {
+                    normal : {
+                        label : {
+                            show : false   //隐藏标示文字
+                        },
+                        labelLine : {
+                            show : false   //隐藏标示线
+                        }
+                    }
+                },
+
+            }
+        ],
+        color: ['#df98c0','#0c9cd9','#fccf17','#68c0b0','#f36d40']
+    };
+    option2 = {
+        title : {
+            show:false,
+            text: '按行业分',
+            x:'center'
+        },
+        tooltip : {
+            trigger: 'item',
+            formatter: "{a} <br/>{b} : {c} ({d}%)"
+        },
+        legend: {
+            orient : 'vertical',
+            x : 'right',
+            y:' middle',
+            data:['有色金属','钛合金加工产品','农机制造','橡胶','其他业务总计']
+        },
+        toolbox: {
+            show : false,
+            feature : {
+                mark : {show: false},
+                dataView : {show: false, readOnly: true},
+                magicType : {
+                    show: false,
+                    type: ['pie', 'funnel'],
+                    option: {
+                        funnel: {
+                            x: '25%',
+                            width: '50%',
+                            funnelAlign: 'left',
+                            max: 1548
+                        }
+                    }
+                },
+                restore : {show: false},
+                saveAsImage : {show: false}
+            }
+        },
+        calculable : false,
+        series : [
+            {
+                name:'访问来源',
+                type:'pie',
+                radius : '45%',
+                center: ['50%', '30%'],
+                data:[
+                    {value:335,name:'有色金属'},
+                    {value:310,name:'钛合金加工产品'},
+                    {value:234,name:'农机制造'},
+                    {value:135,name:'橡胶'},
+                    {value:1548, name:'其他业务总计'}
+                ],
+                itemStyle : {
+                    normal : {
+                        label : {
+                            show : false   //隐藏标示文字
+                        },
+                        labelLine : {
+                            show : false   //隐藏标示线
+                        }
+                    }
+                },
+
+            }
+        ],
+        color: ['#df98c0','#0c9cd9','#fccf17','#68c0b0','#f36d40']
+    };
+    option3 = {
+        title : {
+            show:false,
+            text: '按行业分',
+            x:'center'
+        },
+        tooltip : {
+            trigger: 'item',
+            formatter: "{a} <br/>{b} : {c} ({d}%)"
+        },
+        legend: {
+            orient : 'vertical',
+            x : 'right',
+            y:' middle',
+            data:['河南省','江苏省','上海市','湖南省']
+        },
+        toolbox: {
+            show : false,
+            feature : {
+                mark : {show: false},
+                dataView : {show: false, readOnly: true},
+                magicType : {
+                    show: false,
+                    type: ['pie', 'funnel'],
+                    option: {
+                        funnel: {
+                            x: '25%',
+                            width: '50%',
+                            funnelAlign: 'left',
+                            max: 1548
+                        }
+                    }
+                },
+                restore : {show: false},
+                saveAsImage : {show: false}
+            }
+        },
+        calculable : false,
+        series : [
+            {
+                name:'访问来源',
+                type:'pie',
+                radius : '45%',
+                center: ['50%', '30%'],
+                data:[
+                    {value:335,name:'河南省'},
+                    {value:310,name:'江苏省'},
+                    {value:234,name:'上海市'},
+                    {value:135,name:'湖南省'}
+                ],
+                itemStyle : {
+                    normal : {
+                        label : {
+                            show : false   //隐藏标示文字
+                        },
+                        labelLine : {
+                            show : false   //隐藏标示线
+                        }
+                    }
+                },
+
+            }
+        ],
+        color: ['#0c9cd9','#fccf17','#68c0b0','#f36d40']
+    };
+    myChart1.setOption(option1);
+    myChart2.setOption(option2);
+    myChart3.setOption(option3);
+</script>
+</body>
+</html>

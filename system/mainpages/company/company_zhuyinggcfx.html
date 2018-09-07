@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=11"/>
+    <title>主营构成分析详情</title>
+    <!--框架必需start-->
+    <link href="../../../libs/css/import_main.css" rel="stylesheet" type="text/css"/>
+    <link href="../../../libs/skins/skyblue/style.css" rel="stylesheet" type="text/css" id="theme" themeColor="skyblue" positionTarget="positionContent"/>
+    <link href="../skin/style.css" rel="stylesheet" type="text/css" id="skin" skinPath="system/style1_accordion_skyblue/skin/" scrollerX="true"/>
+    <link href="../../../libs/css/import_basic.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="../../../libs/js/jquery.js"></script>
+    <script type="text/javascript" src="../../../libs/js/language/cn.js"></script>
+    <script type="text/javascript" src="../../../libs/js/framework.js"></script>
+    <!--框架必需end-->
+    <script type="text/javascript" src="../../../libs/js/nav/basicTab.js"></script>
+    <link rel="stylesheet" href="../layer/skin/default/layer.css">
+    <script type="text/javascript" src="../layer/layer.js"></script>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/shzqb.css">
+    <link rel="stylesheet" href="../css/szb_company.css">
+    <script type="text/javascript" src="../js/shzqbqui.js"></script>
+    <style>
+
+    </style>
+</head>
+<body class="bclightgray">
+<div class="page_content companyBox">
+    <!--顶部模块-->
+    <div class="company_nav1"><!--顶部logo & 搜索框-->
+        <div class="centerBox clearfix">
+            <div class="left_logo fl">
+                <a href=""><img src="../images/shzqlogo.png" alt=""></a>
+            </div>
+            <div class="center_input_box fl">
+                <div class="center_input clearfix">
+                    <div class="center_select fl">
+                        <select name="" id="">
+                            <option value="">公司股票代码或全称查询</option>
+                            <option value="">个人查询</option>
+                        </select>
+                    </div>
+                    <div class="center_inp fl">
+                        <input type="text" placeholder="输入公司股票代码/公司名称/个人名称+公司名称">
+                        <button class="fa fa-search btn_search"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="company_nav2">
+        <ul class="centerBox clearfix">
+            <li class="fl nav_list_node">
+                <a href="company.html" class="nav_list_node_link fa fa-home" target="_blank">&nbsp;系统首页</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company.html" class="nav_list_node_link" >公司首页</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_survey.html" class="nav_list_node_link " >概况</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_shareholder.html" class="nav_list_node_link">股东</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_seniorExecutive.html" class="nav_list_node_link">高管</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_finance.html" class="nav_list_node_link">财务</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_bonus.html" class="nav_list_node_link">分红</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_market.html" class="nav_list_node_link">市场</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_risk.html" class="nav_list_node_link">风险</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_industry.html" class="nav_list_node_link">行业</a>
+            </li>
+        </ul>
+    </div>
+    <!--顶部模块 end-->
+
+    <!--主营构成分析饼图-->
+    <div class=" zhuygcfx_box" style="width: 1200px;margin: 20px auto;">
+        <div class="zhuygcfx_tit">
+            <span class="zhuygcfx_tit_txt" title="查看详情">主营构成分析</span>
+            <div class="zhuygcfx_bgq">
+                <label for="" class="fl left_lab">报告期</label>
+                <select name="" id="">
+                    <option value="">2016-09-30</option>
+                    <option value="">2016-12-31</option>
+                    <option value="">2017-06-30</option>
+                </select>
+            </div>
+        </div>
+        <div class="zhuygcfx_con mystyle_tab">
+            <div class="survey_charts_box " style="height: auto ;">
+                <div class="">
+                    <div class="survey_charts_tit">
+                        <span>按行业分</span>
+                    </div>
+                    <div id="surveycharts1" style="width: 600px;height: 300px;margin: 0 auto;"></div>
+                </div>
+                <div class="">
+                    <div class="survey_charts_tit">
+                        <span>按产品分</span>
+                    </div>
+                    <div id="surveycharts2" style="width: 600px;height: 300px;margin: 0 auto;"></div>
+                </div>
+                <div class="">
+                    <div class="survey_charts_tit">
+                        <span>按地区分</span>
+                    </div>
+                    <div id="surveycharts3" style="width: 600px;height: 300px;margin: 0 auto;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--主营构成分析饼图 end-->
+</div>
+
+<script type="text/javascript" src="../js/echarts.min.js"></script>
+<script>
+    var myChart1 = echarts.init(document.getElementById('surveycharts1'));
+    var myChart2 = echarts.init(document.getElementById('surveycharts2'));
+    var myChart3 = echarts.init(document.getElementById('surveycharts3'));
+
+    option1 = {
+        title : {
+            show:false,
+            text: '按行业分',
+            x:'center'
+        },
+        tooltip : {
+            trigger: 'item',
+            formatter: "{a} <br/>{b} : {c} ({d}%)"
+        },
+        legend: {
+            orient : 'horizontal',
+            x:'center',
+            y:'200',
+            data:['有色金属延压加工','农机制造','橡胶','房地产开发','有色金属冶炼','有色金属冶炼2','有色金属冶炼3','有色金属冶炼4','有色金属冶炼5','有色金属冶炼6','有色金属冶炼7']
+        },
+        toolbox: {
+            show : false,
+            feature : {
+                mark : {show: false},
+                dataView : {show: false, readOnly: true},
+                magicType : {
+                    show: false,
+                    type: ['pie', 'funnel'],
+                    option: {
+                        funnel: {
+                            x: '50%',
+                            width: '50%',
+                            funnelAlign: 'center',
+                            max: 1548
+                        }
+                    }
+                },
+                restore : {show: false},
+                saveAsImage : {show: false}
+            }
+        },
+        calculable : false,
+        series : [
+            {
+                name:'',
+                type:'pie',
+                radius : '45%',
+                center: ['50%', '30%'],
+                data:[
+                    {value:335,name:'有色金属延压加工'},
+                    {value:310,name:'农机制造'},
+                    {value:234,name:'橡胶'},
+                    {value:135,name:'房地产开发'},
+                    {value:130, name:'有色金属冶炼'},
+                    {value:250, name:'有色金属冶炼2'},
+                    {value:350, name:'有色金属冶炼3'},
+                    {value:450, name:'有色金属冶炼4'},
+                    {value:550, name:'有色金属冶炼5'},
+                    {value:550, name:'有色金属冶炼6'},
+                    {value:550, name:'有色金属冶炼7'}
+                ],
+                itemStyle : {
+                    normal : {
+                        label : {
+                            show : false   //隐藏标示文字
+                        },
+                        labelLine : {
+                            show : false   //隐藏标示线
+                        }
+                    }
+                },
+
+            }
+        ],
+        color: ['#df98c0','#0c9cd9','#fccf17','#68c0b0','#f36d40','#f4597d','#0cb5d9','#fca817','#35a893','#e098e8','#98dfcc','#7dbfdb','#cbf28d','#13c5a5','#f3ae40']
+    };
+    option2 = {
+        title : {
+            show:false,
+            text: '按行业分',
+            x:'center'
+        },
+        tooltip : {
+            trigger: 'item',
+            formatter: "{a} <br/>{b} : {c} ({d}%)"
+        },
+        legend: {
+            orient : 'horizontal',
+            x : 'center',
+            y:' 200',
+            data:['有色金属','钛合金加工产品','农机制造','橡胶','其他业务总计']
+        },
+        toolbox: {
+            show : false,
+            feature : {
+                mark : {show: false},
+                dataView : {show: false, readOnly: true},
+                magicType : {
+                    show: false,
+                    type: ['pie', 'funnel'],
+                    option: {
+                        funnel: {
+                            x: '50%',
+                            width: '50%',
+                            funnelAlign: 'center',
+                            max: 1548
+                        }
+                    }
+                },
+                restore : {show: false},
+                saveAsImage : {show: false}
+            }
+        },
+        calculable : false,
+        series : [
+            {
+                name:'访问来源',
+                type:'pie',
+                radius : '45%',
+                center: ['50%', '30%'],
+                data:[
+                    {value:335,name:'有色金属'},
+                    {value:310,name:'钛合金加工产品'},
+                    {value:234,name:'农机制造'},
+                    {value:135,name:'橡胶'},
+                    {value:1548, name:'其他业务总计'}
+                ],
+                itemStyle : {
+                    normal : {
+                        label : {
+                            show : false   //隐藏标示文字
+                        },
+                        labelLine : {
+                            show : false   //隐藏标示线
+                        }
+                    }
+                },
+
+            }
+        ],
+        color: ['#df98c0','#0c9cd9','#fccf17','#68c0b0','#f36d40','#f4597d','#0cb5d9','#fca817','#35a893','#e098e8','#98dfcc','#7dbfdb','#cbf28d','#13c5a5','#f3ae40']
+    };
+    option3 = {
+        title : {
+            show:false,
+            text: '按行业分',
+            x:'center'
+        },
+        tooltip : {
+            trigger: 'item',
+            formatter: "{a} <br/>{b} : {c} ({d}%)"
+        },
+        legend: {
+            orient : 'horizontal',
+            x : 'center',
+            y:' 200',
+            data:['河南省','江苏省','上海市','湖南省']
+        },
+        toolbox: {
+            show : false,
+            feature : {
+                mark : {show: false},
+                dataView : {show: false, readOnly: true},
+                magicType : {
+                    show: false,
+                    type: ['pie', 'funnel'],
+                    option: {
+                        funnel: {
+                            x: '50%',
+                            width: '50%',
+                            funnelAlign: 'center',
+                            max: 1548
+                        }
+                    }
+                },
+                restore : {show: false},
+                saveAsImage : {show: false}
+            }
+        },
+        calculable : false,
+        series : [
+            {
+                name:'访问来源',
+                type:'pie',
+                radius : '45%',
+                center: ['50%', '30%'],
+                data:[
+                    {value:335,name:'河南省'},
+                    {value:310,name:'江苏省'},
+                    {value:234,name:'上海市'},
+                    {value:135,name:'湖南省'}
+                ],
+                itemStyle : {
+                    normal : {
+                        label : {
+                            show : false   //隐藏标示文字
+                        },
+                        labelLine : {
+                            show : false   //隐藏标示线
+                        }
+                    }
+                },
+
+            }
+        ],
+        color: ['#df98c0','#0c9cd9','#fccf17','#68c0b0','#f36d40','#f4597d','#0cb5d9','#fca817','#35a893','#e098e8','#98dfcc','#7dbfdb','#cbf28d','#13c5a5','#f3ae40']
+    };
+
+
+
+    myChart1.setOption(option1);
+    myChart2.setOption(option2);
+    myChart3.setOption(option3);
+
+</script>
+</body>
+</html>

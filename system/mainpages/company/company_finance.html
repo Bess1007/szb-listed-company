@@ -1,0 +1,458 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=11"/>
+    <title>财务</title>
+    <!--框架必需start-->
+    <link href="../../../libs/css/import_main.css" rel="stylesheet" type="text/css"/>
+    <link href="../../../libs/skins/skyblue/style.css" rel="stylesheet" type="text/css" id="theme" themeColor="skyblue" positionTarget="positionContent"/>
+    <link href="../skin/style.css" rel="stylesheet" type="text/css" id="skin" skinPath="system/style1_accordion_skyblue/skin/" scrollerX="true"/>
+    <link href="../../../libs/css/import_basic.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="../../../libs/js/jquery.js"></script>
+    <script type="text/javascript" src="../../../libs/js/language/cn.js"></script>
+    <script type="text/javascript" src="../../../libs/js/framework.js"></script>
+    <!--框架必需end-->
+    <script type="text/javascript" src="../../../libs/js/form/datePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="../../../libs/js/nav/basicTab.js"></script>
+    <link rel="stylesheet" href="../layer/skin/default/layer.css">
+    <script type="text/javascript" src="../layer/layer.js"></script>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/shzqb.css">
+    <link rel="stylesheet" href="../css/szb_company.css">
+    <script type="text/javascript" src="../js/shzqbqui.js"></script>
+    <style>
+
+    </style>
+</head>
+<body class="bclightgray">
+<div class="page_content companyBox">
+    <!--顶部模块-->
+    <div class="company_nav1"><!--顶部logo & 搜索框-->
+        <div class="centerBox clearfix">
+            <div class="left_logo fl">
+                <a href=""><img src="../images/shzqlogo.png" alt=""></a>
+            </div>
+            <div class="center_input_box fl">
+                <div class="center_input clearfix">
+                    <div class="center_select fl">
+                        <select name="" id="">
+                            <option value="">公司股票代码或全称查询</option>
+                            <option value="">个人查询</option>
+                        </select>
+                    </div>
+                    <div class="center_inp fl">
+                        <input type="text" placeholder="输入公司股票代码/公司名称/个人名称+公司名称">
+                        <button class="fa fa-search btn_search"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="company_nav2">
+        <ul class="centerBox clearfix">
+            <li class="fl nav_list_node">
+                <a href="" class="nav_list_node_link fa fa-home" target="_blank">&nbsp;系统首页</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company.html" class="nav_list_node_link " >公司首页</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_survey.html" class="nav_list_node_link " >概况</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_shareholder.html" class="nav_list_node_link ">股东</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_seniorExecutive.html" class="nav_list_node_link ">高管</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_finance.html" class="nav_list_node_link actived">财务</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_bonus.html" class="nav_list_node_link">分红</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_market.html" class="nav_list_node_link">市场</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_risk.html" class="nav_list_node_link">风险</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_industry.html" class="nav_list_node_link">行业</a>
+            </li>
+        </ul>
+    </div>
+    <!--顶部模块 end-->
+
+    <!--主要内容-->
+    <div class="company_survey_box centerBox" style="padding-bottom: 20px;">
+
+        <!--财务指标-->
+        <div class="centerBox zhuygcfx_box">
+            <div class="zhuygcfx_tit">
+                <span class="zhuygcfx_tit_txt">财务指标</span>
+            </div>
+            <div class="zhuygcfx_con" style="padding: 15px;">
+                <div id="mychart" style="width: 1350px;height: 370px;margin-left: -75px;"></div>
+                <div class="basicTab">
+                    <div name="按报告期">
+                        <div class="caiwuzb_tab cw-tb-scrollbox" style="margin-top: 15px;">
+                            <table class="mystyle_tab2 left-fixed-lab">
+                                <col style="width: 153px;">
+                                <tbody>
+                                <tr class="tr_bc">
+                                    <td class="td_bc"><span>科目\年度</span></td>
+                                </tr>
+                                <tr class="tr_target">
+                                    <td class="td_bc td_target"><span>净利润（万元）</span></td>
+                                </tr>
+                                <tr class="tr_target">
+                                    <td class="td_bc td_target"><span>扣非净利润（万元）</span></td>
+                                </tr>
+                                <tr class="tr_target">
+                                    <td class="td_bc td_target"><span>管理费用（万元）</span></td>
+                                </tr>
+                                <tr class="tr_target">
+                                    <td class="td_bc td_target actived"><span>营业收入（万元）</span></td>
+                                </tr>
+                                <tr class="tr_target">
+                                    <td class="td_bc td_target"><span>销售费用（万元）</span></td>
+                                </tr>
+                                <tr class="tr_target">
+                                    <td class="td_bc td_target "><span>营业成本（万元）</span></td>
+                                </tr>
+                                <tr class="tr_target">
+                                    <td class="td_bc td_target"><span>财务费用（万元）</span></td>
+                                </tr>
+                                <tr class="tr_target">
+                                    <td class="td_bc td_target"><span>每股盈余（元）</span></td>
+                                </tr>
+                                <tr class="tr_target">
+                                    <td class="td_bc td_target"><span>每股净资产（元）</span></td>
+                                </tr>
+                                <tr class="tr_target">
+                                    <td class="td_bc td_target"><span>市盈率（PE）</span></td>
+                                </tr>
+                                <tr class="tr_target">
+                                    <td class="td_bc td_target"><span>市净率（PB）</span></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="right-abs-tab right-scroll-tab">
+                                <table class="mystyle_tab2 ">
+                                    <tbody>
+                                    <tr class="tr_bc">
+                                        <td class="td_bc"><span>2017-12-31</span></td>
+                                        <td class="td_bc fz-13"><span>2015-09-31</span></td>
+                                        <td class="td_bc fz-13"><span>2015-12-31</span></td>
+                                        <td class="td_bc fz-13"><span>2016-03-31</span></td>
+                                        <td class="td_bc fz-13"><span>2016-06-31</span></td>
+                                        <td class="td_bc fz-13"><span>2016-06-30</span></td>
+                                        <td class="td_bc fz-13"><span>2016-09-30</span></td>
+                                        <td class="td_bc fz-13"><span>2016-12-31</span></td>
+                                        <td class="td_bc fz-13"><span>2017-03-31</span></td>
+                                        <td class="td_bc fz-13"><span>2017-06-30</span></td>
+                                        <td class="td_bc fz-13"><span>2017-09-30</span></td>
+                                    </tr>
+                                    <tr class="tr_target">
+                                        <td class="num_ta_right"><span>3.89亿</span></td>
+                                        <td class="num_ta_right"><span>4.35亿</span></td>
+                                        <td class="num_ta_right"><span>5.63亿</span></td>
+                                        <td class="num_ta_right"><span>6.14亿</span></td>
+                                        <td class="num_ta_right"><span>9.89亿</span></td>
+                                        <td class="num_ta_right"><span>10.45亿</span></td>
+                                        <td class="num_ta_right"><span>13.58亿</span></td>
+                                        <td class="num_ta_right"><span>17.84亿</span></td>
+                                        <td class="num_ta_right"><span>27.15亿</span></td>
+                                        <td class="num_ta_right"><span>35.38亿</span></td>
+                                        <td class="num_ta_right"><span>48.01亿</span></td>
+
+                                    </tr>
+                                    <tr class="tr_target">
+                                        <td class="num_ta_right"><span>3.89亿</span></td>
+                                        <td class="num_ta_right"><span>4.35亿</span></td>
+                                        <td class="num_ta_right"><span>5.63亿</span></td>
+                                        <td class="num_ta_right"><span>6.14亿</span></td>
+                                        <td class="num_ta_right"><span>9.89亿</span></td>
+                                        <td class="num_ta_right"><span>10.45亿</span></td>
+                                        <td class="num_ta_right"><span>13.58亿</span></td>
+                                        <td class="num_ta_right"><span>17.84亿</span></td>
+                                        <td class="num_ta_right"><span>27.15亿</span></td>
+                                        <td class="num_ta_right"><span>35.38亿</span></td>
+                                        <td class="num_ta_right"><span>48.01亿</span></td>
+                                    </tr>
+                                    <tr class="tr_target">
+                                        <td class="num_ta_right"><span>3.89亿</span></td>
+                                        <td class="num_ta_right"><span>4.35亿</span></td>
+                                        <td class="num_ta_right"><span>5.63亿</span></td>
+                                        <td class="num_ta_right"><span>6.14亿</span></td>
+                                        <td class="num_ta_right"><span>9.89亿</span></td>
+                                        <td class="num_ta_right"><span>10.45亿</span></td>
+                                        <td class="num_ta_right"><span>13.58亿</span></td>
+                                        <td class="num_ta_right"><span>17.84亿</span></td>
+                                        <td class="num_ta_right"><span>27.15亿</span></td>
+                                        <td class="num_ta_right"><span>35.38亿</span></td>
+                                        <td class="num_ta_right"><span>48.01亿</span></td>
+
+                                    </tr>
+                                    <tr class="tr_target actived">
+                                        <td class="num_ta_right"><span>1.16亿</span></td>
+                                        <td class="num_ta_right"><span>2.32亿</span></td>
+                                        <td class="num_ta_right"><span>3.06亿</span></td>
+                                        <td class="num_ta_right"><span>3.02亿</span></td>
+                                        <td class="num_ta_right"><span>1.83亿</span></td>
+                                        <td class="num_ta_right"><span>44.21亿</span></td>
+                                        <td class="num_ta_right"><span>77.9亿</span></td>
+                                        <td class="num_ta_right"><span>120.77亿</span></td>
+                                        <td class="num_ta_right"><span>210.6亿</span></td>
+                                        <td class="num_ta_right"><span>268.86亿</span></td>
+                                        <td class="num_ta_right"><span>383.35亿</span></td>
+
+                                    </tr>
+                                    <tr class="tr_target">
+                                        <td class="num_ta_right"><span>1.16亿</span></td>
+                                        <td class="num_ta_right"><span>2.32亿</span></td>
+                                        <td class="num_ta_right"><span>3.06亿</span></td>
+                                        <td class="num_ta_right"><span>3.02亿</span></td>
+                                        <td class="num_ta_right"><span>1.83亿</span></td>
+                                        <td class="num_ta_right"><span>44.21亿</span></td>
+                                        <td class="num_ta_right"><span>77.9亿</span></td>
+                                        <td class="num_ta_right"><span>120.77亿</span></td>
+                                        <td class="num_ta_right"><span>210.6亿</span></td>
+                                        <td class="num_ta_right"><span>268.86亿</span></td>
+                                        <td class="num_ta_right"><span>383.35亿</span></td>
+
+                                    </tr>
+                                    <tr class="tr_target ">
+                                        <td class="num_ta_right"><span>1.16亿</span></td>
+                                        <td class="num_ta_right"><span>2.32亿</span></td>
+                                        <td class="num_ta_right"><span>3.06亿</span></td>
+                                        <td class="num_ta_right"><span>3.02亿</span></td>
+                                        <td class="num_ta_right"><span>1.83亿</span></td>
+                                        <td class="num_ta_right"><span>44.21亿</span></td>
+                                        <td class="num_ta_right"><span>77.9亿</span></td>
+                                        <td class="num_ta_right"><span>120.77亿</span></td>
+                                        <td class="num_ta_right"><span>210.6亿</span></td>
+                                        <td class="num_ta_right"><span>268.86亿</span></td>
+                                        <td class="num_ta_right"><span>383.35亿</span></td>
+
+                                    </tr>
+                                    <tr class="tr_target">
+                                        <td class="num_ta_right"><span>1.16亿</span></td>
+                                        <td class="num_ta_right"><span>2.32亿</span></td>
+                                        <td class="num_ta_right"><span>3.06亿</span></td>
+                                        <td class="num_ta_right"><span>3.02亿</span></td>
+                                        <td class="num_ta_right"><span>1.83亿</span></td>
+                                        <td class="num_ta_right"><span>44.21亿</span></td>
+                                        <td class="num_ta_right"><span>77.9亿</span></td>
+                                        <td class="num_ta_right"><span>120.77亿</span></td>
+                                        <td class="num_ta_right"><span>210.6亿</span></td>
+                                        <td class="num_ta_right"><span>268.86亿</span></td>
+                                        <td class="num_ta_right"><span>383.35亿</span></td>
+
+                                    </tr>
+                                    <tr class="tr_target">
+                                        <td class="num_ta_right"><span>1.16亿</span></td>
+                                        <td class="num_ta_right"><span>2.32亿</span></td>
+                                        <td class="num_ta_right"><span>3.06亿</span></td>
+                                        <td class="num_ta_right"><span>3.02亿</span></td>
+                                        <td class="num_ta_right"><span>1.83亿</span></td>
+                                        <td class="num_ta_right"><span>44.21亿</span></td>
+                                        <td class="num_ta_right"><span>77.9亿</span></td>
+                                        <td class="num_ta_right"><span>120.77亿</span></td>
+                                        <td class="num_ta_right"><span>210.6亿</span></td>
+                                        <td class="num_ta_right"><span>268.86亿</span></td>
+                                        <td class="num_ta_right"><span>383.35亿</span></td>
+
+                                    </tr>
+                                    <tr class="tr_target">
+                                        <td class="num_ta_right"><span>1.16亿</span></td>
+                                        <td class="num_ta_right"><span>2.32亿</span></td>
+                                        <td class="num_ta_right"><span>3.06亿</span></td>
+                                        <td class="num_ta_right"><span>3.02亿</span></td>
+                                        <td class="num_ta_right"><span>1.83亿</span></td>
+                                        <td class="num_ta_right"><span>44.21亿</span></td>
+                                        <td class="num_ta_right"><span>77.9亿</span></td>
+                                        <td class="num_ta_right"><span>120.77亿</span></td>
+                                        <td class="num_ta_right"><span>210.6亿</span></td>
+                                        <td class="num_ta_right"><span>268.86亿</span></td>
+                                        <td class="num_ta_right"><span>383.35亿</span></td>
+
+                                    </tr>
+                                    <tr class="tr_target">
+                                        <td class="num_ta_right"><span>1.16亿</span></td>
+                                        <td class="num_ta_right"><span>2.32亿</span></td>
+                                        <td class="num_ta_right"><span>3.06亿</span></td>
+                                        <td class="num_ta_right"><span>3.02亿</span></td>
+                                        <td class="num_ta_right"><span>1.83亿</span></td>
+                                        <td class="num_ta_right"><span>44.21亿</span></td>
+                                        <td class="num_ta_right"><span>77.9亿</span></td>
+                                        <td class="num_ta_right"><span>120.77亿</span></td>
+                                        <td class="num_ta_right"><span>210.6亿</span></td>
+                                        <td class="num_ta_right"><span>268.86亿</span></td>
+                                        <td class="num_ta_right"><span>383.35亿</span></td>
+
+                                    </tr>
+                                    <tr class="tr_target">
+                                        <td class="num_ta_right"><span>1.16亿</span></td>
+                                        <td class="num_ta_right"><span>2.32亿</span></td>
+                                        <td class="num_ta_right"><span>3.06亿</span></td>
+                                        <td class="num_ta_right"><span>3.02亿</span></td>
+                                        <td class="num_ta_right"><span>1.83亿</span></td>
+                                        <td class="num_ta_right"><span>44.21亿</span></td>
+                                        <td class="num_ta_right"><span>77.9亿</span></td>
+                                        <td class="num_ta_right"><span>120.77亿</span></td>
+                                        <td class="num_ta_right"><span>210.6亿</span></td>
+                                        <td class="num_ta_right"><span>268.86亿</span></td>
+                                        <td class="num_ta_right"><span>383.35亿</span></td>
+
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div name="按年度">
+
+                    </div>
+                    <div name="按单季度">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--主要内容 end-->
+</div>
+<script>
+    /*让右边横向滚动的图表的每一行的高度和左边对应行高度相同*/
+    var scroll_tr_len  = $('.left-fixed-lab tr').length;
+    for(var i = 0; i < scroll_tr_len; i++){
+        var left_h = $('.left-fixed-lab tr').eq(i).height();
+        var right_h = $('.right-abs-tab tr').eq(i).height();
+        if(left_h > right_h){
+            $('.right-abs-tab tr').eq(i).height(left_h)
+        }
+    }
+
+  /*点击行，当前行特殊标识，上图对应展示当前科目图表*/
+  /*7-13改*/
+  $('.left-fixed-lab').on('click','.td_target ',function leftindex() {
+      var leftcnum =  $('.left-fixed-lab .td_target ').index(this);
+      $('.tr_target ').removeClass('actived');
+      $('.td_target ').removeClass('actived');
+      $(this).addClass('actived');
+      $(this).find('.td_target').addClass('actived');
+
+      $('.right-abs-tab .tr_target').eq(leftcnum).addClass('actived');
+     return leftcnum;
+  });
+  $('.right-abs-tab ').on('click','.tr_target',function rightindex() {
+      var rigthcnum = $('.right-abs-tab .tr_target').index(this);
+      $('.tr_target ').removeClass('actived');
+      $('.td_target ').removeClass('actived');
+      $(this).addClass('actived');
+
+      $('.left-fixed-lab .tr_target').eq(rigthcnum).find('.td_target').addClass('actived');
+  })
+</script>
+<script type="text/javascript" src="../js/echarts.min.js"></script>
+<script type="text/javascript">
+
+    var myChart1 = echarts.init(document.getElementById('mychart'));
+    var xAxisData = ['2015-09-31','2015-12-31','2016-03-31','2016-06-31','2016-06-30','2016-09-30','2016-12-31','2017-03-31','2017-06-30','2017-09-30','2017-12-31'];
+    var endPercent = (8 / xAxisData.length)*100;
+    option={
+        tooltip:{
+            trigger: 'axis',
+            axisPointer: {
+                type: 'cross',
+                crossStyle: {
+                    color: '#999'
+                }
+            }
+        },
+        legend: {
+            data: ['营业收入','股价']
+        },
+        xAxis: [{
+            type:'category',
+            data:xAxisData,
+            axisPointer:{
+                type:'shadow'
+            }
+        }],
+        yAxis: [{
+            type:'value',
+            name:'营业收入（亿元）',
+            min: 0,
+            max: 800,
+            interval: 200,
+            axisLabel: {
+                formatter: '{value} 亿元'
+            }
+        },{
+            type:'value',
+            name:'股价（元）',
+            min: 0,
+            max: 8.00,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value} 元'
+            }
+        }],
+        grid:{
+            x:223,
+            x2:150
+        },
+        dataZoom:[
+            {
+                start:0,
+                end: endPercent,
+                type:'slider',
+                show:true,
+                xAxisIndex:[0],
+                handleSize:0,
+                height:15
+            }
+        ],
+        series: [{
+            name:'营业收入',
+            type:'bar',
+            data:[1.61,2.32,3.06,3.02,1.83,44.21,77.9,120.77,210.6,268.86,383.35],
+            barWidth:36
+        },{
+            name:'股价',
+            type:'line',
+            yAxisIndex: 1,
+            data:[1.12,2.34,3.33,3.06,2.97,5.60,7.43,6.89,7.67,7.39,7.45]
+        }],
+        label: {
+            normal: {
+                show: true,
+                position: 'top',
+                textStyle: {
+                    color: 'black'
+                }
+            }
+        },
+        color: ['#0f88cb','#ff4242']
+    };
+    myChart1.setOption(option);
+    myChart1.on('datazoom', function (params){
+        //获得起始位置百分比
+        var startpercent = myChart1.getModel().option.dataZoom[0].start;
+
+        var table_width = $('.right-scroll-tab .mystyle_tab2 ').width();
+        var table_left = 143-(table_width*startpercent/100)+'px';
+
+        $('.right-abs-tab').css('left',table_left+'');
+
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,1309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=11"/>
+    <title>市场</title>
+    <!--框架必需start-->
+    <link href="../../../libs/css/import_main.css" rel="stylesheet" type="text/css"/>
+    <link href="../../../libs/skins/skyblue/style.css" rel="stylesheet" type="text/css" id="theme" themeColor="skyblue" positionTarget="positionContent"/>
+    <link href="../skin/style.css" rel="stylesheet" type="text/css" id="skin" skinPath="system/style1_accordion_skyblue/skin/" scrollerX="true"/>
+    <link href="../../../libs/css/import_basic.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="../../../libs/js/jquery.js"></script>
+    <script type="text/javascript" src="../../../libs/js/language/cn.js"></script>
+    <script type="text/javascript" src="../../../libs/js/framework.js"></script>
+    <!--框架必需end-->
+    <!--分页-->
+    <script type="text/javascript" src="../../../libs/js/nav/pageNumber.js"></script>
+    <!--分页 end-->
+    <script type="text/javascript" src="../../../libs/js/form/datePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="../../../libs/js/nav/basicTab.js"></script>
+    <link rel="stylesheet" href="../layer/skin/default/layer.css">
+    <script type="text/javascript" src="../layer/layer.js"></script>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/shzqb.css">
+    <link rel="stylesheet" href="../css/szb_company.css">
+    <script type="text/javascript" src="../js/shzqbqui.js"></script>
+    <style>
+
+    </style>
+</head>
+<body class="bclightgray">
+<div class="page_content companyBox">
+    <!--顶部模块-->
+    <div class="company_nav1"><!--顶部logo & 搜索框-->
+        <div class="centerBox clearfix">
+            <div class="left_logo fl">
+                <a href=""><img src="../images/shzqlogo.png" alt=""></a>
+            </div>
+            <div class="center_input_box fl">
+                <div class="center_input clearfix">
+                    <div class="center_select fl">
+                        <select name="" id="">
+                            <option value="">公司股票代码或全称查询</option>
+                            <option value="">个人查询</option>
+                        </select>
+                    </div>
+                    <div class="center_inp fl">
+                        <input type="text" placeholder="输入公司股票代码/公司名称/个人名称+公司名称">
+                        <button class="fa fa-search btn_search"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="company_nav2">
+        <ul class="centerBox clearfix">
+            <li class="fl nav_list_node">
+                <a href="" class="nav_list_node_link fa fa-home" target="_blank">&nbsp;系统首页</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company.html" class="nav_list_node_link " >公司首页</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_survey.html" class="nav_list_node_link " >概况</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_shareholder.html" class="nav_list_node_link ">股东</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_seniorExecutive.html" class="nav_list_node_link ">高管</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_finance.html" class="nav_list_node_link ">财务</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_bonus.html" class="nav_list_node_link ">分红</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_market.html" class="nav_list_node_link actived">市场</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_risk.html" class="nav_list_node_link">风险</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_industry.html" class="nav_list_node_link">行业</a>
+            </li>
+        </ul>
+    </div>
+    <!--顶部模块 end-->
+
+    <!--主要内容-->
+    <div class="company_survey_box centerBox" style="padding-bottom: 20px;">
+        <div class="basicTab" selectedIdx="0">
+            <div name="龙虎榜数据" style="width:100%">
+                <div class="lhubsj" style="margin-top: 15px;">
+                    <div class="zhuygcfx_tit" >
+                        <span class="zhuygcfx_tit_txt">龙虎榜 - 机构席位统计</span>
+                    </div>
+                    <div class="zhuygcfx_con">
+                        <table class="mystyle_tab2">
+                            <tbody>
+                            <tr class="tr_bc">
+                                <td class="td_bc"><span>数据日期</span></td>
+                                <td class="td_bc"><span>龙虎榜成交金额（万）</span></td>
+                                <td class="td_bc"><span>上榜次数</span></td>
+                                <td class="td_bc"><span>买入额（万）</span></td>
+                                <td class="td_bc"><span>买入次数</span></td>
+                                <td class="td_bc"><span>卖出额（万）</span></td>
+                                <td class="td_bc"><span>卖出次数</span></td>
+                                <td class="td_bc"><span>净买入额（万）</span></td>
+                            </tr>
+                            <tr class="lhb_tr_target">
+                                <td class="td_bc"><span>近一月</span></td>
+                                <td class="num_ta_right"><span>-</span></td>
+                                <td class="num_ta_right"><span>1</span></td>
+                                <td class="num_ta_right"><span class="text_red">20580.65</span></td>
+                                <td class="num_ta_right"><span>1</span></td>
+                                <td class="num_ta_right"><span>-</span></td>
+                                <td class="num_ta_right"><span>0</span></td>
+                                <td class="num_ta_right"><span>-</span></td>
+                            </tr>
+                            <tr class="lhb_tr_target">
+                                <td class="td_bc"><span>近三月</span></td>
+                                <td class="num_ta_right"><span>64358.37</span></td>
+                                <td class="num_ta_right"><span>3</span></td>
+                                <td class="num_ta_right"><span class="text_red">51049.04</span></td>
+                                <td class="num_ta_right"><span>2</span></td>
+                                <td class="num_ta_right"><span class="text_green">13309.33</span></td>
+                                <td class="num_ta_right"><span>1</span></td>
+                                <td class="num_ta_right"><span class="text_red">37739.71</span></td>
+                            </tr>
+                            <tr class="lhb_tr_target">
+                                <td class="td_bc"><span>近六月</span></td>
+                                <td class="num_ta_right"><span>116487.39</span></td>
+                                <td class="num_ta_right"><span>5</span></td>
+                                <td class="num_ta_right"><span class="text_red">51049.04</span></td>
+                                <td class="num_ta_right"><span>2</span></td>
+                                <td class="num_ta_right"><span class="text_green">65438.35</span></td>
+                                <td class="num_ta_right"><span>3</span></td>
+                                <td class="num_ta_right"><span class="text_green">-14389.31</span></td>
+                            </tr>
+                            <tr class="lhb_tr_target actived">
+                                <td class="td_bc"><span>近一年</span></td>
+                                <td class="num_ta_right"><span>116487.39</span></td>
+                                <td class="num_ta_right"><span>5</span></td>
+                                <td class="num_ta_right"><span class="text_red">51049.04</span></td>
+                                <td class="num_ta_right"><span>2</span></td>
+                                <td class="num_ta_right"><span class="text_green">65438.35</span></td>
+                                <td class="num_ta_right"><span>3</span></td>
+                                <td class="num_ta_right"><span class="text_green">-14389.31</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <table class="mystyle_tab2" style="margin-top: 10px;">
+                            <col style="width: 6%" />
+                            <col style="width: 10%" />
+                            <col style="width: 8%" />
+                            <col style="width: 10%" />
+                            <col style="width: 10%" />
+                            <col style="width: 13%" />
+                            <col style="width: 13%" />
+                            <col style="width: 13%" />
+                            <col style="width: 17%" />
+                            <tbody class="tr_bc">
+                            <tr>
+                                <td colspan="9" style="background-color: #f6f6f6;"><span>机构席位交易明细</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>序号</span></td>
+                                <td class="td_bc"><span>上榜日期</span></td>
+                                <td class="td_bc"><span>涨跌幅</span></td>
+                                <td class="td_bc"><span>买方机构数</span></td>
+                                <td class="td_bc"><span>卖方机构数</span></td>
+                                <td class="td_bc"><span>机构买入总额（万）</span></td>
+                                <td class="td_bc"><span>机构卖出总额（万）</span></td>
+                                <td class="td_bc"><span>机构买入净额（万）</span></td>
+                                <td class="td_bc"><span>上榜原因</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="table-body">
+                            <table class="mystyle_tab2">
+                                <col style="width: 6%" />
+                                <col style="width: 10%" />
+                                <col style="width: 8%" />
+                                <col style="width: 10%" />
+                                <col style="width: 10%" />
+                                <col style="width: 13%" />
+                                <col style="width: 13%" />
+                                <col style="width: 13%" />
+                                <col style="width: 17%" />
+                                <tbody class="tr_bc">
+                                <tr>
+                                    <td class="td_bc"><span>1</span></td>
+                                    <td><span>2018/1/9</span></td>
+                                    <td class="num_ta_right"><span class="text_red">7.71</span></td>
+                                    <td class="num_ta_right"><span>1</span></td>
+                                    <td class="num_ta_right"><span>0</span></td>
+                                    <td class="num_ta_right"><span class="text_red">20580.65</span></td>
+                                    <td class="num_ta_right"><span>-</span></td>
+                                    <td class="num_ta_right"><span class="text_red">20580.65</span></td>
+                                    <td><span class="sbyy_txtbox" title="日涨幅偏离值达到7%">日涨幅偏离值达到7%</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td_bc"><span>2</span></td>
+                                    <td><span>2017/11/27</span></td>
+                                    <td class="num_ta_right"><span class="text_green">-9.69%</span></td>
+                                    <td class="num_ta_right"><span>1</span></td>
+                                    <td class="num_ta_right"><span>1</span></td>
+                                    <td class="num_ta_right"><span class="text_red">30468.39</span></td>
+                                    <td class="num_ta_right"><span class="text_green">13309.33</span></td>
+                                    <td class="num_ta_right"><span class="text_red">17159.06</span></td>
+                                    <td><span class="sbyy_txtbox" title="日涨幅偏离值达到7%">日涨幅偏离值达到7%</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td_bc"><span>3</span></td>
+                                    <td><span>2017/9/28</span></td>
+                                    <td class="num_ta_right"><span class="text_red">6.90%</span></td>
+                                    <td class="num_ta_right"><span>0</span></td>
+                                    <td class="num_ta_right"><span>2</span></td>
+                                    <td class="num_ta_right"><span>-</span></td>
+                                    <td class="num_ta_right"><span class="text_green">52129.02</span></td>
+                                    <td class="num_ta_right"><span class="text_green">-52129.02</span></td>
+                                    <td><span class="sbyy_txtbox" title="日涨幅偏离值达到7%">日涨幅偏离值达到7%</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td_bc"><span>4</span></td>
+                                    <td><span>2017/1/3</span></td>
+                                    <td class="num_ta_right"><span class="text_red">8.39%</span></td>
+                                    <td class="num_ta_right"><span>2</span></td>
+                                    <td class="num_ta_right"><span>2</span></td>
+                                    <td class="num_ta_right"><span class="text_red">14288.39</span></td>
+                                    <td class="num_ta_right"><span class="text_green">9352.95</span></td>
+                                    <td class="num_ta_right"><span class="text_green">-52129.02</span></td>
+                                    <td><span class="sbyy_txtbox" title="日涨幅偏离值达到7%">日涨幅偏离值达到7%</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td_bc"><span>4</span></td>
+                                    <td><span>2017/1/3</span></td>
+                                    <td class="num_ta_right"><span class="text_red">8.39%</span></td>
+                                    <td class="num_ta_right"><span>2</span></td>
+                                    <td class="num_ta_right"><span>2</span></td>
+                                    <td class="num_ta_right"><span class="text_red">14288.39</span></td>
+                                    <td class="num_ta_right"><span class="text_green">9352.95</span></td>
+                                    <td class="num_ta_right"><span class="text_green">-52129.02</span></td>
+                                    <td><span class="sbyy_txtbox" title="日涨幅偏离值达到7%">日涨幅偏离值达到7%</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td_bc"><span>4</span></td>
+                                    <td><span>2017/1/3</span></td>
+                                    <td class="num_ta_right"><span class="text_red">8.39%</span></td>
+                                    <td class="num_ta_right"><span>2</span></td>
+                                    <td class="num_ta_right"><span>2</span></td>
+                                    <td class="num_ta_right"><span class="text_red">14288.39</span></td>
+                                    <td class="num_ta_right"><span class="text_green">9352.95</span></td>
+                                    <td class="num_ta_right"><span class="text_green">-52129.02</span></td>
+                                    <td><span class="sbyy_txtbox" title="日涨幅偏离值达到7%">日涨幅偏离值达到7%</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td_bc"><span>4</span></td>
+                                    <td><span>2017/1/3</span></td>
+                                    <td class="num_ta_right"><span class="text_red">8.39%</span></td>
+                                    <td class="num_ta_right"><span>2</span></td>
+                                    <td class="num_ta_right"><span>2</span></td>
+                                    <td class="num_ta_right"><span class="text_red">14288.39</span></td>
+                                    <td class="num_ta_right"><span class="text_green">9352.95</span></td>
+                                    <td class="num_ta_right"><span class="text_green">-52129.02</span></td>
+                                    <td><span class="sbyy_txtbox" title="日涨幅偏离值达到7%">日涨幅偏离值达到7%</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td_bc"><span>4</span></td>
+                                    <td><span>2017/1/3</span></td>
+                                    <td class="num_ta_right"><span class="text_red">8.39%</span></td>
+                                    <td class="num_ta_right"><span>2</span></td>
+                                    <td class="num_ta_right"><span>2</span></td>
+                                    <td class="num_ta_right"><span class="text_red">14288.39</span></td>
+                                    <td class="num_ta_right"><span class="text_green">9352.95</span></td>
+                                    <td class="num_ta_right"><span class="text_green">-52129.02</span></td>
+                                    <td><span class="sbyy_txtbox" title="日涨幅偏离值达到7%">日涨幅偏离值达到7%</span></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="lhubsj" style="margin-top: 15px;">
+                    <div class="zhuygcfx_tit" >
+                        <span class="zhuygcfx_tit_txt">按席位统计</span>
+                    </div>
+                    <div class="zhuygcfx_con">
+                        <table class="mystyle_tab2" >
+                            <col style="width: 6%" />
+                            <col style="width: 21%" />
+                            <col style="width: 10%" />
+                            <col style="width: 10%" />
+                            <col style="width: 10%" />
+                            <col style="width: 10%" />
+                            <col style="width: 11%" />
+                            <col style="width: 11%" />
+                            <col style="width: 11%" />
+                            <tbody class="tr_bc">
+                            <tr class="tr_tal_center">
+                                <td><span>数据日期</span></td>
+                                <td><span>近一月</span></td>
+                                <td><span>近三月</span></td>
+                                <td><span>近六月</span></td>
+                                <td><span>近一年</span></td>
+                                <td><span></span></td>
+                                <td><span></span></td>
+                                <td><span></span></td>
+                                <td><span></span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>序号</span></td>
+                                <td class="td_bc"><span>营业部名称</span></td>
+                                <td class="td_bc"><span>龙虎榜成交额</span></td>
+                                <td class="td_bc"><span>上榜次数</span></td>
+                                <td class="td_bc"><span>买入额（万）</span></td>
+                                <td class="td_bc"><span>买入次数</span></td>
+                                <td class="td_bc"><span>卖出额（万）</span></td>
+                                <td class="td_bc"><span>卖出次数</span></td>
+                                <td class="td_bc"><span>净买入额（万）</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="table-body">
+                            <table class="mystyle_tab2" >
+                                <col style="width: 6%" />
+                                <col style="width: 21%" />
+                                <col style="width: 10%" />
+                                <col style="width: 10%" />
+                                <col style="width: 10%" />
+                                <col style="width: 10%" />
+                                <col style="width: 11%" />
+                                <col style="width: 11%" />
+                                <col style="width: 11%" />
+                                <tbody class="tr_bc">
+                                <tr>
+                                    <td class="td_bc"><span>1</span></td>
+                                    <td class="yyb_name"><span>深股通专用</span></td>
+                                    <td class="num_ta_right"><span>131940.13</span></td>
+                                    <td class="num_ta_right"><span>4</span></td>
+                                    <td class="num_ta_right"><span class="text_red">66273.44</span></td>
+                                    <td class="num_ta_right"><span>4</span></td>
+                                    <td class="num_ta_right"><span class="text_green">65666.7</span></td>
+                                    <td class="num_ta_right"><span>3</span></td>
+                                    <td class="num_ta_right"><span class="text_red">606.74</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td_bc"><span>2</span></td>
+                                    <td class="yyb_name"><span>申万宏源证券有限公司上海浦东新区</span></td>
+                                    <td class="num_ta_right"><span>131940.13</span></td>
+                                    <td class="num_ta_right"><span>4</span></td>
+                                    <td class="num_ta_right"><span class="text_red">66273.44</span></td>
+                                    <td class="num_ta_right"><span>4</span></td>
+                                    <td class="num_ta_right"><span class="text_green">65666.7</span></td>
+                                    <td class="num_ta_right"><span>3</span></td>
+                                    <td class="num_ta_right"><span class="text_green">-12733.21</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td_bc"><span>3</span></td>
+                                    <td class="yyb_name"><span>申万宏源证券有限公司上海浦东新区</span></td>
+                                    <td class="num_ta_right"><span>131940.13</span></td>
+                                    <td class="num_ta_right"><span>4</span></td>
+                                    <td class="num_ta_right"><span class="text_red">66273.44</span></td>
+                                    <td class="num_ta_right"><span>4</span></td>
+                                    <td class="num_ta_right"><span class="text_green">65666.7</span></td>
+                                    <td class="num_ta_right"><span>3</span></td>
+                                    <td class="num_ta_right"><span class="text_green">-12733.21</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td_bc"><span>4</span></td>
+                                    <td class="yyb_name"><span>申万宏源证券有限公司上海浦东新区</span></td>
+                                    <td class="num_ta_right"><span>131940.13</span></td>
+                                    <td class="num_ta_right"><span>4</span></td>
+                                    <td class="num_ta_right"><span class="text_red">66273.44</span></td>
+                                    <td class="num_ta_right"><span>4</span></td>
+                                    <td class="num_ta_right"><span class="text_green">65666.7</span></td>
+                                    <td class="num_ta_right"><span>3</span></td>
+                                    <td class="num_ta_right"><span class="text_green">-12733.21</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td_bc"><span>5</span></td>
+                                    <td class="yyb_name"><span>申万宏源证券有限公司上海浦东新区</span></td>
+                                    <td class="num_ta_right"><span>131940.13</span></td>
+                                    <td class="num_ta_right"><span>4</span></td>
+                                    <td class="num_ta_right"><span class="text_red">66273.44</span></td>
+                                    <td class="num_ta_right"><span>4</span></td>
+                                    <td class="num_ta_right"><span class="text_green">65666.7</span></td>
+                                    <td class="num_ta_right"><span>3</span></td>
+                                    <td class="num_ta_right"><span class="text_green">-12733.21</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td_bc"><span>6</span></td>
+                                    <td class="yyb_name"><span>申万宏源证券有限公司上海浦东新区</span></td>
+                                    <td class="num_ta_right"><span>131940.13</span></td>
+                                    <td class="num_ta_right"><span>4</span></td>
+                                    <td class="num_ta_right"><span class="text_red">66273.44</span></td>
+                                    <td class="num_ta_right"><span>4</span></td>
+                                    <td class="num_ta_right"><span class="text_green">65666.7</span></td>
+                                    <td class="num_ta_right"><span>3</span></td>
+                                    <td class="num_ta_right"><span class="text_green">-12733.21</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td_bc"><span>7</span></td>
+                                    <td class="yyb_name"><span>申万宏源证券有限公司上海浦东新区</span></td>
+                                    <td class="num_ta_right"><span>131940.13</span></td>
+                                    <td class="num_ta_right"><span>4</span></td>
+                                    <td class="num_ta_right"><span class="text_red">66273.44</span></td>
+                                    <td class="num_ta_right"><span>4</span></td>
+                                    <td class="num_ta_right"><span class="text_green">65666.7</span></td>
+                                    <td class="num_ta_right"><span>3</span></td>
+                                    <td class="num_ta_right"><span class="text_green">-12733.21</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td_bc"><span>8</span></td>
+                                    <td class="yyb_name"><span>申万宏源证券有限公司上海浦东新区</span></td>
+                                    <td class="num_ta_right"><span>131940.13</span></td>
+                                    <td class="num_ta_right"><span>4</span></td>
+                                    <td class="num_ta_right"><span class="text_red">66273.44</span></td>
+                                    <td class="num_ta_right"><span>4</span></td>
+                                    <td class="num_ta_right"><span class="text_green">65666.7</span></td>
+                                    <td class="num_ta_right"><span>3</span></td>
+                                    <td class="num_ta_right"><span class="text_green">-12733.21</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td_bc"><span>9</span></td>
+                                    <td class="yyb_name"><span>申万宏源证券有限公司上海浦东新区</span></td>
+                                    <td class="num_ta_right"><span>131940.13</span></td>
+                                    <td class="num_ta_right"><span>4</span></td>
+                                    <td class="num_ta_right"><span class="text_red">66273.44</span></td>
+                                    <td class="num_ta_right"><span>4</span></td>
+                                    <td class="num_ta_right"><span class="text_green">65666.7</span></td>
+                                    <td class="num_ta_right"><span>3</span></td>
+                                    <td class="num_ta_right"><span class="text_green">-12733.21</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td_bc"><span>10</span></td>
+                                    <td class="yyb_name"><span>申万宏源证券有限公司上海浦东新区</span></td>
+                                    <td class="num_ta_right"><span>131940.13</span></td>
+                                    <td class="num_ta_right"><span>4</span></td>
+                                    <td class="num_ta_right"><span class="text_red">66273.44</span></td>
+                                    <td class="num_ta_right"><span>4</span></td>
+                                    <td class="num_ta_right"><span class="text_green">65666.7</span></td>
+                                    <td class="num_ta_right"><span>3</span></td>
+                                    <td class="num_ta_right"><span class="text_green">-12733.21</span></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="lhubsj" style="margin-top: 15px;">
+                    <div class="zhuygcfx_tit" >
+                        <span class="zhuygcfx_tit_txt">明细数据</span>
+                    </div>
+                    <div class="zhuygcfx_con pb50">
+                        <table class="mystyle_tab2 bt_dark" >
+                            <tbody class="tr_bc">
+                            <tr class="tr_tal_center">
+                                <td><span>上榜日期</span></td>
+                                <td><span>2018/1/9</span></td>
+                                <td><span></span></td>
+                                <td><span>上榜原因</span></td>
+                                <td colspan="3"><span class="sbyy_txtbox">日涨幅偏离值达到7%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc bold_txt" colspan="2"><span>买入金额最大的前五名</span></td>
+                                <td class="td_bc"><span></span></td>
+                                <td class="td_bc"><span></span></td>
+                                <td class="td_bc"><span></span></td>
+                                <td class="td_bc"><span></span></td>
+                                <td class="td_bc"><span></span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>序号</span></td>
+                                <td class="td_bc"><span>交易营业部名称</span></td>
+                                <td class="td_bc"><span>买入金额（万）</span></td>
+                                <td class="td_bc"><span>占总成交比例</span></td>
+                                <td class="td_bc"><span>卖出金额（万）</span></td>
+                                <td class="td_bc"><span>占总成交比例</span></td>
+                                <td class="td_bc"><span>净额（万）</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>1</span></td>
+                                <td><span>机构专用</span></td>
+                                <td class="num_ta_right"><span class="text_red">20568.65</span></td>
+                                <td class="num_ta_right"><span>1.72%</span></td>
+                                <td class="num_ta_right"><span class="text_green">435.33</span></td>
+                                <td class="num_ta_right"><span>0.04%</span></td>
+                                <td class="num_ta_right"><span class="text_red">20145.32</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>2</span></td>
+                                <td><span>机构专用</span></td>
+                                <td class="num_ta_right"><span class="text_red">20568.65</span></td>
+                                <td class="num_ta_right"><span>1.72%</span></td>
+                                <td class="num_ta_right"><span class="text_green">435.33</span></td>
+                                <td class="num_ta_right"><span>0.04%</span></td>
+                                <td class="num_ta_right"><span class="text_red">20145.32</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>3</span></td>
+                                <td><span>机构专用</span></td>
+                                <td class="num_ta_right"><span class="text_red">20568.65</span></td>
+                                <td class="num_ta_right"><span>1.72%</span></td>
+                                <td class="num_ta_right"><span class="text_green">435.33</span></td>
+                                <td class="num_ta_right"><span>0.04%</span></td>
+                                <td class="num_ta_right"><span class="text_red">20145.32</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>4</span></td>
+                                <td><span>机构专用</span></td>
+                                <td class="num_ta_right"><span class="text_red">20568.65</span></td>
+                                <td class="num_ta_right"><span>1.72%</span></td>
+                                <td class="num_ta_right"><span class="text_green">435.33</span></td>
+                                <td class="num_ta_right"><span>0.04%</span></td>
+                                <td class="num_ta_right"><span class="text_red">20145.32</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>5</span></td>
+                                <td><span>机构专用</span></td>
+                                <td class="num_ta_right"><span class="text_red">20568.65</span></td>
+                                <td class="num_ta_right"><span>1.72%</span></td>
+                                <td class="num_ta_right"><span class="text_green">435.33</span></td>
+                                <td class="num_ta_right"><span>0.04%</span></td>
+                                <td class="num_ta_right"><span class="text_red">20145.32</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc bold_txt" colspan="2"><span>卖出金额最大的前五名</span></td>
+                                <td class="td_bc"><span></span></td>
+                                <td class="td_bc"><span></span></td>
+                                <td class="td_bc"><span></span></td>
+                                <td class="td_bc"><span></span></td>
+                                <td class="td_bc"><span></span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>序号</span></td>
+                                <td class="td_bc"><span>交易营业部名称</span></td>
+                                <td class="td_bc"><span>买入金额（万）</span></td>
+                                <td class="td_bc"><span>占总成交比例</span></td>
+                                <td class="td_bc"><span>卖出金额（万）</span></td>
+                                <td class="td_bc"><span>占总成交比例</span></td>
+                                <td class="td_bc"><span>净额（万）</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>1</span></td>
+                                <td><span>机构专用</span></td>
+                                <td class="num_ta_right"><span class="text_red">20568.65</span></td>
+                                <td class="num_ta_right"><span>1.72%</span></td>
+                                <td class="num_ta_right"><span class="text_green">435.33</span></td>
+                                <td class="num_ta_right"><span>0.04%</span></td>
+                                <td class="num_ta_right"><span class="text_red">20145.32</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>2</span></td>
+                                <td><span>机构专用</span></td>
+                                <td class="num_ta_right"><span class="text_red">20568.65</span></td>
+                                <td class="num_ta_right"><span>1.72%</span></td>
+                                <td class="num_ta_right"><span class="text_green">435.33</span></td>
+                                <td class="num_ta_right"><span>0.04%</span></td>
+                                <td class="num_ta_right"><span class="text_red">20145.32</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>3</span></td>
+                                <td><span>机构专用</span></td>
+                                <td class="num_ta_right"><span class="text_red">20568.65</span></td>
+                                <td class="num_ta_right"><span>1.72%</span></td>
+                                <td class="num_ta_right"><span class="text_green">435.33</span></td>
+                                <td class="num_ta_right"><span>0.04%</span></td>
+                                <td class="num_ta_right"><span class="text_red">20145.32</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>4</span></td>
+                                <td><span>机构专用</span></td>
+                                <td class="num_ta_right"><span class="text_red">20568.65</span></td>
+                                <td class="num_ta_right"><span>1.72%</span></td>
+                                <td class="num_ta_right"><span class="text_green">435.33</span></td>
+                                <td class="num_ta_right"><span>0.04%</span></td>
+                                <td class="num_ta_right"><span class="text_red">20145.32</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>5</span></td>
+                                <td><span>机构专用</span></td>
+                                <td class="num_ta_right"><span class="text_red">20568.65</span></td>
+                                <td class="num_ta_right"><span>1.72%</span></td>
+                                <td class="num_ta_right"><span class="text_green">435.33</span></td>
+                                <td class="num_ta_right"><span>0.04%</span></td>
+                                <td class="num_ta_right"><span class="text_red">20145.32</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <table class="mystyle_tab2 bt_dark" >
+                            <tbody class="tr_bc">
+                            <tr class="tr_tal_center">
+                                <td><span>上榜日期</span></td>
+                                <td><span>2018/1/9</span></td>
+                                <td><span></span></td>
+                                <td><span>上榜原因</span></td>
+                                <td colspan="3"><span class="sbyy_txtbox">日涨幅偏离值达到7%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc bold_txt" colspan="2"><span>买入金额最大的前五名</span></td>
+                                <td class="td_bc"><span></span></td>
+                                <td class="td_bc"><span></span></td>
+                                <td class="td_bc"><span></span></td>
+                                <td class="td_bc"><span></span></td>
+                                <td class="td_bc"><span></span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>序号</span></td>
+                                <td class="td_bc"><span>交易营业部名称</span></td>
+                                <td class="td_bc"><span>买入金额（万）</span></td>
+                                <td class="td_bc"><span>占总成交比例</span></td>
+                                <td class="td_bc"><span>卖出金额（万）</span></td>
+                                <td class="td_bc"><span>占总成交比例</span></td>
+                                <td class="td_bc"><span>净额（万）</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>1</span></td>
+                                <td><span>机构专用</span></td>
+                                <td class="num_ta_right"><span class="text_red">20568.65</span></td>
+                                <td class="num_ta_right"><span>1.72%</span></td>
+                                <td class="num_ta_right"><span class="text_green">435.33</span></td>
+                                <td class="num_ta_right"><span>0.04%</span></td>
+                                <td class="num_ta_right"><span class="text_red">20145.32</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>2</span></td>
+                                <td><span>机构专用</span></td>
+                                <td class="num_ta_right"><span class="text_red">20568.65</span></td>
+                                <td class="num_ta_right"><span>1.72%</span></td>
+                                <td class="num_ta_right"><span class="text_green">435.33</span></td>
+                                <td class="num_ta_right"><span>0.04%</span></td>
+                                <td class="num_ta_right"><span class="text_red">20145.32</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>3</span></td>
+                                <td><span>机构专用</span></td>
+                                <td class="num_ta_right"><span class="text_red">20568.65</span></td>
+                                <td class="num_ta_right"><span>1.72%</span></td>
+                                <td class="num_ta_right"><span class="text_green">435.33</span></td>
+                                <td class="num_ta_right"><span>0.04%</span></td>
+                                <td class="num_ta_right"><span class="text_red">20145.32</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>4</span></td>
+                                <td><span>机构专用</span></td>
+                                <td class="num_ta_right"><span class="text_red">20568.65</span></td>
+                                <td class="num_ta_right"><span>1.72%</span></td>
+                                <td class="num_ta_right"><span class="text_green">435.33</span></td>
+                                <td class="num_ta_right"><span>0.04%</span></td>
+                                <td class="num_ta_right"><span class="text_red">20145.32</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>5</span></td>
+                                <td><span>机构专用</span></td>
+                                <td class="num_ta_right"><span class="text_red">20568.65</span></td>
+                                <td class="num_ta_right"><span>1.72%</span></td>
+                                <td class="num_ta_right"><span class="text_green">435.33</span></td>
+                                <td class="num_ta_right"><span>0.04%</span></td>
+                                <td class="num_ta_right"><span class="text_red">20145.32</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc bold_txt" colspan="2"><span>卖出金额最大的前五名</span></td>
+                                <td class="td_bc"><span></span></td>
+                                <td class="td_bc"><span></span></td>
+                                <td class="td_bc"><span></span></td>
+                                <td class="td_bc"><span></span></td>
+                                <td class="td_bc"><span></span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>序号</span></td>
+                                <td class="td_bc"><span>交易营业部名称</span></td>
+                                <td class="td_bc"><span>买入金额（万）</span></td>
+                                <td class="td_bc"><span>占总成交比例</span></td>
+                                <td class="td_bc"><span>卖出金额（万）</span></td>
+                                <td class="td_bc"><span>占总成交比例</span></td>
+                                <td class="td_bc"><span>净额（万）</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>1</span></td>
+                                <td><span>机构专用</span></td>
+                                <td class="num_ta_right"><span class="text_red">20568.65</span></td>
+                                <td class="num_ta_right"><span>1.72%</span></td>
+                                <td class="num_ta_right"><span class="text_green">435.33</span></td>
+                                <td class="num_ta_right"><span>0.04%</span></td>
+                                <td class="num_ta_right"><span class="text_red">20145.32</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>2</span></td>
+                                <td><span>机构专用</span></td>
+                                <td class="num_ta_right"><span class="text_red">20568.65</span></td>
+                                <td class="num_ta_right"><span>1.72%</span></td>
+                                <td class="num_ta_right"><span class="text_green">435.33</span></td>
+                                <td class="num_ta_right"><span>0.04%</span></td>
+                                <td class="num_ta_right"><span class="text_red">20145.32</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>3</span></td>
+                                <td><span>机构专用</span></td>
+                                <td class="num_ta_right"><span class="text_red">20568.65</span></td>
+                                <td class="num_ta_right"><span>1.72%</span></td>
+                                <td class="num_ta_right"><span class="text_green">435.33</span></td>
+                                <td class="num_ta_right"><span>0.04%</span></td>
+                                <td class="num_ta_right"><span class="text_red">20145.32</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>4</span></td>
+                                <td><span>机构专用</span></td>
+                                <td class="num_ta_right"><span class="text_red">20568.65</span></td>
+                                <td class="num_ta_right"><span>1.72%</span></td>
+                                <td class="num_ta_right"><span class="text_green">435.33</span></td>
+                                <td class="num_ta_right"><span>0.04%</span></td>
+                                <td class="num_ta_right"><span class="text_red">20145.32</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc"><span>5</span></td>
+                                <td><span>机构专用</span></td>
+                                <td class="num_ta_right"><span class="text_red">20568.65</span></td>
+                                <td class="num_ta_right"><span>1.72%</span></td>
+                                <td class="num_ta_right"><span class="text_green">435.33</span></td>
+                                <td class="num_ta_right"><span>0.04%</span></td>
+                                <td class="num_ta_right"><span class="text_red">20145.32</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="pageNumber" total="200" id="page-1"></div>
+                    </div>
+                </div>
+            </div>
+            <div name="大宗交易" style="width:100%">
+                <div class="centerBox zhuygcfx_box">
+                    <div class="zhuygcfx_tit">
+                        <span class="zhuygcfx_tit_txt">股价走势图</span>
+                        <span class="zhuygcfx_bgq">单位：万元</span>
+                    </div>
+                    <div class="zhuygcfx_con">
+                        <div id="mychart" style="width: 1350px;height: 370px;margin-left: -84px;background-color: transparent;"></div>
+                        <table class="mystyle_tab2" style="margin-top: 10px;">
+                            <tbody>
+                            <tr>
+                                <td colspan="9" style="background-color: #f6f6f6;"><span>明细数据</span></td>
+                            </tr>
+                            <tr class="tr_bc">
+                                <td class="td_bc" rowspan="2"><span>交易日期</span></td>
+                                <td class="td_bc" rowspan="2"><span>成交价（元）</span></td>
+                                <td class="td_bc" rowspan="2"><span>成交量（万股）</span></td>
+                                <td class="td_bc" rowspan="2"><span>成交额（万元）</span></td>
+                                <td class="td_bc" rowspan="1" colspan="2">
+                                    <span>折价率（%）</span>
+                                </td>
+                                <td class="td_bc" rowspan="2"><span>成交额占比（%）</span></td>
+                                <td class="td_bc" rowspan="2"><span>买方营业部</span></td>
+                                <td class="td_bc" rowspan="2"><span>卖方营业部</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td_bc" rowspan="1">
+                                    <span>相对前收</span>
+                                </td>
+                                <td class="td_bc" rowspan="1">
+                                    <span>相对收盘</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span>2017/9/15</span></td>
+                                <td class="num_ta_right"><span>26.06</span></td>
+                                <td class="num_ta_right"><span>74</span></td>
+                                <td class="num_ta_right"><span>1928.44</span></td>
+                                <td class="num_ta_right"><span>9.98</span></td>
+                                <td class="num_ta_right"><span>11.54</span></td>
+                                <td class="num_ta_right"><span>5.78</span></td>
+                                <td><span>华泰证券深圳深南大道</span></td>
+                                <td><span>东莞证券厦门分公司</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>2017/9/13</span></td>
+                                <td class="num_ta_right"><span>26.06</span></td>
+                                <td class="num_ta_right"><span>74</span></td>
+                                <td class="num_ta_right"><span>1928.44</span></td>
+                                <td class="num_ta_right"><span>9.98</span></td>
+                                <td class="num_ta_right"><span>11.54</span></td>
+                                <td class="num_ta_right"><span>5.78</span></td>
+                                <td><span>华泰证券深圳深南大道</span></td>
+                                <td><span>东莞证券厦门分公司</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>2016/12/28</span></td>
+                                <td class="num_ta_right"><span>26.06</span></td>
+                                <td class="num_ta_right"><span>74</span></td>
+                                <td class="num_ta_right"><span>1928.44</span></td>
+                                <td class="num_ta_right"><span>9.98</span></td>
+                                <td class="num_ta_right"><span>11.54</span></td>
+                                <td class="num_ta_right"><span>5.78</span></td>
+                                <td><span>华泰证券深圳深南大道</span></td>
+                                <td><span>东莞证券厦门分公司</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>2016/12/28</span></td>
+                                <td class="num_ta_right"><span>26.06</span></td>
+                                <td class="num_ta_right"><span>74</span></td>
+                                <td class="num_ta_right"><span>1928.44</span></td>
+                                <td class="num_ta_right"><span>9.98</span></td>
+                                <td class="num_ta_right"><span>11.54</span></td>
+                                <td class="num_ta_right"><span>5.78</span></td>
+                                <td><span>华泰证券深圳深南大道</span></td>
+                                <td><span>东莞证券厦门分公司</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>2016/12/28</span></td>
+                                <td class="num_ta_right"><span>26.06</span></td>
+                                <td class="num_ta_right"><span>74</span></td>
+                                <td class="num_ta_right"><span>1928.44</span></td>
+                                <td class="num_ta_right"><span>9.98</span></td>
+                                <td class="num_ta_right"><span>11.54</span></td>
+                                <td class="num_ta_right"><span>5.78</span></td>
+                                <td><span>华泰证券深圳深南大道</span></td>
+                                <td><span>东莞证券厦门分公司</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>2016/12/28</span></td>
+                                <td class="num_ta_right"><span>26.06</span></td>
+                                <td class="num_ta_right"><span>74</span></td>
+                                <td class="num_ta_right"><span>1928.44</span></td>
+                                <td class="num_ta_right"><span>9.98</span></td>
+                                <td class="num_ta_right"><span>11.54</span></td>
+                                <td class="num_ta_right"><span>5.78</span></td>
+                                <td><span>华泰证券深圳深南大道</span></td>
+                                <td><span>东莞证券厦门分公司</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>2016/11/18</span></td>
+                                <td class="num_ta_right"><span>26.06</span></td>
+                                <td class="num_ta_right"><span>74</span></td>
+                                <td class="num_ta_right"><span>1928.44</span></td>
+                                <td class="num_ta_right"><span>9.98</span></td>
+                                <td class="num_ta_right"><span>11.54</span></td>
+                                <td class="num_ta_right"><span>5.78</span></td>
+                                <td><span>华泰证券深圳深南大道</span></td>
+                                <td><span>东莞证券厦门分公司</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>2015/10/22</span></td>
+                                <td class="num_ta_right"><span>26.06</span></td>
+                                <td class="num_ta_right"><span>74</span></td>
+                                <td class="num_ta_right"><span>1928.44</span></td>
+                                <td class="num_ta_right"><span>9.98</span></td>
+                                <td class="num_ta_right"><span>11.54</span></td>
+                                <td class="num_ta_right"><span>5.78</span></td>
+                                <td><span>华泰证券深圳深南大道</span></td>
+                                <td><span>东莞证券厦门分公司</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>2015/8/5</span></td>
+                                <td class="num_ta_right"><span>26.06</span></td>
+                                <td class="num_ta_right"><span>74</span></td>
+                                <td class="num_ta_right"><span>1928.44</span></td>
+                                <td class="num_ta_right"><span>9.98</span></td>
+                                <td class="num_ta_right"><span>11.54</span></td>
+                                <td class="num_ta_right"><span>5.78</span></td>
+                                <td><span>华泰证券深圳深南大道</span></td>
+                                <td><span>东莞证券厦门分公司</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>2015/3/19</span></td>
+                                <td class="num_ta_right"><span>26.06</span></td>
+                                <td class="num_ta_right"><span>74</span></td>
+                                <td class="num_ta_right"><span>1928.44</span></td>
+                                <td class="num_ta_right"><span>9.98</span></td>
+                                <td class="num_ta_right"><span>11.54</span></td>
+                                <td class="num_ta_right"><span>5.78</span></td>
+                                <td><span>华泰证券深圳深南大道</span></td>
+                                <td><span>东莞证券厦门分公司</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>2015/3/19</span></td>
+                                <td class="num_ta_right"><span>26.06</span></td>
+                                <td class="num_ta_right"><span>74</span></td>
+                                <td class="num_ta_right"><span>1928.44</span></td>
+                                <td class="num_ta_right"><span>9.98</span></td>
+                                <td class="num_ta_right"><span>11.54</span></td>
+                                <td class="num_ta_right"><span>5.78</span></td>
+                                <td><span>华泰证券深圳深南大道</span></td>
+                                <td><span>东莞证券厦门分公司</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>2015/3/19</span></td>
+                                <td class="num_ta_right"><span>26.06</span></td>
+                                <td class="num_ta_right"><span>74</span></td>
+                                <td class="num_ta_right"><span>1928.44</span></td>
+                                <td class="num_ta_right"><span>9.98</span></td>
+                                <td class="num_ta_right"><span>11.54</span></td>
+                                <td class="num_ta_right"><span>5.78</span></td>
+                                <td><span>华泰证券深圳深南大道</span></td>
+                                <td><span>东莞证券厦门分公司</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>2015/3/18</span></td>
+                                <td class="num_ta_right"><span>26.06</span></td>
+                                <td class="num_ta_right"><span>74</span></td>
+                                <td class="num_ta_right"><span>1928.44</span></td>
+                                <td class="num_ta_right"><span>9.98</span></td>
+                                <td class="num_ta_right"><span>11.54</span></td>
+                                <td class="num_ta_right"><span>5.78</span></td>
+                                <td><span>华泰证券深圳深南大道</span></td>
+                                <td><span>东莞证券厦门分公司</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div name="融资融券" style="width:100%">
+                <!--时间范围和周期选择-->
+                <div class="time_cycle_select">
+                    <div class="rzrq_sel clearfix">
+                        <label for="" class="fl">时间范围：</label>
+                        <select name="" id="">
+                            <option value="">3个月</option>
+                            <option value="">6个月</option>
+                            <option value="" selected>1年</option>
+                            <option value="">3年</option>
+                            <option value="">5年</option>
+                            <option value="">上市以来</option>
+                        </select>
+                    </div>
+                    <div class="rzrq_sel clearfix">
+                        <label for="" class="fl">周期：</label>
+                        <select name="" id="">
+                            <option value="">周</option>
+                        </select>
+                    </div>
+                </div>
+                <!--时间范围和周期选择 end-->
+                <div class="rzrq_con">
+                    <h5 class="rzrq_tit overflowh">
+                        <span class="fl">鞍钢股份[000898.SZ] - 融资融券</span>
+                        <span class="fr">单位：万元</span>
+                    </h5>
+                    <!--融资买入-->
+                    <div class="rzmr_box mb12">
+                        <div class="zhuygcfx_tit tal_center">
+                            <span class="zhuygcfx_tit_txt">融资买入</span>
+                        </div>
+                        <div class="zhuygcfx_con">
+                            <div id="mychart_rzrq1" style="width: 100%;height: 370px;"></div>
+                            <!--单选项-->
+                            <div class="rzmr_radio">
+                                <input type="radio" id="rzmr_radio1" name="rzmr_radio" value="融资余额" checked="checked" />
+                                <label for="rzmr_radio1" class="hand">
+                                    <span class="rz_bc_blue"></span>
+                                    <span>融资余额</span>
+                                </label>
+
+                                <input type="radio" id="rzmr_radio2" name="rzmr_radio" value=" 融资净买入额" />
+                                <label for="rzmr_radio2" class="hand">
+                                    <span class="rz_bc_lightblue"></span>
+                                    <span>融资净买入额</span>
+                                </label>
+
+                                <input type="radio" id="rzmr_radio3" name="rzmr_radio" value=" 融资买入额" />
+                                <label for="rzmr_radio3" class="hand">
+                                    <span class="rz_bc_darkblue"></span>
+                                    <span>融资净买入额</span>
+                                </label>
+
+                                <input type="radio" id="rzmr_radio4" name="rzmr_radio" value=" 融资偿还额" />
+                                <label for="rzmr_radio4" class="hand">
+                                    <span class="rz_bc_green"></span>
+                                    <span>融资偿还额</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--融券卖出-->
+                    <div class="rzmc_box mb12">
+                        <div class="zhuygcfx_tit tal_center">
+                            <span class="zhuygcfx_tit_txt">融券卖出</span>
+                        </div>
+                        <div class="zhuygcfx_con">
+                            <div id="mychart_rzrq2" style="width: 100%;height: 370px;"></div>
+                            <!--单选项-->
+                            <div class="rzmr_radio">
+                                <input type="radio" id="rzmc_radio1" name="rzmc_radio" value="融券余量" checked="checked" />
+                                <label for="rzmc_radio1" class="hand">
+                                    <span class="rz_bc_blue"></span>
+                                    <span>融券余量</span>
+                                </label>
+
+                                <input type="radio" id="rzmc_radio2" name="rzmc_radio" value=" 融券净卖出量" />
+                                <label for="rzmc_radio2" class="hand">
+                                    <span class="rz_bc_lightblue"></span>
+                                    <span>融券净卖出量</span>
+                                </label>
+
+                                <input type="radio" id="rzmc_radio3" name="rzmc_radio" value=" 融券卖出额" />
+                                <label for="rzmc_radio3" class="hand">
+                                    <span class="rz_bc_darkblue"></span>
+                                    <span>融券卖出额</span>
+                                </label>
+
+                                <input type="radio" id="rzmc_radio4" name="rzmc_radio" value=" 融券偿还量" />
+                                <label for="rzmc_radio4" class="hand">
+                                    <span class="rz_bc_green"></span>
+                                    <span>融券偿还量</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--融资、融券余额变化-->
+                    <div class="rzmc_box">
+                        <div class="zhuygcfx_tit tal_center">
+                            <span class="zhuygcfx_tit_txt">融资、融券余额变化</span>
+                        </div>
+                        <div class="zhuygcfx_con">
+                            <div id="mychart_rzrq3" style="width: 100%;height: 370px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--主要内容 end-->
+</div>
+<script>
+    $('body').on('click','.lhb_tr_target',function () {
+        $('.lhb_tr_target').removeClass('actived');
+        $(this).addClass('actived');
+    })
+</script>
+<script type="text/javascript" src="../js/echarts.min.js"></script>
+<script type="text/javascript">
+
+    var myChart1 = echarts.init(document.getElementById('mychart'));
+    var myChart2 = echarts.init(document.getElementById('mychart_rzrq1'));
+    var myChart3 = echarts.init(document.getElementById('mychart_rzrq2'));
+    var myChart4 = echarts.init(document.getElementById('mychart_rzrq3'));
+
+
+
+
+
+    // option1(大宗交易)
+    option1 = {
+        backgroundColor: 'transparent',
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'shadow'
+            }
+        },
+        legend: {
+            data: ['成交额', '收盘价'],
+            textStyle: {
+                color: '#333'
+            }
+        },
+        xAxis: {
+            data: ['2015-01-01','2015-04-01','2015-07-01','2015-10-01','2016-01-01','2016-04-01','2016-07-01','2016-10-01','2017-01-01','2017-04-01','2017-07-01','2017-10-01','2018-01-01'],
+            axisLine: {
+                lineStyle: {
+                    color: '#333'
+                }
+            }
+        },
+        yAxis: [{
+            type:'value',
+            name:'成交额（万元）',
+            min: 0,
+            max: 14000,
+            interval: 2000,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        },{
+            type:'value',
+            name:'收盘价(前复权)',
+            min: 10.00,
+            max: 45.00,
+            interval: 15.00,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }],
+        series: [ {
+            name: '成交额',
+            type: 'bar',
+            barWidth: 10,
+            itemStyle: {
+                normal: {
+                    barBorderRadius: 5,
+                    color: new echarts.graphic.LinearGradient(
+                        0, 0, 0, 1,
+                        [
+                            {offset: 0, color: '#f36d40'},
+                            {offset: 1, color: '#f3a940'}
+                        ]
+                    )
+                }
+            },
+            data: ['','8000','2100','3100','','','','4300','6200','','','12000','']
+        }, {
+            name: '收盘价',
+            type: 'line',
+            smooth: true,
+            showAllSymbol: true,
+            itemStyle: {normal: {areaStyle: {type: 'default'},color:'#8bd3f1'}},
+            symbol: 'emptyCircle',
+            symbolSize: 15,
+            yAxisIndex: 1,
+            data: ['25.5','30.1','25.4','17.8','45','37','30.1','28.5','27.5','25.6','28','31','25.2']
+        }]
+    };
+
+    //option2(融资融券-融资余额)
+    option2 = {
+        tooltip:{
+            trigger: 'axis',
+            axisPointer: {
+                type: 'cross',
+                crossStyle: {
+                    color: '#999'
+                }
+            }
+        },
+        legend: {
+            data: ['融资余额','收盘价']
+        },
+        xAxis: [{
+            type:'category',
+            data:['2017-01-01','2017-02-01','2017-03-01','2017-04-01','2017-05-01','2017-06-01','2017-07-01','2017-08-01','2017-09-01','2017-10-01','2017-11-01','2017-12-01','2018-01-01'],
+            axisPointer:{
+                type:'shadow'
+            }
+        }],
+        yAxis: [{
+            type:'value',
+            name:'融资余额',
+            min: -20000,
+            max: 100000,
+            interval: 20000,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        },{
+            type:'value',
+            name:'收盘价(前复权)',
+            min: 4.50,
+            max: 8.00,
+            interval: 0.50,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }],
+        series: [{
+            name:'融资余额',
+            type:'bar',
+            data:[27000,24000,25000,34000,/*4*/35000,36000,36500,37200,/*8*/57000,83000,83200,85000,/*12*/78000/*1*/],
+            barWidth:36
+        },{
+            name:'收盘价',
+            type:'line',
+            yAxisIndex: 1,
+            data:[5.50,6.00,5.80,5.40,/*4*/5.53,4.90,5.57,5.87,/*8*/7.20,6.40,6.32,6.45,/*1*/6.50]
+        }],
+        label: {
+            normal: {
+                show: true,
+                position: 'top',
+                textStyle: {
+                    color: 'black'
+                }
+            }
+        },
+        color: ['#0f88cb','#ff4242']
+    };
+
+    //option3(融券卖出-融券余量)
+    option3 = {
+        tooltip:{
+            trigger: 'axis',
+            axisPointer: {
+                type: 'cross',
+                crossStyle: {
+                    color: '#999'
+                }
+            }
+        },
+        legend: {
+            data: ['融券余量','收盘价']
+        },
+        xAxis: [{
+            type:'category',
+            data:['2017-01-01','2017-02-01','2017-03-01','2017-04-01','2017-05-01','2017-06-01','2017-07-01','2017-08-01','2017-09-01','2017-10-01','2017-11-01','2017-12-01','2018-01-01'],
+            axisPointer:{
+                type:'shadow'
+            }
+        }],
+        yAxis: [{
+            type:'value',
+            name:'融券余量',
+            min: -20,
+            max: 30,
+            interval: 10,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        },{
+            type:'value',
+            name:'收盘价(前复权)',
+            min: 4.50,
+            max: 8.00,
+            interval: 0.50,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }],
+        series: [{
+            name:'融券余量',
+            type:'bar',
+            data:[-3,2,8,'',/*4*/1.5,1.9,3.2,29,/*8*/4.5,-9,11,5.5,/*12*/''/*1*/],
+            barWidth:36
+        },{
+            name:'收盘价',
+            type:'line',
+            yAxisIndex: 1,
+            data:[5.50,6.00,5.80,5.40,/*4*/5.53,4.90,5.57,5.87,/*8*/7.20,6.40,6.32,6.45,/*1*/6.50]
+        }],
+        label: {
+            normal: {
+                show: true,
+                position: 'top',
+                textStyle: {
+                    color: 'black'
+                }
+            }
+        },
+        color: ['#0f88cb','#ff4242']
+    };
+
+    //option4(融资、融券余额变化)
+    option4 = {
+        tooltip:{
+            trigger: 'axis',
+            axisPointer: {
+                type: 'cross',
+                crossStyle: {
+                    color: '#999'
+                }
+            }
+        },
+        legend: {
+            data: ['融资余额','融券余额']
+        },
+        xAxis: [{
+            type:'category',
+            data:['2017-01-01','2017-02-01','2017-03-01','2017-04-01','2017-05-01','2017-06-01','2017-07-01','2017-08-01','2017-09-01','2017-10-01','2017-11-01','2017-12-01']
+        }],
+        yAxis: [{
+            type:'value',
+            name:'融资余额',
+            min: -20000,
+            max: 100000,
+            interval: 20000,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        },{
+            type:'value',
+            name:'融券余额',
+            min: -10,
+            max: 40,
+            interval: 10,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        }],
+        series: [{
+            name:'融资余额',
+            type:'line',
+            data:[28000,23000,21000,25000,/*4*/37000,35000,41000,42000,/*8*/71000,81000,78900,0]
+
+        },{
+            name:'融券余额',
+            type:'line',
+            yAxisIndex: 1,
+            data:[9,2,4,11,/*4*/14,14.8,15,17,/*8*/31,30.3,30.2,-3]
+        }],
+        label: {
+            normal: {
+                show: true,
+                position: 'top',
+                textStyle: {
+                    color: 'black'
+                }
+            }
+        },
+        color: ['#0f88cb','#ff4242']
+    };
+
+    myChart1.setOption(option1);
+    myChart2.setOption(option2);
+    myChart3.setOption(option3);
+    myChart4.setOption(option4);
+</script>
+</body>
+</html>

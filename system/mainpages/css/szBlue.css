@@ -1,0 +1,217 @@
+/****上海证券报红色主题***/
+/*侧边栏*/
+.szbStyle .logo_win img {
+    width: 108px;
+}
+.szbStyle .logo_win {
+    padding: 26px 0;
+}
+.szbStyle #hideCon {
+    background-color: #062868;
+}
+.szbStyle #lbox_topcenter {
+    background: #062868;}
+.szbStyle .LeftNav_title {
+    background: #062868;
+}
+.szbStyle .logo_win {
+    background: #062868;}
+.szbStyle .style1 a {
+    background-color: #062868;
+}
+.szbStyle .style1>a:hover {
+    background-color: #05245d;
+}
+.szbStyle .style1>a.active {
+    background-color: #05245d;
+}
+.szbStyle .style2 a:hover {
+    background-color:#05245d!important;
+    border-left: 2px solid #ffffff!important;
+    color: white;
+}
+.szbStyle .style2 a.hover {
+    background-color:#05245d!important;
+    border-left: 2px solid #ffffff!important;
+    transition: all .3s ease-in-out;
+    color: white;
+}
+.szbStyle #rbox {
+    background: none;
+}
+.szbStyle #rbox_topcenter {
+    height: 50px;}
+.szbStyle #rbox_topcenter>div {
+    height: 50px;
+    box-shadow: 0 0 15px #ccc;
+}
+
+/*******首页样式改（蓝色主题）*******/
+.szbStyle .searchwidget .basicTab_top {
+    background-color: #1b92e6;
+    height: 39px; padding-left: 10px;
+}
+.szbStyle .searchwidget .basicTab_normal_center {
+    height: 39px;
+    line-height: 40px;
+}
+.szbStyle .searchwidget .basicTab_current_center {
+    background-color: #59b6ef;
+    border:0;
+    position: relative;
+}
+.szbStyle .searchwidget .basicTab_current_center:after {
+    content:'';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #ffffff;
+    bottom: 0;
+    left: 50%;
+    margin-left:-6px;
+}
+.szbStyle .searchwidget .basicTab_hover_center {
+    border-color:#59b6ef;
+}
+.szbStyle .basicTab_top {
+    padding-left: 10px;
+    background-color: #1b92e6;
+    border-bottom: 0;
+    border-radius: 6px 6px 0 0;
+}
+.szbStyle .basicTab_current_center {
+    background-color: #59b6ef;
+    border:0;
+    color: #fff;
+    position: relative;
+}
+.szbStyle .basicTab_current_center:after {
+    content:'';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #ffffff;
+    bottom: 0;
+    left: 50%;
+    margin-left:-6px;
+}
+.szbStyle .basicTab_hover_center {
+    border-color:#59b6ef;
+}
+.szbStyle .basicTab_normal_center {
+    color: #fff;
+}
+.szbStyle .moreangle {
+    color: #fff;
+}
+.moreangle:hover {
+    color: #fff;}
+.szbStyle .mygroupTitle {
+    border-bottom: 0;
+    background-color: #1b92e6;
+    border-radius:6px 6px 0 0;
+    padding-left: 10px;
+
+}
+.szbStyle .mygroupTitle span {
+    border-bottom: 0;
+    color: #ffffff;
+    background-color: #59b6ef;
+    position: relative;
+    margin-top: 0;
+}
+.szbStyle .mygroupTitle span:after {
+    content:'';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #ffffff;
+    bottom: 0;
+    left: 50%;
+    margin-left:-6px;
+}
+
+/****************日历样式改***************/
+ul.monthevcon {
+    height: 110px;
+    border:0;
+    border-top: 1px solid #ededed;
+    border-radius:0;
+}
+.newaddschedule {cursor: pointer;margin-top:10px}
+.szbStyle .fc-toolbar {
+    background-color: #1b92e6;
+}
+.szbStyle .fc-widget-header {
+    background-color: #1b92e6;}
+.szbStyle #calendar {
+    border:1px solid #1b92e6;
+    overflow: hidden;
+}
+.szbStyle .fc-toolbar button:focus {
+    border:0;
+}
+/*.szbStyle .fc-scroller.fc-day-grid-container {*/
+/*height: 245px!important;}*/
+/*.szbStyle #calendar {*/
+/*max-width:100%*/
+/*}*/
+
+.szbStyle #fc-dateSelect,.szbBlueStyle #fc-dateSelect {
+    display: block;
+    max-width: 330px;
+    margin: 0 auto;
+}
+.szbStyle .calendarbox,.szbBlueStyle .calendarbox {
+    background-color: #fff;
+    border-radius:6px;
+    margin-bottom: 20px;
+}
+.szbStyle #fc-dateSelect .selectbox,.szbBlueStyle #fc-dateSelect .selectbox ,.szbStyle #fc-dateSelect .selBtn,.szbBlueStyle #fc-dateSelect .selBtn{
+    border: 0;}
+
+.changeTheme {
+    display:inline-block;
+}
+
+
+.banner .circles li.current{
+    background-color: #1b92e6;
+}
+.newaddschedule:hover {
+    color: #1b92e6;
+}
+/*11-30首页样式改动（blue）*/
+.newipostyle .day_tit {
+    background-color: #1b92e6;
+    border-bottom:1px solid #fff;
+    position: relative;
+    color: #fff;
+}
+.newipostyle .day_tit:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-right: 4px solid #fff;
+    right: 0;
+    bottom:-4px;
+}
+.newipostyle .day_under {
+    background-color: #1b92e6;
+    color: #fff;
+}
+.ipo_a:hover .day_tit {
+    background-color: #1b92e6;
+}
+.ipo_a:hover .day_under {
+    background-color: #1b92e6;
+}

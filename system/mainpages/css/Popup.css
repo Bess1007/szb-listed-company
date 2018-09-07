@@ -1,0 +1,53 @@
+.delPop{
+    background: #fff;
+}
+.delPop h3 {
+    background: #fff;
+    border-bottom:1px solid #dedede;
+    height: 46px;
+    line-height:46px;
+}
+.delPop .layui-m-layercont {
+    padding: 20px 30px;
+    line-height: 22px;
+    text-align: center;
+}
+.delPop .layui-m-layerbtn {
+
+    background-color: #fff;
+    border-top:0;
+  box-sizing: border-box;
+    padding:0 5px;
+    overflow: hidden;
+    width: 90%;
+    margin:0 auto; margin-bottom:20px;
+}
+.delPop .layui-m-layerbtn span {
+    display: block;
+    float: left;
+    width: 40%;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-box-flex: 1;
+    font-size: 14px;
+    cursor: pointer;
+    margin:0 7px;
+    height: 42px;
+    line-height: 42px;
+}
+.delPop .layui-m-layerbtn span[no] {
+    border-right:0;
+    border-radius:  5px;
+    background: #454444;
+    color: #fff;
+    
+}
+.delPop .layui-m-layerbtn span[yes] {
+    background-color:#40AFFE;
+    color: #fff;
+    border-radius:  5px;
+}
+.layui-m-layer0 .layui-m-layerchild {
+    width: 58%;
+    max-width: 376px;
+}

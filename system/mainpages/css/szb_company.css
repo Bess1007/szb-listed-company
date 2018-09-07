@@ -1,0 +1,1065 @@
+/*********************************上证报公司模块样式*********************************/
+
+.bclightgray {
+    background-color: #f6f6f6;
+}
+.centerBox {
+    width: 1200px;
+    margin:0 auto;
+}
+.company_nav1 {
+    background-color: #fff;
+
+}
+.company_nav1 .centerBox{
+    position: relative; padding: 20px 0;
+}
+.left_logo {
+    width: 260px;
+    text-align: left;
+}
+.left_logo img {
+    width: 170px;
+    height: auto;
+    vertical-align: middle;
+}
+.center_input {
+    background-color: #f1f1f0;
+    width:auto;
+}
+.center_input_box {
+    width: auto;
+     /*   padding-left: 200px;
+        margin-left: -200px;*/
+}
+.center_select {
+    position: relative;
+    padding-right: 12px;
+    height: 36px;
+    line-height: 36px;
+}
+.center_select:after {
+    content: '';
+    position: absolute;
+    border:5px solid transparent;
+    border-top:5px solid #444;
+    top: 50%;
+    right: 0;
+    margin-top: -3px;
+
+}
+.center_select .selectbox {
+    width: 150px!important;
+    height: 36px;
+    line-height: 36px;
+    background-color: transparent; padding-left: 10px;
+}
+.center_select input{
+    border:0;
+}
+.center_select .selBtn {
+    display: none;
+}
+.center_inp {
+    position: relative;
+    margin-left: 15px;
+    width: 500px;
+    padding-right: 60px;
+    background-color: #f1f1f0;
+
+}
+.center_inp:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 16px;
+    background-color: #888;
+    left: 0;
+    top: 50%;
+    margin-top: -8px;
+}
+.center_inp input {
+    vertical-align: top;
+    border:0;
+    height: 36px;
+    line-height: 36px;
+}
+.center_inp .textinput,.center_inp .textinput_hover,.center_inp .textinput_click{
+    width: 100%!important;
+    padding-left: 12px;
+    background-color: transparent;
+}
+.center_inp .btn_search {
+    position:absolute;
+    background-color: transparent;
+    border: 0;
+    top: 0;
+    right: 0;
+    line-height: 36px;
+    height: 36px;
+    font-size: 16px!important;
+    margin: 0;
+    color: #444;
+}
+.center_inp .btn_search:hover {
+    color: #6bc1f2;
+} 
+
+.company_nav2 {
+    background-color: #f1f1f0;
+    padding:10px 0;
+}
+.nav_list_node {
+    border-right:1px solid #e1e1e1;
+}
+.nav_list_node_link {
+    color: #000;
+    display:block; font-size: 14px;
+    line-height: 24px;
+    height: 24px;
+    padding:0 22px;
+}
+.nav_list_node:nth-last-child(1) {
+    border: 0;
+}
+.nav_list_node_link:hover {
+    color: #e60012;
+}
+.nav_list_node_link.actived {
+    color: #e60012;
+}
+
+.company_basicinfo_left {
+    width: 700px;
+
+}
+.company_basicinfo {
+    margin-top: 12px;
+    background-color: #fff;
+    padding: 12px;
+}
+.company_basicinfo_left {
+    /*width: 700px;*/
+    width: 580px;
+    position: relative;
+    padding-left: 120px;
+    min-height: 200px;
+}
+.company_logo_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.company_logo {
+    padding: 5px;
+    border:1px solid #f0f0f0;
+}
+.company_logo img {
+    width: 100px;
+}
+.c_basicinfo {
+    padding-left: 12px;
+}
+.company_creditReport {
+    display:block;
+    padding:0 10px;
+    background-color: #1b92e6;
+    transition: all .3s ease-in-out;
+    color: #fff;
+    margin-top: 15px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.company_creditReport:hover {
+    background-color: #04649c;
+}
+.c_basicinfo h1 {
+    font-size: 20px;
+    line-height: 34px;
+    height: 34px;
+    margin-bottom: 5px;
+}
+.gray_txt {
+    color: #999;
+}
+.c_state {
+    display:inline-block;
+    padding:0 10px;
+    height: 24px;
+    line-height: 22px;
+    color: #1b92e6;
+    border:1px solid #1b82e6;
+    font-size: 12px;
+}
+.c_info_cell {
+    margin-bottom: 6px;
+    line-height: 26px;
+}
+.follow_state {
+    cursor: pointer;
+}
+.follow_state .fa {
+    font-size: 18px;
+}
+.c_refresh {
+    color: #1b92e6;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.company_news_relationship {
+    margin-top: 12px;
+}
+.company_news_box {
+    width: 900px;
+    /*background-color: #fff;*/
+    /*padding: 20px;*/
+}
+.company_relationship {
+    width: 300px;
+}
+
+.news_title {
+    border-top:2px solid #dddddd;
+}
+.news_title a {
+    display:inline-block;
+    padding: 5px 20px;
+    border-top:2px solid #1b92e6;
+    margin-top: -2px;
+    font-size: 14px;
+    font-weight:700;
+    color: #666;
+}
+.news_title .tit_txt {
+    display:inline-block;
+    padding: 5px 20px;
+    border-top:2px solid #1b92e6;
+    margin-top: -2px;
+    font-size: 14px;
+    font-weight:700;
+    color: #666;
+}
+.news_title a:hover {
+    text-decoration: underline;
+    color: #1b92e6;
+}
+.text_red {
+    color: #e60012;
+}
+.text_green {
+    color: #00c813;}
+.news_txts_link {
+    display:block;
+    position: relative;
+    font-size: 14px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 30px;
+    padding-right: 100px;
+    height: 36px;
+    line-height: 36px;
+}
+.news_left {
+    position: absolute;
+    height: 36px;
+    line-height: 36px;
+    width: 30px;
+    text-align: center;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+
+}
+.news_time {
+    position: absolute;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    top: 0;
+    right: 0;
+    text-align: right;
+}
+.company_news_cell {
+    margin-bottom: 15px;
+}
+.bg-network {
+    background: url(../images/sample_network_20160120.png) no-repeat;
+    width: 230px;
+    /*height: 158px;*/
+    height: 143px;
+    margin: 5px auto 0 auto;
+    cursor: pointer;
+}
+.text-center {
+    text-align: center;
+}
+.tupu-desc-container {
+    text-align: center;
+    padding: 0px 10px 20px;
+    position: relative;
+}
+.tupu-desc-title {
+    font-size: 20px;
+    color: #333;
+}
+.tupu-desc {
+    font-size: 14px;
+    color: #888;
+    /*margin: 17px 0;*/
+    margin: 8px 0;
+    line-height: 26px;
+}
+.tupu-desc-container .ckb {
+    background: #1b92e6;
+    border-radius: 4px;
+    border: #1b92e6;
+    font-size: 14px;
+    color: #fff;
+    padding: 6px 26px;
+    margin-top: 10px;
+}
+.bg-relation {
+    background: url(../images/sample_relation_20160120.png) no-repeat;
+    width: 230px;
+   /* height: 158px;*/
+    height: 140px;
+    margin: 5px auto 0 auto;
+    cursor: pointer;
+}
+
+.bottom_chart {
+    margin-top: 12px;
+}
+.company_todaymarket {
+    width: 590px;
+}
+.today_market_txt {
+    display:inline-block;
+}
+.today_market_num1 {
+    font-size: 16px;
+    font-weight:700;
+}
+.today_market_txt {
+    width: 140px;
+    text-align: right;
+}
+.today_market_tit {
+    font-size: 16px;
+    font-weight:700;
+}
+.today_market_num1{
+    display: block;
+}
+.today_market_num2 {
+    margin-right: 10px;
+}
+.company_todaymarket {
+
+}
+
+/*概况*/
+.company_survey_box {
+    margin-top: 20px;
+    font-size: 14px;
+}
+.tit_hd {
+    background-color: #f6fafd;
+    width: 146px;vertical-align: middle;
+    font-size: 13px;
+    color: #555;
+}
+.c_survey_table {
+    width: 100%;
+    background-color: #fff;
+    border:1px solid #1b92e6;
+}
+.c_survey_table td {
+    text-align: left;
+    padding:10px 8px;
+    line-height: 20px;
+    border: 1px solid #dfeaf6;
+    width:218px;
+    font-size: 13px;
+}
+.zhuygcfx_box {
+    margin-top: 12px;
+}
+.zhuygcfx_tit {
+    background-color: #fafafa;
+    background-image: linear-gradient(to bottom,#fff,#f2f2f2);background-repeat: repeat-x;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.065);
+    border: 1px solid #d4d4d4;
+    line-height: 20px;
+    padding:10px 20px;
+    position: relative;
+/*    overflow: hidden;*/
+    width: 100%;
+}
+.zhuygcfx_bgq {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    line-height: 30px;
+}
+.zhuygcfx_con {
+    background-color: #fff;
+    border:1px solid #d4d4d4;
+    border-top: 0;
+    padding: 20px;
+}
+.left_lab {
+    margin-right: 10px;
+}
+.zhuygcfx_tit_txt {
+    color: #000;
+}
+.mystyle_tab .basicTab_current_center {
+    border-bottom: 2px solid #1b92e6;
+    color: #1b92e6;
+}
+.survey_charts_tit {
+    text-align: center;
+    margin: 10px 0;
+
+}
+.survey_charts_tit span {
+    display: inline-block;
+    line-height: 26px;
+    padding:0 10px;
+    /*border-bottom:1px double #1b92e6;*/
+    color: #666;
+    font-weight:bold;
+}
+.mystyle_tab2 {
+    width: 100%;
+}
+.mystyle_tab2 td {
+    text-align: left;
+    padding: 7px;
+    line-height: 20px;
+    border: 1px solid #dfeaf6;
+    color: #4d4d4d;
+    font-size: 13px;
+}
+.mystyle_tab2 .th_bc td{
+    text-align: center;
+    padding:10px 8px;
+    line-height: 20px;
+    border: 1px solid #dfeaf6;
+    color: #555;
+    background-color: #f6fafd;
+}
+.mystyle_tab2 .td_bc {
+    text-align: left;
+    padding:10px 8px;
+    line-height: 20px;
+    border: 1px solid #dfeaf6;
+    color: #555;
+    background-color: #f6fafd;
+}
+input.company_tit_input_box {
+    background: #fff;
+    border-radius:0;
+}
+.company_tit_search {
+    border-radius:0;
+    background-color: #1b92e6;
+    color: #fff;
+    margin-left: -1px;
+    border: 0;
+}
+.company_tit_search:hover {
+    background-color: #1b92e6;
+    color: #fff;
+}
+.c_tb_mark_txt {
+    line-height: 40px;
+}
+.al_center {
+    text-align: center;
+}
+.briefIntroduction_box {
+    width: 300px;
+    position: relative;
+}
+.briefIntroduction {
+    width: 284px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.briefIntro_layer {
+    padding: 10px;
+    text-indent: 2em;
+}
+
+.td_target span{
+    cursor: default;
+    display: block;
+    padding-left: 20px;
+    position: relative;
+    text-align: center;
+}
+.td_target.actived span {
+    color: #1b92e6;
+}
+.td_target.actived span:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    content: '\f00c';
+    color: #1b92e6;
+    font-size: 16px;
+    position: absolute;
+    width: 20px;
+    text-align: right;
+    line-height: 20px;
+    top: 0;
+    left: 0;
+}
+.tr_target.actived {
+    background-color: #f5f5f5;
+}
+
+.td_inner_box span {
+    display:block;
+    line-height: 26px;
+    padding:0 8px;
+}
+.mystyle_tab2  .inner_box_td {
+    padding: 0;
+}
+.sbyy_txtbox {
+    display:block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 150px;
+    margin:0;
+}
+.lhb_tr_target {
+    cursor: default;
+}
+.lhb_tr_target.actived {
+    background-color: #f5f5f5!important;
+}
+.lhb_tr_target .td_bc {
+    position: relative;
+    padding-left: 22px;
+    text-align: center;
+}
+.lhb_tr_target.actived .td_bc:before{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    content: '\f00c';
+    color: #1b92e6;
+    font-size: 16px;
+    position: absolute;
+    width: 20px;
+    text-align: right;
+    line-height: 40px;
+    top: 0;
+    left: 0;
+}
+.yyb_name {
+    max-width: 200px;
+}
+.bold_txt {
+    font-weight:bold;
+}
+.bt_dark {
+    border-top:5px solid #5bc0de;
+    margin-bottom: 15px;
+}
+.pb50 {
+    padding-bottom: 50px;
+}
+.left_gbjg_chart {
+    width: 600px;
+}
+.right_gbjg_table {
+    width: 550px;
+}
+.right_gbjg_table .mystyle_tab2 td {
+    padding:2px 8px;
+    text-align: left;
+}
+.current_company td span{
+    color: #1b92e6;
+}
+
+/*风险表格*/
+.panel-heading-inner {
+    font-size: 16px !important;
+}
+.fx_box table {
+    background-color: #fff;
+}
+.fx_box .panel-heading {
+    background-color: #fff;
+    border-bottom: none;
+    border-radius: 0;
+    padding: 6px 20px; border-color: #eee; font-weight: bold;
+    color: #666;
+}
+.fx_box .panel-body {
+    padding: 10px 20px;
+    margin-top: -1px;
+}
+.fx_box .table-bordered {
+    border: 1px solid #dfeaf6;
+}
+.fx_box .td-label {
+    width: 146px;
+    font-size: 13px !important;
+    color: #9a9a9a;
+    background: #f6fafd;
+    vertical-align: middle;
+}
+.fx_box td {
+    padding: 10px 8px;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    text-align: left;
+    line-height:23px;
+}
+.fx_box .panel-heading .count {
+    background: #ffc000;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 1px 5px;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+.fx_box .table-bordered > thead > tr > th {
+  /*  border: 1px solid #dfeaf6;
+    background: #f6fafd;*/
+    background-color: #f8f8f8;
+    border:1px solid #ddd;
+    text-align: left;
+    font-weight:400;
+
+}
+/*风险表格 end*/
+
+/*****市场*****/
+.rzrq_sel {
+    margin-right: 15px;
+    display:inline-block;
+    padding-top: 10px;
+}
+.time_cycle_select {
+    padding-left: 10px;
+    border-left:4px solid #1b92e6;
+    background-color: #fff;
+    margin-top: 15px;
+}
+.rzrq_tit {
+    font-size: 14px;
+    font-weight:700;
+    color: #000;
+    padding: 10px;
+}
+.rzrq_con {
+    /*background-color: #fff;*/
+}
+.zhuygcfx_tit.tal_center {
+    text-align: center;
+}
+.rz_bc_blue,.rz_bc_lightblue,.rz_bc_darkblue,.rz_bc_green {
+    width: 20px;
+    height: 12px;
+    margin-right: 5px;
+    display:inline-block;
+}
+.rz_bc_blue {
+    background-color: #0f88cb;
+}
+.rz_bc_lightblue {
+    background-color: #00a2ff;
+}
+.rz_bc_darkblue {
+    background-color: #528098;
+}
+.rz_bc_green {
+    background-color: #68c0b0;
+}
+
+.rzmr_radio {
+    text-align: center;}
+.rzmr_radio label {
+    margin-right: 12px;
+}
+/*****市场**** end*/
+
+
+.mystyle_tab2 .tr_bc .td_bc {
+    text-align: center;
+}
+.mystyle_tab2 td.num_ta_right {
+    text-align: right;
+}
+.no_info_box {
+    padding: 20px;
+    background-color: #fff;
+    border:1px solid #ddd;
+    border-top:0;
+    font-size: 14px;
+    margin-top: -20px;
+    line-height: 24px;
+}
+.no_info_box .fa {
+    color: #ccc;
+    font-size: 24px;
+    margin-right: 10px;
+}
+.tr_tal_center td {
+    text-align: center;
+}
+ .mystyle_tab2 .tal_center {
+    text-align: center;
+}
+  .table-more {
+     font-size: 20px;
+     cursor: pointer;
+     margin-left: 5px;
+     color:#1b92e6;
+     position: relative;
+     top: 2px;
+ }
+.table-left-more {
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 5px;
+    color:#1b92e6;
+    position: relative;
+    top: 2px;
+}
+.mystyle_tab2 .fz-13 {
+    font-size: 13px;
+}
+.company_news_more {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #e6e6e6;
+}
+.company_news_more .fa-angle-right {
+    font-size: 16px;
+    margin-left: 5px;
+}
+.company_news_box .basicTab {
+    padding: 20px;background-color: #fff;
+    padding-top: 5px;
+}
+.zgx_box {
+    background-color: #fff;padding: 20px;padding-bottom: 7px;
+}
+.bottom_chart {
+    position: relative;
+    top: -90px;
+}
+.survey_charts_box {
+    height: 214px;
+}
+
+.zhuygcfx_con.lhbd_con {
+    padding:20px 10px;
+}
+.lhbd_con td {
+    font-size: 12px;
+    padding:8px 5px;
+}
+.lhbd_con .td_bc {
+    padding:8px 5px;
+    font-size: 12px;
+    color: #000;
+    text-align: center;
+}
+.a_detail {
+    text-decoration: underline;
+    color: #1b92e6;
+}
+td.zyyw_con {
+    width: 400px;
+}
+
+/*kline样式改*/
+.company_todaymarket {
+    position: relative;
+}
+.kline-size-control {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #1b92e6;
+    cursor: pointer;
+    font-size: 16px;
+    width: 30px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+.company_todaymarket.openState {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 1000;
+}
+.hq-rise div {
+    color: #e60012;
+}
+.hq-fall div {
+    color: #00c813;
+}
+.pricetxt{
+    font-size: 22px;
+    margin-right: 15px;
+    line-height: 40px;
+}
+.hq-rise .pricetxt:after {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f062";
+}
+.hq-fall  .pricetxt:after {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f063";
+}
+.hq-rise p ,.hq-fall p {
+    line-height: 20px;
+}
+.companybrhq .mystyle_tab2 .td_bc {
+    line-height: 18px;
+}
+.companybrhq .mystyle_tab2 td {
+    line-height: 18px;
+    padding: 4px 8px;
+}
+/*kline样式改 end*/
+
+/*5-23加对外投资*/
+.dwtz-companys .dwtz-company:first-child {
+    border:1px solid #dfeaf6;
+}
+.dwtz-company {
+    padding: 0 0 0 20px;
+    position: relative;
+    border: 1px solid #dfeaf6;
+    border-top: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+.serial-num {
+    position: absolute;
+    border-radius: 3px;
+    background-color: #1b92e6;
+    color: #fff;
+    padding: 2px 5px;
+    font-size: 12px;
+    top: 18px;
+    width: auto;
+    text-align: center;
+    line-height: 16px;
+}
+.dwtz-company-det {
+    padding: 20px 20px 20px 38px;
+}
+.dwtz-company-logo {
+    border: 1px solid #eee;
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-top: 2px;
+    line-height: 56px;
+    text-align: center;
+    margin-right: -76px;
+}
+.dwtz-company-logo img {
+    width: 58px;
+    border: none !important;
+}
+.check-det {
+    position: absolute;
+    color: #1b92e6;
+    font-size: 12px;
+    width: 60px;
+    text-align: center;
+    line-height: 34px;
+    height: 34px;
+    top: 10px;
+    right: 0;
+}
+.dwtz-company-info {
+    float: left;
+    padding-left: 76px;
+    width: 100%;
+    padding-right: 70px;
+}
+.dwtz-c-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #1b92e6;
+}
+.c-name-box .fa {
+    font-size: 16px;
+}
+.c-det-txt {
+    display: inline-block;
+    font-size: 14px;
+    color: #666;
+    margin-right: 6px;
+    margin-top: 6px;
+}
+.dwtz-company-det-box {
+    overflow: hidden;
+    width: 800px;
+    padding: 15px;
+    padding-left: 55px;
+    background-color: #fff;
+    display: none;
+}
+.dwtz-company-det-box .det-cell {
+    width: 365px;
+    float: left;
+    text-align: left;
+    font-size: 14px;
+    min-height: 40px;
+    line-height: 20px;
+    padding: 10px 0;
+}
+.dwtz-company-det-box .det-cell label {
+    color: #666;
+}
+
+/*表头固定，内容滚动*/
+.tablebody-scroll-box {
+    position:relative;
+    table-layout : fixed;
+}
+.tablebody-scroll-box table {
+    table-layout:fixed;
+}
+.tablebody-scroll-box td {
+    white-space:normal;
+}
+.tablebody-scroll-box th {
+    white-space:normal;
+}
+.table-body {
+    overflow-y:auto;
+    overflow-x:hidden;
+    height:auto;
+    max-height:300px;
+    margin-right: -5px;
+
+}
+/*表头固定，内容滚动 end*/
+
+/*7-13股东-列表滚动*/
+.table-rightscroll-box {
+    position: relative;
+}
+.right-abs-tab {
+    position: absolute;
+    left: 209px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow-x: auto;
+}
+.right-scroll-tab .mystyle_tab2 {
+    width:auto;
+}
+.right-scroll-tab .mystyle_tab2 td {
+    width: 158px;
+    padding:10px 0;
+}
+.right-scroll-tab .mystyle_tab2 td span {
+    display: block;
+    width: 158px;
+    padding:0 8px;
+}
+/*7-13股东-列表滚动 end*/
+
+/*7-13财务-列表横向滚动*/
+.cw-tb-scrollbox {
+    position: relative;
+}
+
+.cw-tb-scrollbox .right-abs-tab {
+    left: 153px;
+}
+.cw-tb-scrollbox .right-scroll-tab .mystyle_tab2 td {
+    width: 92px;
+    padding:10px 0;
+}
+.cw-tb-scrollbox .right-scroll-tab .mystyle_tab2 td span {
+    width: 92px;
+}
+/*7-13财务-列表横向滚动 end*/
+
+/*7-22tab横向滚动条*/
+.scrollbar-tab .basicTab_top {
+    overflow-y: hidden;
+    overflow-x: auto;
+    height: 50px;
+}
+.scrollbar-tab .basicTab_top::-webkit-scrollbar-thumb{
+    background-color: rgba(196,208,223,.8);
+}
+.scrollbar-tab .basicTab_top li {
+    display: inline-block;
+    float: none;
+}
+.scrollbar-tab .basicTab_normal_left,.basicTab_normal_middle,.basicTab_normal_right {
+    display: none!important;
+}
+.right-abs-tab {
+    bottom: -8px;
+}
+/*7-22tab横向滚动条 end*/
+
+/*8-9 柱状图表格横向联动滚动改*/
+.table-rightscroll-box,.cw-tb-scrollbox {
+    overflow: hidden;
+}
+.table-rightscroll-box .left-fixed-lab,.cw-tb-scrollbox .left-fixed-lab {
+    width: 144px;
+    z-index: 10;
+    position: relative;
+}
+.table-rightscroll-box .right-abs-tab,.cw-tb-scrollbox .right-abs-tab {
+    left: 143px;
+    overflow: hidden;
+    right: 35px;
+}
+.table-rightscroll-box .right-scroll-tab .mystyle_tab2 td span,.cw-tb-scrollbox .right-scroll-tab .mystyle_tab2 td span {
+    width: 121px;
+}
+
+/*8-9 柱状图表格横向联动滚动改 end*/

@@ -1,0 +1,581 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=11"/>
+    <title>股东</title>
+    <!--框架必需start-->
+    <link href="../../../libs/css/import_main.css" rel="stylesheet" type="text/css"/>
+    <link href="../../../libs/skins/skyblue/style.css" rel="stylesheet" type="text/css" id="theme" themeColor="skyblue" positionTarget="positionContent"/>
+    <link href="../skin/style.css" rel="stylesheet" type="text/css" id="skin" skinPath="system/style1_accordion_skyblue/skin/" scrollerX="true"/>
+    <link href="../../../libs/css/import_basic.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="../../../libs/js/jquery.js"></script>
+    <script type="text/javascript" src="../../../libs/js/language/cn.js"></script>
+    <script type="text/javascript" src="../../../libs/js/framework.js"></script>
+    <!--框架必需end-->
+    <script type="text/javascript" src="../../../libs/js/form/datePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="../../../libs/js/nav/basicTab.js"></script>
+    <link rel="stylesheet" href="../layer/skin/default/layer.css">
+    <script type="text/javascript" src="../layer/layer.js"></script>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/shzqb.css">
+    <link rel="stylesheet" href="../css/szb_company.css">
+    <script type="text/javascript" src="../js/shzqbqui.js"></script>
+    <style>
+
+    </style>
+</head>
+<body class="bclightgray">
+<div class="page_content companyBox">
+    <!--顶部模块-->
+    <div class="company_nav1"><!--顶部logo & 搜索框-->
+        <div class="centerBox clearfix">
+            <div class="left_logo fl">
+                <a href=""><img src="../images/shzqlogo.png" alt=""></a>
+            </div>
+            <div class="center_input_box fl">
+                <div class="center_input clearfix">
+                    <div class="center_select fl">
+                        <select name="" id="">
+                            <option value="">公司股票代码或全称查询</option>
+                            <option value="">个人查询</option>
+                        </select>
+                    </div>
+                    <div class="center_inp fl">
+                        <input type="text" placeholder="输入公司股票代码/公司名称/个人名称+公司名称">
+                        <button class="fa fa-search btn_search"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="company_nav2">
+        <ul class="centerBox clearfix">
+            <li class="fl nav_list_node">
+                <a href="" class="nav_list_node_link fa fa-home" target="_blank">&nbsp;系统首页</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company.html" class="nav_list_node_link " >公司首页</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_survey.html" class="nav_list_node_link " >概况</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_shareholder.html" class="nav_list_node_link actived">股东</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_seniorExecutive.html" class="nav_list_node_link">高管</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_finance.html" class="nav_list_node_link">财务</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_bonus.html" class="nav_list_node_link">分红</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_market.html" class="nav_list_node_link">市场</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_risk.html" class="nav_list_node_link">风险</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_industry.html" class="nav_list_node_link">行业</a>
+            </li>
+        </ul>
+    </div>
+    <!--顶部模块 end-->
+
+    <!--主要内容-->
+    <div class="company_survey_box centerBox" style="padding-bottom: 20px;">
+        <!--股东人数和股价比价-->
+        <div class="centerBox zhuygcfx_box">
+            <div class="zhuygcfx_tit">
+                <span class="zhuygcfx_tit_txt">股东人数和股价比较</span>
+              <!--  <div class="zhuygcfx_bgq ">
+                    <input type="text" placeholder="输入关键词查询" class="company_tit_input_box"><button class="company_tit_search">开始搜索</button>
+                </div>-->
+            </div>
+            <div class="zhuygcfx_con mystyle_tab">
+                <div class="c_tb_mark_txt">
+                    <span class="text_red">股票价格通常与股东人数成反比，股东人数越少，则代表筹码越集中，股价越有可能上涨</span>
+                </div>
+                <!--股东人数和股价比价 echarts-->
+                <div id="mychart" style="width: 1300px;height: 320px;margin-left: -60px"></div>
+
+                <!--股东人数和股价比价 table-->
+                <div class="table-rightscroll-box table-rightscroll-box-style2 clearfix">
+                    <table class="mystyle_tab2 left-fixed-lab" >
+                        <col style="width: 209px;">
+                        <tbody>
+                        <tr>
+                            <td class="td_bc"><span>指标\日期</span></td>
+                        </tr>
+                        <tr>
+                            <td class="td_bc"><span>股东总人数(万人)</span></td>
+                        </tr>
+                        <tr>
+                            <td class="td_bc"><span>较上期变化(%)</span></td>
+                        </tr>
+                        <tr>
+                            <td class="td_bc"><span>人均流通股(万股)</span></td>
+                        </tr>
+                        <tr>
+                            <td class="td_bc"><span>人均流通变化(%)</span></td>
+                        </tr>
+                        <tr>
+                            <td class="td_bc"><span>行业平均(万户)</span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="right-abs-tab right-scroll-tab">
+                        <table class="mystyle_tab2 ">
+                            <tbody>
+                            <tr>
+                                <td class="td_bc"><span>2017-09-30</span></td>
+                                <td class="td_bc"><span>2017-06-30</span></td>
+                                <td class="td_bc"><span>2017-03-31</span></td>
+                                <td class="td_bc"><span>2017-02-28</span></td>
+                                <td class="td_bc"><span>2016-12-31</span></td>
+                                <td class="td_bc"><span>2016-09-30</span></td>
+                                <td class="td_bc"><span>2016-09-30</span></td>
+                                <td class="td_bc"><span>2016-09-30</span></td>
+                                <td class="td_bc"><span>2016-09-30</span></td>
+                                <td class="td_bc"><span>2016-09-30</span></td>
+                                <td class="td_bc"><span>2016-09-30</span></td>
+                                <td class="td_bc"><span>2016-09-30</span></td>
+                                <td class="td_bc"><span>2016-09-30</span></td>
+                                <td class="td_bc"><span>2016-09-30</span></td>
+                                <td class="td_bc"><span>2016-09-30</span></td>
+                            </tr>
+                            <tr>
+                                <td class="num_ta_right"><span>8.48</span></td>
+                                <td class="num_ta_right"><span>10.66</span></td>
+                                <td class="num_ta_right"><span>11.51</span></td>
+                                <td class="num_ta_right"><span>12.75</span></td>
+                                <td class="num_ta_right"><span>12.68</span></td>
+                                <td class="num_ta_right"><span>11.73</span></td>
+                                <td class="num_ta_right"><span>11.73</span></td>
+                                <td class="num_ta_right"><span>11.73</span></td>
+                                <td class="num_ta_right"><span>11.73</span></td>
+                                <td class="num_ta_right"><span>11.73</span></td>
+                                <td class="num_ta_right"><span>11.73</span></td>
+                                <td class="num_ta_right"><span>11.73</span></td>
+                                <td class="num_ta_right"><span>11.73</span></td>
+                                <td class="num_ta_right"><span>11.73</span></td>
+                                <td class="num_ta_right"><span>11.73</span></td>
+                            </tr>
+                            <tr>
+                                <td class="num_ta_right"><span class="text_green">-20.46</span></td>
+                                <td class="num_ta_right"><span class="text_green">-7.39</span></td>
+                                <td class="num_ta_right"><span class="text_green">-9.66</span></td>
+                                <td class="num_ta_right"><span class="text_red">+0.52</span></td>
+                                <td class="num_ta_right"><span class="text_red">+8.11</span></td>
+                                <td class="num_ta_right"><span class="text_green">-7.37</span></td>
+                                <td class="num_ta_right"><span class="text_green">-7.37</span></td>
+                                <td class="num_ta_right"><span class="text_green">-7.37</span></td>
+                                <td class="num_ta_right"><span class="text_green">-7.37</span></td>
+                                <td class="num_ta_right"><span class="text_green">-7.37</span></td>
+                                <td class="num_ta_right"><span class="text_green">-7.37</span></td>
+                                <td class="num_ta_right"><span class="text_green">-7.37</span></td>
+                                <td class="num_ta_right"><span class="text_green">-7.37</span></td>
+                                <td class="num_ta_right"><span class="text_green">-7.37</span></td>
+                                <td class="num_ta_right"><span class="text_green">-7.37</span></td>
+                            </tr>
+                            <tr>
+                                <td class="num_ta_right"><span>7.67</span></td>
+                                <td class="num_ta_right"><span>6.10</span></td>
+                                <td class="num_ta_right"><span>5.65</span></td>
+                                <td class="num_ta_right"><span>5.11</span></td>
+                                <td class="num_ta_right"><span>5.13</span></td>
+                                <td class="num_ta_right"><span>5.55</span></td>
+                                <td class="num_ta_right"><span>5.55</span></td>
+                                <td class="num_ta_right"><span>5.55</span></td>
+                                <td class="num_ta_right"><span>5.55</span></td>
+                                <td class="num_ta_right"><span>5.55</span></td>
+                                <td class="num_ta_right"><span>5.55</span></td>
+                                <td class="num_ta_right"><span>5.55</span></td>
+                                <td class="num_ta_right"><span>5.55</span></td>
+                                <td class="num_ta_right"><span>5.55</span></td>
+                                <td class="num_ta_right"><span>5.55</span></td>
+                            </tr>
+                            <tr>
+                                <td class="num_ta_right"><span class="text_red">+25.72</span></td>
+                                <td class="num_ta_right"><span class="text_red">+7.98</span></td>
+                                <td class="num_ta_right"><span class="text_red">+10.69</span></td>
+                                <td class="num_ta_right"><span class="text_green">-0.51</span></td>
+                                <td class="num_ta_right"><span class="text_green">-7.50</span></td>
+                                <td class="num_ta_right"><span class="text_red">+14.38</span></td>
+                                <td class="num_ta_right"><span class="text_red">+14.38</span></td>
+                                <td class="num_ta_right"><span class="text_red">+14.38</span></td>
+                                <td class="num_ta_right"><span class="text_red">+14.38</span></td>
+                                <td class="num_ta_right"><span class="text_red">+14.38</span></td>
+                                <td class="num_ta_right"><span class="text_red">+14.38</span></td>
+                                <td class="num_ta_right"><span class="text_red">+14.38</span></td>
+                                <td class="num_ta_right"><span class="text_red">+14.38</span></td>
+                                <td class="num_ta_right"><span class="text_red">+14.38</span></td>
+                                <td class="num_ta_right"><span class="text_red">+14.38</span></td>
+                            </tr>
+                            <tr>
+                                <td class="num_ta_right"><span>5.32</span></td>
+                                <td class="num_ta_right"><span>5.38</span></td>
+                                <td class="num_ta_right"><span>5.59</span></td>
+                                <td class="num_ta_right"><span>-</span></td>
+                                <td class="num_ta_right"><span>5.94</span></td>
+                                <td class="num_ta_right"><span>5.85</span></td>
+                                <td class="num_ta_right"><span>5.85</span></td>
+                                <td class="num_ta_right"><span>5.85</span></td>
+                                <td class="num_ta_right"><span>5.85</span></td>
+                                <td class="num_ta_right"><span>5.85</span></td>
+                                <td class="num_ta_right"><span>5.85</span></td>
+                                <td class="num_ta_right"><span>5.85</span></td>
+                                <td class="num_ta_right"><span>5.85</span></td>
+                                <td class="num_ta_right"><span>5.85</span></td>
+                                <td class="num_ta_right"><span>5.85</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--十大流通股东-->
+        <div class="centerBox zhuygcfx_box">
+            <div class="zhuygcfx_tit">
+                <span class="zhuygcfx_tit_txt">十大流通股东</span>
+            </div>
+            <div class="zhuygcfx_con">
+                <div class="c_tb_mark_txt">
+               前十大流通股东累计持有：<span class="blue_txt">35,000,000</span>，累计占流通股比：<span class="blue_txt">53.82%</span>,较上期变化：<span class="text_red">192,800,000 ↑</span>
+                </div>
+                <div class="basicTab scrollbar-tab">
+                    <div name="2017-09-30" style="width:100%">
+                        <table class="mystyle_tab2" style="margin-top: 15px;">
+                            <tbody>
+                            <tr>
+                                <td class="td_bc"><span>机构或基金名称</span></td>
+                                <td class="td_bc"><span>持有数量（股）</span></td>
+                                <td class="td_bc"><span>持股变化（股）</span></td>
+                                <td class="td_bc"><span>占流通股比例（%）</span></td>
+                                <td class="td_bc"><span>实际增减持</span></td>
+                                <td class="td_bc"><span>股份类型</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>张轩松</span></td>
+                                <td class="num_ta_right"><span>16.13亿</span></td>
+                                <td><span>不变</span></td>
+                                <td class="num_ta_right"><span>24.78</span></td>
+                                <td><span>不变</span></td>
+                                <td><span>流通A股</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>张轩松</span></td>
+                                <td class="num_ta_right"><span>16.13亿</span></td>
+                                <td><span>不变</span></td>
+                                <td class="num_ta_right"><span>24.78</span></td>
+                                <td><span>不变</span></td>
+                                <td><span>流通A股</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>张轩松</span></td>
+                                <td class="num_ta_right"><span>16.13亿</span></td>
+                                <td><span>不变</span></td>
+                                <td class="num_ta_right"><span>24.78</span></td>
+                                <td><span>不变</span></td>
+                                <td><span>流通A股</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>张轩松</span></td>
+                                <td class="num_ta_right"><span>16.13亿</span></td>
+                                <td><span>不变</span></td>
+                                <td class="num_ta_right"><span>24.78</span></td>
+                                <td><span>不变</span></td>
+                                <td><span>流通A股</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>张轩松</span></td>
+                                <td class="num_ta_right"><span>16.13亿</span></td>
+                                <td><span class="text_red">↑700.00万</span></td>
+                                <td class="num_ta_right"><span>24.78</span></td>
+                                <td><span class="text_red">↑9.39%</span></td>
+                                <td><span>流通A股</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>张轩松</span></td>
+                                <td class="num_ta_right"><span>16.13亿</span></td>
+                                <td><span class="text_green">↓-1000.00万</span></td>
+                                <td class="num_ta_right"><span>24.78</span></td>
+                                <td><span class="text_red">↓-13.70%</span></td>
+                                <td><span>流通A股</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>张轩松</span></td>
+                                <td class="num_ta_right"><span>16.13亿</span></td>
+                                <td><span class="text_green">↓-1000.00万</span></td>
+                                <td class="num_ta_right"><span>24.78</span></td>
+                                <td><span class="text_red">↓-13.70%</span></td>
+                                <td><span>流通A股</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="6"  class="td_bc al_center"><span>较上个报告期退出前十大流通股东有</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>中央汇金资产管理有限责任公司</span></td>
+                                <td class="num_ta_right"><span>5899.40万股</span></td>
+                                <td><span>退出</span></td>
+                                <td class="num_ta_right"><span>0.91</span></td>
+                                <td><span></span></td>
+                                <td><span></span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div name="2017-06-30" style="width:100%">
+
+                    </div>
+                    <div name="2017-03-31" style="width:100%">
+
+                    </div>
+                    <div name="2016-12-31" style="width:100%">
+
+                    </div>
+                    <div name="2016-09-30" style="width:100%">
+
+                    </div>
+                    <div name="2016-06-30" style="width:100%"></div>
+                    <div name="2016-03-30" style="width:100%"></div>
+                    <div name="2015-12-30" style="width:100%"></div>
+                    <div name="2015-09-30" style="width:100%"></div>
+                    <div name="2015-06-30" style="width:100%"></div>
+                    <div name="2015-06-30" style="width:100%"></div>
+                    <div name="2015-03-30" style="width:100%"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--十大股东-->
+        <div class="centerBox zhuygcfx_box">
+            <div class="zhuygcfx_tit">
+                <span class="zhuygcfx_tit_txt">十大股东</span>
+            </div>
+            <div class="zhuygcfx_con">
+                <div class="c_tb_mark_txt">
+                    前十大股东累计持有：<span class="blue_txt">637,450,000,00</span>，累计占流通股比：<span class="blue_txt">66.6%</span>,较上期变化：<span class="text_red">122,280,000股 ↑</span>
+                </div>
+                <div class="basicTab scrollbar-tab">
+                    <div name="2017-09-30" style="width:100%">
+                        <table class="mystyle_tab2" style="margin-top: 15px;">
+                            <tbody>
+                            <tr>
+                                <td class="td_bc"><span>机构或基金名称</span></td>
+                                <td class="td_bc"><span>持有数量（股）</span></td>
+                                <td class="td_bc"><span>持股变化（股）</span></td>
+                                <td class="td_bc"><span>占总股本比例</span></td>
+                                <td class="td_bc"><span>实际增减持</span></td>
+                                <td class="td_bc"><span>股份类型</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>张轩松</span></td>
+                                <td class="num_ta_right"><span>16.13亿</span></td>
+                                <td><span>不变</span></td>
+                                <td class="num_ta_right"><span>24.78%</span></td>
+                                <td><span>不变</span></td>
+                                <td><span>流通A股</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>张轩松</span></td>
+                                <td class="num_ta_right"><span>16.13亿</span></td>
+                                <td><span>不变</span></td>
+                                <td class="num_ta_right"><span>24.78%</span></td>
+                                <td><span>不变</span></td>
+                                <td><span>流通A股</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>张轩松</span></td>
+                                <td class="num_ta_right"><span>16.13亿</span></td>
+                                <td><span>不变</span></td>
+                                <td class="num_ta_right"><span>24.78%</span></td>
+                                <td><span>不变</span></td>
+                                <td><span>流通A股</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>张轩松</span></td>
+                                <td class="num_ta_right"><span>16.13亿</span></td>
+                                <td><span>不变</span></td>
+                                <td class="num_ta_right"><span>24.78%</span></td>
+                                <td><span>不变</span></td>
+                                <td><span>流通A股</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>张轩松</span></td>
+                                <td class="num_ta_right"><span>16.13亿</span></td>
+                                <td><span class="text_red">↑700.00万</span></td>
+                                <td class="num_ta_right"><span>24.78%</span></td>
+                                <td><span class="text_red">↑9.39%</span></td>
+                                <td><span>流通A股</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>张轩松</span></td>
+                                <td class="num_ta_right"><span>16.13亿</span></td>
+                                <td><span class="text_green">↓-1000.00万</span></td>
+                                <td class="num_ta_right"><span>24.78%</span></td>
+                                <td><span class="text_red">↓-13.70%</span></td>
+                                <td><span>流通A股</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>张轩松</span></td>
+                                <td class="num_ta_right"><span>16.13亿</span></td>
+                                <td><span class="text_green">↓-1000.00万</span></td>
+                                <td class="num_ta_right"><span>24.78%</span></td>
+                                <td><span class="text_red">↓-13.70%</span></td>
+                                <td><span>流通A股</span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="6"  class="td_bc al_center"><span>较上个报告期退出前十大股东有</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>中央汇金资产管理有限责任公司</span></td>
+                                <td class="num_ta_right"><span>5899.40万股</span></td>
+                                <td><span>退出</span></td>
+                                <td class="num_ta_right"><span>0.91</span></td>
+                                <td><span></span></td>
+                                <td><span></span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div name="2017-06-30" style="width:100%">
+
+                    </div>
+                    <div name="2017-03-31" style="width:100%">
+
+                    </div>
+                    <div name="2016-12-31" style="width:100%">
+
+                    </div>
+                    <div name="2016-09-30" style="width:100%">
+
+                    </div>
+                    <div name="2016-06-30" style="width:100%"></div>
+                    <div name="2016-03-30" style="width:100%"></div>
+                    <div name="2015-12-30" style="width:100%"></div>
+                    <div name="2015-09-30" style="width:100%"></div>
+                    <div name="2015-06-30" style="width:100%"></div>
+                    <div name="2015-06-30" style="width:100%"></div>
+                    <div name="2015-03-30" style="width:100%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--主要内容 end-->
+</div>
+
+<script type="text/javascript" src="../js/echarts.min.js"></script>
+<script type="text/javascript">
+    /*让右边横向滚动的图表的每一行的高度和左边对应行高度相同*/
+    var scroll_tr_len  = $('.left-fixed-lab tr').length;
+    for(var i = 0; i < scroll_tr_len; i++){
+        var left_h = $('.left-fixed-lab tr').eq(i).height();
+        var right_h = $('.right-abs-tab tr').eq(i).height();
+        if(left_h > right_h){
+            $('.right-abs-tab tr').eq(i).height(left_h)
+        }
+    }
+
+    var myChart1 = echarts.init(document.getElementById('mychart'));
+    var xAxisData = ['2017-09-30','2017-06-30','2017-03-31','2017-02-28','2016-12-31','2016-09-30','2016-09-30','2016-09-30','2016-09-30','2016-09-30','2016-09-30','2016-09-30','2016-09-30','2016-09-30','2016-09-30'];
+    var endPercent = (8 / xAxisData.length)*100;
+
+    option={
+        tooltip:{
+            trigger: 'axis',
+            axisPointer: {
+                type: 'cross',
+                crossStyle: {
+                    color: '#999'
+                }
+            }
+        },
+        legend: {
+            data: ['股东总人数','股价']
+        },
+        xAxis: [{
+            type:'category',
+            data: xAxisData,
+            axisPointer:{
+                type:'shadow'
+            }
+        }],
+        yAxis: [{
+            type:'value',
+            name:'股东总人数',
+            min: 0,
+            max: 12.80,
+            interval: 1.2,
+            axisLabel: {
+                formatter: '{value} 万户'
+            }
+        },{
+            type:'value',
+            name:'股价',
+            min: 0,
+            max: 8.00,
+            interval: 2,
+            axisLabel: {
+                formatter: '{value} 元'
+            }
+        }],
+        grid:{
+            x:202,
+            x2:120
+        },
+        dataZoom:[
+            {
+                start:0,
+                end: endPercent,
+                type:'slider',
+                show:true,
+                xAxisIndex:[0],
+                handleSize:0,
+                height:15
+            }
+        ],
+        series: [{
+            name:'股东总人数',
+            type:'bar',
+            data:[8.4816,10.6633,11.5145,12.7457,12.6802,11.729,11.729,8.729,5.729,8.729,3.729,6.729,9.729,6.729,8.729],
+            barWidth:36
+        },{
+            name:'股价',
+            type:'line',
+            yAxisIndex: 1,
+            data:[7.99,7.08,5.50,5.47,4.91,4.46,4.46,4.46,4.46,4.46,4.46,4.46,4.46,4.46,4.46]
+        }],
+        label: {
+            normal: {
+                show: true,
+                position: 'top',
+                textStyle: {
+                    color: 'black'
+                }
+            }
+        },
+        color: ['#0f88cb','#ff4242']
+    };
+    myChart1.setOption(option);
+    myChart1.on('datazoom', function (params){
+        //获得起始位置百分比
+        var startpercent = myChart1.getModel().option.dataZoom[0].start;
+
+        var table_width = $('.right-scroll-tab .mystyle_tab2 ').width();
+        var table_left = 143-(table_width*startpercent/100)+'px';
+
+        $('.right-abs-tab').css('left',table_left+'');
+
+    })
+</script>
+</body>
+</html>

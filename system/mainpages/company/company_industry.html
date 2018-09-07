@@ -1,0 +1,718 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=11"/>
+    <title>行业</title>
+    <!--框架必需start-->
+    <link href="../../../libs/css/import_main.css" rel="stylesheet" type="text/css"/>
+    <link href="../../../libs/skins/skyblue/style.css" rel="stylesheet" type="text/css" id="theme" themeColor="skyblue" positionTarget="positionContent"/>
+    <link href="../skin/style.css" rel="stylesheet" type="text/css" id="skin" skinPath="system/style1_accordion_skyblue/skin/" scrollerX="true"/>
+    <link href="../../../libs/css/import_basic.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="../../../libs/js/jquery.js"></script>
+    <script type="text/javascript" src="../../../libs/js/language/cn.js"></script>
+    <script type="text/javascript" src="../../../libs/js/framework.js"></script>
+    <!--框架必需end-->
+    <script type="text/javascript" src="../../../libs/js/form/datePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="../../../libs/js/nav/basicTab.js"></script>
+    <link rel="stylesheet" href="../layer/skin/default/layer.css">
+    <script type="text/javascript" src="../layer/layer.js"></script>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/shzqb.css">
+    <link rel="stylesheet" href="../css/szb_company.css">
+    <script type="text/javascript" src="../js/shzqbqui.js"></script>
+    <style>
+
+    </style>
+</head>
+<body class="bclightgray">
+<div class="page_content companyBox">
+    <!--顶部模块-->
+    <div class="company_nav1"><!--顶部logo & 搜索框-->
+        <div class="centerBox clearfix">
+            <div class="left_logo fl">
+                <a href=""><img src="../images/shzqlogo.png" alt=""></a>
+            </div>
+            <div class="center_input_box fl">
+                <div class="center_input clearfix">
+                    <div class="center_select fl">
+                        <select name="" id="">
+                            <option value="">公司股票代码或全称查询</option>
+                            <option value="">个人查询</option>
+                        </select>
+                    </div>
+                    <div class="center_inp fl">
+                        <input type="text" placeholder="输入公司股票代码/公司名称/个人名称+公司名称">
+                        <button class="fa fa-search btn_search"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="company_nav2">
+        <ul class="centerBox clearfix">
+            <li class="fl nav_list_node">
+                <a href="" class="nav_list_node_link fa fa-home" target="_blank">&nbsp;系统首页</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company.html" class="nav_list_node_link " >公司首页</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_survey.html" class="nav_list_node_link " >概况</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_shareholder.html" class="nav_list_node_link">股东</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_seniorExecutive.html" class="nav_list_node_link">高管</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_finance.html" class="nav_list_node_link">财务</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_bonus.html" class="nav_list_node_link">分红</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_market.html" class="nav_list_node_link">市场</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_risk.html" class="nav_list_node_link">风险</a>
+            </li>
+            <li class="fl nav_list_node">
+                <a href="company_industry.html" class="nav_list_node_link actived">行业</a>
+            </li>
+        </ul>
+    </div>
+    <!--顶部模块 end-->
+
+    <!--行业内容-->
+    <div class="centerBox" style="padding-bottom: 20px;">
+       <div class="scbj_box margin_top15">
+           <div class="zhuygcfx_tit">
+               <span class="zhuygcfx_tit_txt">市场比较</span>
+               <div class="zhuygcfx_bgq">
+                   <label for="" class="fl">行业：</label>
+                   <select name="" id="">
+                       <option value="">申银万国一级</option>
+                       <option value="">申银万国二级</option>
+                       
+                   </select>
+               </div>
+           </div>
+           <div class="zhuygcfx_con tablebody-scroll-box">
+               <div class="newestCloseDay">
+                   <label for="" class="gray_txt">最新收盘日：</label>
+                   <span>2018-01-11</span>
+               </div>
+               <div class="table-head">
+                   <table class="mystyle_tab2"  >
+                       <tr>
+                           <td class="td_bc" rowspan="2"><span>排名</span></td>
+                           <td class="td_bc" rowspan="2"><span>代码</span></td>
+                           <td class="td_bc" rowspan="2"><span>证券简称</span></td>
+                           <td class="td_bc" colspan="4"><span>涨跌幅（%）</span></td>
+                           <td class="td_bc" colspan="4"><span>日均换手率（%）</span></td>
+                           <td class="td_bc" rowspan="2"><span>流通市值（亿元）</span></td>
+                           <td class="td_bc" rowspan="2"><span>总市值（亿元）</span></td>
+                       </tr>
+                       <tr>
+                           <td class="td_bc"><span>5日</span></td>
+                           <td class="td_bc"><span>20日</span></td>
+                           <td class="td_bc"><span>60日</span></td>
+                           <td class="td_bc"><span>120日</span></td>
+                           <td class="td_bc"><span>5日</span></td>
+                           <td class="td_bc"><span>20日</span></td>
+                           <td class="td_bc"><span>60日</span></td>
+                           <td class="td_bc"><span>120日</span></td>
+                       </tr>
+                       <tr class="current_company">
+                           <td class="tal_center"><span>3</span></td><!--排名居中-->
+                           <td><span>000898.SZ</span></td>
+                           <td><span>鞍钢股份</span></td>
+                           <td class="num_ta_right"><span>-1.51</span></td>
+                           <td class="num_ta_right"><span>0.15</span></td>
+                           <td class="num_ta_right"><span>2.99</span></td>
+                           <td class="num_ta_right"><span>2.99</span></td>
+                           <td class="num_ta_right"><span>1.24</span></td>
+                           <td class="num_ta_right"><span>2.03</span></td>
+                           <td class="num_ta_right"><span>7.92</span></td>
+                           <td class="num_ta_right"><span>20.62</span></td>
+                           <td class="num_ta_right"><span>402.15</span></td>
+                           <td class="num_ta_right"><span>470.32</span></td>
+                       </tr>
+                       <tr>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                       </tr>
+                       <tr>
+                           <td></td>
+                           <td><span>平均值</span></td>
+                           <td></td>
+                           <td class="num_ta_right"><span>1.54</span></td>
+                           <td class="num_ta_right"><span>5.78</span></td>
+                           <td class="num_ta_right"><span>18.20</span></td>
+                           <td class="num_ta_right"><span>18.20</span></td>
+                           <td class="num_ta_right"><span>10.42</span></td>
+                           <td class="num_ta_right"><span>45.98</span></td>
+                           <td class="num_ta_right"><span>112.25</span></td>
+                           <td class="num_ta_right"><span>105.12</span></td>
+                           <td class="num_ta_right"><span>1951.54</span></td>
+                           <td class="num_ta_right"><span>1951.54</span></td>
+                       </tr>
+                       <tr>
+                           <td></td>
+                           <td><span>中位值</span></td>
+                           <td></td>
+                           <td class="num_ta_right"><span>-1.10</span></td>
+                           <td class="num_ta_right"><span>-0.73</span></td>
+                           <td class="num_ta_right"><span>2.18</span></td>
+                           <td class="num_ta_right"><span>2.18</span></td>
+                           <td class="num_ta_right"><span>-0.63</span></td>
+                           <td class="num_ta_right"><span>-5.20</span></td>
+                           <td class="num_ta_right"><span>0.14</span></td>
+                           <td class="num_ta_right"><span>9.87</span></td>
+                           <td class="num_ta_right"><span>191.37</span></td>
+                           <td class="num_ta_right"><span>195.14</span></td>
+                       </tr>
+                   </table>
+               </div>
+               <div class="table-body">
+                   <table class="mystyle_tab2">
+                       <tbody class="tr_bc">
+
+                       <tr>
+                           <td class="tal_center"><span>1</span></td><!--排名居中-->
+                           <td><span>600019.SH</span></td>
+                           <td><span>宝钢股份</span></td>
+                           <td class="num_ta_right"><span>-2.43</span></td>
+                           <td class="num_ta_right"><span>-0.45</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>5.12</span></td>
+                           <td class="num_ta_right"><span>20.30</span></td>
+                           <td class="num_ta_right"><span>21.63</span></td>
+                           <td class="num_ta_right"><span>34.13</span></td>
+                           <td class="num_ta_right"><span>1951.54</span></td>
+                           <td class="num_ta_right"><span>1951.54</span></td>
+                       </tr>
+                       <tr>
+                           <td class="tal_center"><span>2</span></td>
+                           <td><span>600010.SH</span></td>
+                           <td><span>包钢股份</span></td>
+                           <td class="num_ta_right"><span>-2.43</span></td>
+                           <td class="num_ta_right"><span>-0.45</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>5.12</span></td>
+                           <td class="num_ta_right"><span>20.30</span></td>
+                           <td class="num_ta_right"><span>21.63</span></td>
+                           <td class="num_ta_right"><span>34.13</span></td>
+                           <td class="num_ta_right"><span>1951.54</span></td>
+                           <td class="num_ta_right"><span>1951.54</span></td>
+                       </tr>
+                       <tr>
+                           <td class="tal_center"><span>4</span></td>
+                           <td><span>600709.SZ</span></td>
+                           <td><span>河钢股份</span></td>
+                           <td class="num_ta_right"><span>-2.43</span></td>
+                           <td class="num_ta_right"><span>-0.45</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>5.12</span></td>
+                           <td class="num_ta_right"><span>20.30</span></td>
+                           <td class="num_ta_right"><span>21.63</span></td>
+                           <td class="num_ta_right"><span>34.13</span></td>
+                           <td class="num_ta_right"><span>1951.54</span></td>
+                           <td class="num_ta_right"><span>1951.54</span></td>
+                       </tr>
+                       <tr>
+                           <td class="tal_center"><span>4</span></td>
+                           <td><span>600709.SZ</span></td>
+                           <td><span>河钢股份</span></td>
+                           <td class="num_ta_right"><span>-2.43</span></td>
+                           <td class="num_ta_right"><span>-0.45</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>5.12</span></td>
+                           <td class="num_ta_right"><span>20.30</span></td>
+                           <td class="num_ta_right"><span>21.63</span></td>
+                           <td class="num_ta_right"><span>34.13</span></td>
+                           <td class="num_ta_right"><span>1951.54</span></td>
+                           <td class="num_ta_right"><span>1951.54</span></td>
+                       </tr>
+                       <tr>
+                           <td class="tal_center"><span>4</span></td>
+                           <td><span>600709.SZ</span></td>
+                           <td><span>河钢股份</span></td>
+                           <td class="num_ta_right"><span>-2.43</span></td>
+                           <td class="num_ta_right"><span>-0.45</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>5.12</span></td>
+                           <td class="num_ta_right"><span>20.30</span></td>
+                           <td class="num_ta_right"><span>21.63</span></td>
+                           <td class="num_ta_right"><span>34.13</span></td>
+                           <td class="num_ta_right"><span>1951.54</span></td>
+                           <td class="num_ta_right"><span>1951.54</span></td>
+                       </tr>
+                       <tr>
+                           <td class="tal_center"><span>4</span></td>
+                           <td><span>600709.SZ</span></td>
+                           <td><span>河钢股份</span></td>
+                           <td class="num_ta_right"><span>-2.43</span></td>
+                           <td class="num_ta_right"><span>-0.45</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>5.12</span></td>
+                           <td class="num_ta_right"><span>20.30</span></td>
+                           <td class="num_ta_right"><span>21.63</span></td>
+                           <td class="num_ta_right"><span>34.13</span></td>
+                           <td class="num_ta_right"><span>1951.54</span></td>
+                           <td class="num_ta_right"><span>1951.54</span></td>
+                       </tr>
+                       <tr>
+                           <td class="tal_center"><span>4</span></td>
+                           <td><span>600709.SZ</span></td>
+                           <td><span>河钢股份</span></td>
+                           <td class="num_ta_right"><span>-2.43</span></td>
+                           <td class="num_ta_right"><span>-0.45</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>5.12</span></td>
+                           <td class="num_ta_right"><span>20.30</span></td>
+                           <td class="num_ta_right"><span>21.63</span></td>
+                           <td class="num_ta_right"><span>34.13</span></td>
+                           <td class="num_ta_right"><span>1951.54</span></td>
+                           <td class="num_ta_right"><span>1951.54</span></td>
+                       </tr>
+                       <tr>
+                           <td class="tal_center"><span>4</span></td>
+                           <td><span>600709.SZ</span></td>
+                           <td><span>河钢股份河钢股份河钢股份</span></td>
+                           <td class="num_ta_right"><span>-2.43</span></td>
+                           <td class="num_ta_right"><span>-0.45</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>5.12</span></td>
+                           <td class="num_ta_right"><span>20.30</span></td>
+                           <td class="num_ta_right"><span>21.63</span></td>
+                           <td class="num_ta_right"><span>34.13</span></td>
+                           <td class="num_ta_right"><span>1951.54</span></td>
+                           <td class="num_ta_right"><span>1951.54</span></td>
+                       </tr>
+                       </tbody>
+                   </table>
+               </div>
+           </div>
+       </div>
+       <div class="cwbl_box margin_top15">
+           <div class="zhuygcfx_tit">
+               <span class="zhuygcfx_tit_txt">财务比率</span>
+               <div class="zhuygcfx_bgq">
+                   <label for="" class="fl">行业：</label>
+                   <select name="" id="">
+                       <option value="">申银万国一级</option>
+                       <option value="">申银万国二级</option>
+                       
+                   </select>
+               </div>
+           </div>
+           <div class="zhuygcfx_con tablebody-scroll-box">
+               <div class="table-head">
+                   <table class="mystyle_tab2">
+                       <tr>
+                           <td class="td_bc" rowspan="2"><span>排名</span></td>
+                           <td class="td_bc" rowspan="2"><span>代码</span></td>
+                           <td class="td_bc" rowspan="2"><span>证券简称</span></td>
+                           <td class="td_bc" colspan="3"><span>净资产收益率（%）</span></td>
+                           <td class="td_bc" colspan="3"><span>每股收益（基本）</span></td>
+                           <td class="td_bc" colspan="3"><span>销售毛利率</span></td>
+                       </tr>
+                       <tr>
+                           <td class="td_bc"><span>2017三季报</span></td>
+                           <td class="td_bc"><span>2016年报</span></td>
+                           <td class="td_bc"><span>2015年报</span></td>
+                           <td class="td_bc"><span>2017三季报</span></td>
+                           <td class="td_bc"><span>2016年报</span></td>
+                           <td class="td_bc"><span>2015年报</span></td>
+                           <td class="td_bc"><span>2017三季报</span></td>
+                           <td class="td_bc"><span>2016年报</span></td>
+                           <td class="td_bc"><span>2015年报</span></td>
+                       </tr>
+                       <tr class="current_company">
+                           <td class="tal_center"><span>18</span></td>
+                           <td><span>000898.SZ</span></td>
+                           <td><span>鞍钢股份</span></td>
+                           <td class="num_ta_right"><span>7.10</span></td>
+                           <td class="num_ta_right"><span>3.67</span></td>
+                           <td class="num_ta_right"><span>-10.09</span></td>
+                           <td class="num_ta_right"><span>0.45</span></td>
+                           <td class="num_ta_right"><span>0.22</span></td>
+                           <td class="num_ta_right"><span>-0.64</span></td>
+                           <td class="num_ta_right"><span>11.32</span></td>
+                           <td class="num_ta_right"><span>12.89</span></td>
+                           <td class="num_ta_right"><span>5.84</span></td>
+                       </tr>
+                       <tr>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                       </tr>
+                       <tr>
+                           <td></td>
+                           <td><span>平均值</span></td>
+                           <td></td>
+                           <td class="num_ta_right"><span>1.54</span></td>
+                           <td class="num_ta_right"><span>5.78</span></td>
+                           <td class="num_ta_right"><span>18.20</span></td>
+                           <td class="num_ta_right"><span>18.20</span></td>
+                           <td class="num_ta_right"><span>10.42</span></td>
+                           <td class="num_ta_right"><span>45.98</span></td>
+                           <td class="num_ta_right"><span>112.25</span></td>
+                           <td class="num_ta_right"><span>105.12</span></td>
+                           <td class="num_ta_right"><span>1951.54</span></td>
+                       </tr>
+                       <tr>
+                           <td></td>
+                           <td><span>中位值</span></td>
+                           <td></td>
+                           <td class="num_ta_right"><span>-1.10</span></td>
+                           <td class="num_ta_right"><span>-0.73</span></td>
+                           <td class="num_ta_right"><span>2.18</span></td>
+                           <td class="num_ta_right"><span>2.18</span></td>
+                           <td class="num_ta_right"><span>-0.63</span></td>
+                           <td class="num_ta_right"><span>-5.20</span></td>
+                           <td class="num_ta_right"><span>0.14</span></td>
+                           <td class="num_ta_right"><span>9.87</span></td>
+                           <td class="num_ta_right"><span>191.37</span></td>
+                       </tr>
+                   </table>
+               </div>
+               <div class="table-body">
+                   <table class="mystyle_tab2">
+                       <tr>
+                           <td class="tal_center"><span>1</span></td>
+                           <td><span>600019.SH</span></td>
+                           <td><span>宝钢股份</span></td>
+                           <td class="num_ta_right"><span>-2.43</span></td>
+                           <td class="num_ta_right"><span>-0.45</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>5.12</span></td>
+                           <td class="num_ta_right"><span>20.30</span></td>
+                           <td class="num_ta_right"><span>21.63</span></td>
+                           <td class="num_ta_right"><span>34.13</span></td>
+                           <td class="num_ta_right"><span>1951.54</span></td>
+                       </tr>
+                       <tr>
+                           <td class="tal_center"><span>2</span></td>
+                           <td><span>600010.SH</span></td>
+                           <td><span>包钢股份</span></td>
+                           <td class="num_ta_right"><span>-2.43</span></td>
+                           <td class="num_ta_right"><span>-0.45</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>5.12</span></td>
+                           <td class="num_ta_right"><span>20.30</span></td>
+                           <td class="num_ta_right"><span>21.63</span></td>
+                           <td class="num_ta_right"><span>34.13</span></td>
+                           <td class="num_ta_right"><span>1951.54</span></td>
+                       </tr>
+                       <tr>
+                           <td class="tal_center"><span>4</span></td>
+                           <td><span>600709.SZ</span></td>
+                           <td><span>河钢股份</span></td>
+                           <td class="num_ta_right"><span>-2.43</span></td>
+                           <td class="num_ta_right"><span>-0.45</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>5.12</span></td>
+                           <td class="num_ta_right"><span>20.30</span></td>
+                           <td class="num_ta_right"><span>21.63</span></td>
+                           <td class="num_ta_right"><span>34.13</span></td>
+                           <td class="num_ta_right"><span>1951.54</span></td>
+                       </tr>
+                   </table>
+               </div>
+           </div>
+       </div>
+       <div class="cwsj_box margin_top15">
+           <div class="zhuygcfx_tit">
+               <span class="zhuygcfx_tit_txt">财务数据</span>
+               <div class="zhuygcfx_bgq">
+                  <div class="fl margin_right10">
+                      <label for="" class="fl">行业：</label>
+                      <select name="" id="">
+                          <option value="">申银万国一级</option>
+                          <option value="">申银万国二级</option>
+                          
+                      </select>
+                  </div>
+                   <div class="fl">
+                       <label for="" class="fl">指标选择：</label>
+                       <select name="" id="">
+                           <option value="">总收入（万元）</option>
+                           <option value="">净利润（万元）</option>
+                           <option value="">总资产（万元）</option>
+                           <option value="">总负债（万元）</option>
+                           <option value="">经营活动净现金流（万元）</option>
+                       </select>
+                   </div>
+               </div>
+           </div>
+           <div class="zhuygcfx_con tablebody-scroll-box">
+               <div class="table-head">
+                   <table class="mystyle_tab2">
+                       <tr class="tr_bc">
+                           <td class="td_bc" rowspan="2"><span>排名</span></td>
+                           <td class="td_bc" rowspan="2"><span>代码</span></td>
+                           <td class="td_bc" rowspan="2"><span>证券简称</span></td>
+                           <td class="td_bc" colspan="3"><span>总收入</span></td>
+                           <td class="td_bc" colspan="3"><span>总收入同比增长率（%）</span></td>
+                       </tr>
+                       <tr class="tr_bc">
+                           <td class="td_bc"><span>2017三季报</span></td>
+                           <td class="td_bc"><span>2016年报</span></td>
+                           <td class="td_bc"><span>2015年报</span></td>
+                           <td class="td_bc"><span>2017三季报</span></td>
+                           <td class="td_bc"><span>2016年报</span></td>
+                           <td class="td_bc"><span>2015年报</span></td>
+                       </tr>
+                       <tr class="current_company">
+                           <td class="tal_center"><span>3</span></td>
+                           <td><span>000898.SZ</span></td>
+                           <td><span>鞍钢股份</span></td>
+                           <td class="num_ta_right"><span>5991000.00</span></td>
+                           <td class="num_ta_right"><span>5761100.00</span></td>
+                           <td class="num_ta_right"><span>5253500.00</span></td>
+                           <td class="num_ta_right"><span>46.73</span></td>
+                           <td class="num_ta_right"><span>9.66</span></td>
+                           <td class="num_ta_right"><span>-28.85</span></td>
+                       </tr>
+                       <tr>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                       </tr>
+                       <tr>
+                           <td></td>
+                           <td><span>平均值</span></td>
+                           <td></td>
+                           <td class="num_ta_right"><span>1.54</span></td>
+                           <td class="num_ta_right"><span>5.78</span></td>
+                           <td class="num_ta_right"><span>18.20</span></td>
+                           <td class="num_ta_right"><span>18.20</span></td>
+                           <td class="num_ta_right"><span>10.42</span></td>
+                           <td class="num_ta_right"><span>45.98</span></td>
+                       </tr>
+                       <tr>
+                           <td></td>
+                           <td><span>中位值</span></td>
+                           <td></td>
+                           <td class="num_ta_right"><span>-1.10</span></td>
+                           <td class="num_ta_right"><span>-0.73</span></td>
+                           <td class="num_ta_right"><span>2.18</span></td>
+                           <td class="num_ta_right"><span>2.18</span></td>
+                           <td class="num_ta_right"><span>-0.63</span></td>
+                           <td class="num_ta_right"><span>-5.20</span></td>
+                       </tr>
+                   </table>
+               </div>
+               <div class="table-body">
+                   <table class="mystyle_tab2">
+                       <tr>
+                           <td class="tal_center"><span>1</span></td>
+                           <td><span>600019.SH</span></td>
+                           <td><span>宝钢股份</span></td>
+                           <td class="num_ta_right"><span>-2.43</span></td>
+                           <td class="num_ta_right"><span>-0.45</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>5.12</span></td>
+                           <td class="num_ta_right"><span>20.30</span></td>
+                       </tr>
+                       <tr>
+                           <td class="tal_center"><span>2</span></td>
+                           <td><span>600010.SH</span></td>
+                           <td><span>包钢股份</span></td>
+                           <td class="num_ta_right"><span>-2.43</span></td>
+                           <td class="num_ta_right"><span>-0.45</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>5.12</span></td>
+                           <td class="num_ta_right"><span>20.30</span></td>
+                       </tr>
+                       <tr>
+                           <td class="tal_center"><span>4</span></td>
+                           <td><span>600709.SZ</span></td>
+                           <td><span>河钢股份</span></td>
+                           <td class="num_ta_right"><span>-2.43</span></td>
+                           <td class="num_ta_right"><span>-0.45</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>5.12</span></td>
+                           <td class="num_ta_right"><span>20.30</span></td>
+                       </tr>
+                       <tr>
+                           <td class="tal_center"><span>4</span></td>
+                           <td><span>600709.SZ</span></td>
+                           <td><span>河钢股份</span></td>
+                           <td class="num_ta_right"><span>-2.43</span></td>
+                           <td class="num_ta_right"><span>-0.45</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>5.12</span></td>
+                           <td class="num_ta_right"><span>20.30</span></td>
+                       </tr>
+                       <tr>
+                           <td class="tal_center"><span>4</span></td>
+                           <td><span>600709.SZ</span></td>
+                           <td><span>河钢股份</span></td>
+                           <td class="num_ta_right"><span>-2.43</span></td>
+                           <td class="num_ta_right"><span>-0.45</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>5.12</span></td>
+                           <td class="num_ta_right"><span>20.30</span></td>
+                       </tr>
+                       <tr>
+                           <td class="tal_center"><span>4</span></td>
+                           <td><span>600709.SZ</span></td>
+                           <td><span>河钢股份</span></td>
+                           <td class="num_ta_right"><span>-2.43</span></td>
+                           <td class="num_ta_right"><span>-0.45</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>5.12</span></td>
+                           <td class="num_ta_right"><span>20.30</span></td>
+                       </tr>
+                       <tr>
+                           <td class="tal_center"><span>4</span></td>
+                           <td><span>600709.SZ</span></td>
+                           <td><span>河钢股份</span></td>
+                           <td class="num_ta_right"><span>-2.43</span></td>
+                           <td class="num_ta_right"><span>-0.45</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>5.12</span></td>
+                           <td class="num_ta_right"><span>20.30</span></td>
+                       </tr>
+                       <tr>
+                           <td class="tal_center"><span>4</span></td>
+                           <td><span>600709.SZ</span></td>
+                           <td><span>河钢股份</span></td>
+                           <td class="num_ta_right"><span>-2.43</span></td>
+                           <td class="num_ta_right"><span>-0.45</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>5.12</span></td>
+                           <td class="num_ta_right"><span>20.30</span></td>
+                       </tr>
+                       <tr>
+                           <td class="tal_center"><span>4</span></td>
+                           <td><span>600709.SZ</span></td>
+                           <td><span>河钢股份</span></td>
+                           <td class="num_ta_right"><span>-2.43</span></td>
+                           <td class="num_ta_right"><span>-0.45</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>5.12</span></td>
+                           <td class="num_ta_right"><span>20.30</span></td>
+                       </tr>
+                       <tr>
+                           <td class="tal_center"><span>4</span></td>
+                           <td><span>600709.SZ</span></td>
+                           <td><span>河钢股份</span></td>
+                           <td class="num_ta_right"><span>-2.43</span></td>
+                           <td class="num_ta_right"><span>-0.45</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>5.12</span></td>
+                           <td class="num_ta_right"><span>20.30</span></td>
+                       </tr>
+                       <tr>
+                           <td class="tal_center"><span>4</span></td>
+                           <td><span>600709.SZ</span></td>
+                           <td><span>河钢股份</span></td>
+                           <td class="num_ta_right"><span>-2.43</span></td>
+                           <td class="num_ta_right"><span>-0.45</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>5.12</span></td>
+                           <td class="num_ta_right"><span>20.30</span></td>
+                       </tr>
+                       <tr>
+                           <td class="tal_center"><span>4</span></td>
+                           <td><span>600709.SZ</span></td>
+                           <td><span>河钢股份</span></td>
+                           <td class="num_ta_right"><span>-2.43</span></td>
+                           <td class="num_ta_right"><span>-0.45</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>2.20</span></td>
+                           <td class="num_ta_right"><span>5.12</span></td>
+                           <td class="num_ta_right"><span>20.30</span></td>
+                       </tr>
+                   </table>
+               </div>
+           </div>
+       </div>
+
+    </div>
+    <!--行业内容 end-->
+</div>
+
+<script>
+    /*表头固定相关*/
+    /*scrollbar width*/
+    function getScrollbarWidth() {
+        var odiv = document.createElement('div'),//创建一个div
+            styles = {
+                width: '100px',
+                height: '100px',
+                overflowY: 'scroll'//让他有滚动条
+            }, i, scrollbarWidth;
+        for (i in styles) odiv.style[i] = styles[i];
+        document.body.appendChild(odiv);//把div添加到body中
+        scrollbarWidth = odiv.offsetWidth - odiv.clientWidth;//相减
+        odiv.style.display = 'none';//移除创建的div
+        return scrollbarWidth;//返回滚动条宽度
+    }
+    $('.table-body').each(function (index,ele) {
+        if($('.table-body').eq(index).children('table').height()>300){
+            $('.table-body').eq(index).css('marginRight','-'+getScrollbarWidth()+'px');
+        }else{
+            $('.table-body').eq(index).css('marginRight','0')
+        }
+    })
+    /*表头固定相关 end*/
+</script>
+</body>
+</html>

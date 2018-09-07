@@ -1,0 +1,18 @@
+主题色：
+主色：#1fc695
+按钮鼠标移入颜色35ddac
+弹窗的任务栏未激活弹窗颜色40eab8
+单元格鼠标移入背景f0f9f6
+单元格鼠标移入边框9cecd5
+链接移入颜色 4cdcb2
+table表头颜色 fafffc
+grid鼠标移入颜色 下拉框选中项背景色 e5eee5
+grid边框颜色 表单元素边框 d8efe6
+
+
+
+浅黄：#FFF6E5 grid鼠标点击颜色
+#f7f8fa tooltip背景色 弹窗的taskbar
+#c4d0df tooltip边框 弹窗的taskbar
+正文颜色 链接颜色 #657180
+#edf0f2 下拉框列表鼠标移入颜色（未用）
